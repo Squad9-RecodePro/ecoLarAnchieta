@@ -9,22 +9,98 @@
 
   <link rel="stylesheets" href="./public/css/global.css" />
   <link rel="stylesheet" href="./public/css/cadastro.css" />
+
 </head>
 
 <body>
-  <header class="menu">
-    <a href="./index.html">
-      <!-- Clica no logo e Redireciona para index -->
-      <img src="./public/images/logo2.svg" alt="logo" title="Logo EcoCasa" /></a>
-    <br> <br>
-    <hr>
-  </header>
-  <br><br><br><br>
+  <header>
+ 
+    <div class="nav-container">
+      <div class="wrapper">
+        <nav>
+          <div class="logo">
+            <br>
+            
+            <img src="./public/images/logo2.svg" alt="logo" title="Logo EcoCasa" /></a>  <!--Logo EcoCasa-->
+          </div>
+          <!--
+          <ul class="nav-items">
+            <li>
+              <div class="contato"> 
+                <a href="#">Contato</a>
+              </div>
 
-  <footer>
-    <br> <br> <br> <br>
-    <p class="direitos_autorais">2020&copy; Todos os Direitos Reservados</p>
-  </footer>
+              <a class="contato-botao"></a>
+            </li>
+
+            <li>
+              <div class="causas"> 
+                <a href="#">Nossas Causas</a>
+              </div>
+              
+              <a class="causas-botao"></a>
+            </li>
+
+            <li>
+              <div class="dicas"> 
+                <a href="#">Dicas</a>
+              </div>
+              <a class="dicas-botao"></a>
+            </li>
+          </ul>
+          -->
+        </nav>
+      </div>
+    </div>
+
+
+    <hr>
+
+  </header>
+
+<br>
+<br>
+
+
+<main>
+  <div class="card">
+    <table border="0", width="100" cellpadding=>
+      <tr>
+        <td rowspan="5" width="20%" valign="top">
+          <ul>
+            <li><h1>Cadastre-se</h1></li>   <!--Aqui começa a parte do cadastro (lado esquerdo)-->
+            <li><input id="nome" type="nome" placeholder="Digite o seu nome"></li>
+            <li><input id="email" type="email" placeholder="Digite um e-mail"></li>
+            <li><input id="cpf" type="cpf" placeholder="Digite o seu CPF"></li>
+            <li><input id="endereco" type="endereco" placeholder="Digite o seu endereço"></li>
+            <li><input id="numero-rua" type="numero-rua" placeholder="Digite o número de sua residência"></li>
+            <li><input id="complemento" type="complemento" placeholder="Digite o complemento"></li>
+            <li><input id="bairro" type="bairro" placeholder="Digite o nome de seu Bairro"></li>
+            <li><input id="cidade" type="cidade" placeholder="Digite o nome de sua cidade"></li>
+            <li><input id="estado" type="estado" placeholder="Digite o seu Estado"></li>
+            <li><input id="senha" type="password" placeholder="Digite uma senha"></li>
+            <li><input id="confirmar-senha" type="password" placeholder="Confirme a sua senha"></li>
+            <li><button onclick="cadastrar()"><b>Cadastre-se</b></button></li>
+            <li><a href="./index.html">Já possui cadastro? Realize o login.</a></li>
+          </ul>
+      </td>
+      <td>
+        <img src="public/images/Imagem pagina cadastro.jpeg" width="800px" height="800px"> <!--Imagem no lado direito-->
+      </td>
+
+
+
+    </tr>
+  </table>
+  </div>
+</main>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+
 </body>
 
 </html>
