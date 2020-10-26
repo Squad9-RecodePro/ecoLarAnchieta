@@ -2,28 +2,29 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoCasa - Cadastre-se</title>
-  <link rel="icon" href="./public/images/logo.svg" /> <!-- Icone no Title -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>EcoCasa - Cadastre-se</title>
+	<link rel="icon" href="./public/images/logo.svg" /> <!-- Icone no Title -->
 
-  <link rel="stylesheets" href="./public/css/global.css" />
-  <link rel="stylesheet" href="./public/css/cadastro.css" />
+	<link rel="stylesheets" href="./public/css/global.css" />
+	<link rel="stylesheet" href="./public/css/cadastro.css" />
 
 </head>
 
 <body>
-  <header>
- 
-    <div class="nav-container">
-      <div class="wrapper">
-        <nav>
-          <div class="logo">
-            <br>
-            
-            <img src="./public/images/logo2.svg" alt="logo" title="Logo EcoCasa" /></a>  <!--Logo EcoCasa-->
-          </div>
-          <!--
+	<header>
+
+		<div class="nav-container">
+			<div class="wrapper">
+				<nav>
+					<div class="logo">
+						<br>
+
+						<img src="./public/images/logo2.svg" alt="logo" title="Logo EcoCasa" /></a>
+						<!--Logo EcoCasa-->
+					</div>
+					<!--
           <ul class="nav-items">
             <li>
               <div class="contato"> 
@@ -49,57 +50,67 @@
             </li>
           </ul>
           -->
-        </nav>
-      </div>
-    </div>
+				</nav>
+			</div>
+		</div>
 
 
-    <hr>
+		<hr>
 
-  </header>
+	</header>
 
-<br>
-<br>
-
-
-<main>
-  <div class="card">
-    <table border="0", width="100" cellpadding=>
-      <tr>
-        <td rowspan="5" width="20%" valign="top">
-          <ul>
-            <li><h1>Cadastre-se</h1></li>   <!--Aqui começa a parte do cadastro (lado esquerdo)-->
-            <li><input id="nome" type="nome" placeholder="Digite o seu nome"></li>
-            <li><input id="email" type="email" placeholder="Digite um e-mail"></li>
-            <li><input id="cpf" type="cpf" placeholder="Digite o seu CPF"></li>
-            <li><input id="endereco" type="endereco" placeholder="Digite o seu endereço"></li>
-            <li><input id="numero-rua" type="numero-rua" placeholder="Digite o número de sua residência"></li>
-            <li><input id="complemento" type="complemento" placeholder="Digite o complemento"></li>
-            <li><input id="bairro" type="bairro" placeholder="Digite o nome de seu Bairro"></li>
-            <li><input id="cidade" type="cidade" placeholder="Digite o nome de sua cidade"></li>
-            <li><input id="estado" type="estado" placeholder="Digite o seu Estado"></li>
-            <li><input id="senha" type="password" placeholder="Digite uma senha"></li>
-            <li><input id="confirmar-senha" type="password" placeholder="Confirme a sua senha"></li>
-            <li><button onclick="cadastrar()"><b>Cadastre-se</b></button></li>
-            <li><a href="./index.html">Já possui cadastro? Realize o login.</a></li>
-          </ul>
-      </td>
-      <td>
-        <img src="public/images/Imagem pagina cadastro.jpeg" width="800px" height="800px"> <!--Imagem no lado direito-->
-      </td>
+	<br>
+	<br>
 
 
+	<main>
+		<div class="card">
+			<table border="0" , width="100" cellpadding=>
+				<tr>
+					<td rowspan="5" width="20%" valign="top">
+						<ul>
+							<li>
+								<h1>Cadastre-se</h1>
+							</li>
+							<!--Aqui começa a parte do cadastro (lado esquerdo)-->
+							<form id="form-cadastro" onsubmit="return validateForm(event)" action="php/cadastro.php" method="post">
+								<li><input id="nome" type="text" placeholder="Digite o seu nome" required></li>
+								<li><input id="email" type="email" placeholder="Digite um e-mail" required></li>
+								<li><input id="cpf" type="text" placeholder="Digite o seu CPF" required></li>
+								<li><input id="cep" type="text" placeholder="Digite o seu CEP" required></li>
+                                <li><input id="endereco" type="text" placeholder="Digite o seu endereço" required></li>
+								<li><input id="numero-rua" type="text" placeholder="Digite o número de sua residência" required></li>
+								<li><input id="complemento" type="text" placeholder="Digite o complemento"></li>
+								<li><input id="bairro" type="text" placeholder="Digite o nome de seu Bairro" required></li>
+								<li><input id="cidade" type="text" placeholder="Digite o nome de sua cidade" required></li>
+								<li><input id="estado" type="text" placeholder="Digite o seu Estado" required></li>
+								<li><input id="senha" type="password" placeholder="Digite uma senha" required></li>
+								<li><input id="confirmar-senha" type="password" placeholder="Confirme a sua senha" required></li>
+								<li><button type="submit" form="form-cadastro" value="Submit"><b>Cadastre-se</b></button>
+								</li>
+                            <form>
+								<li><a href="./index.html">Já possui cadastro? Realize o login.</a></li>
+								
+						</ul>
+					</td>
+					<td>
+						<img src="public/images/Imagem pagina cadastro.jpeg" width="800px" height="800px">
+						<!--Imagem no lado direito-->
+					</td>
 
-    </tr>
-  </table>
-  </div>
-</main>
-<br>
-<br>
-<br>
-<br>
-<br>
-  
+
+
+				</tr>
+			</table>
+		</div>
+	</main>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+    <script type="text/javascript" src="./public/js/validacao_form.js"></script>
 
 </body>
 
