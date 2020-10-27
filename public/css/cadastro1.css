@@ -1,0 +1,32 @@
+.card {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: #41414144;
+}
+
+.card input {
+    width: 50%;
+    margin: 0.6rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    /* border: none; */
+}
+
+.card label {
+    font-size: 2.3rem;
+    padding-right: 60px;
+    text-align: center;
+}
+
+#qtdmoradores {
+    width: 30px;
+}
+
+.card select {
+    width: 40%;
+    border-radius: 0.8rem;
+    /* border: none; */
+    margin: 0.6rem;
+    padding: 0.8rem;
+}

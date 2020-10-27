@@ -1,51 +1,27 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-  }
 
-  header{  /* tela branca atras do logo EcoCasa */
-    position: relative;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  header .logo { /* definição das medidas do logo */
-    position: relative;
-    width: auto;
-  }
-  
-  
-
-.linha-vertical{
-    position: relative;
-    width: 2px;
-    height: 500px;
-    left: 50%;
-    top: 150px;
-    border: 2px solid #85C872;
+.linha-vertical {
+  position: relative;
+  width: 2px;
+  height: 500px;
+  left: 50%;
+  top: 150px;
+  border: 2px solid #85C872;
 }
 
-
-main {  /*background esverdeado atras do box de cadastro */
+main {
+  /*background esverdeado atras do box de cadastro */
   height: 50rem;
   width: 100%;
   background-color: #6ce2af;
-  display: flex; 
-
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-main .card {  /* box de cadastro */
+main .card {
+  /* box de cadastro */
   position: absolute;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.466);
   width: 32.5rem;
   height: 49rem;
   border-radius: 6px;
@@ -54,40 +30,31 @@ main .card {  /* box de cadastro */
   align-items: center;
 }
 
-
-main .card ul{  /*seleciona todos os items da lista */
-    list-style: none;
-    align-items: top;
+main .card ul li input {
+  /*seleciona todos inputs (caixas de inserção de dados) */
+  display: center;
+  width: 420px;
+  margin-top: 10px;
+  padding-left: 16px;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid #b8b8b8
 }
 
-
-main .card ul li input{  /*seleciona todos inputs (caixas de inserção de dados) */
-    display: center;
-    width: 420px;
-    margin-top: 10px;
-    padding-left: 16px;
-    height: 42px;
-    border-radius: 6px;
-    border: 1px solid #b8b8b8
-
+main .card ul li button {
+  /* Define o estilo do botao */
+  width: 420px;
+  margin-top: 30px;
+  text-align: center;
+  height: 48px;
+  border-radius: 6px;
+  background-color: #53c794;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
 }
-main .card ul li button {  /* Define o estilo do botao */
-    width: 420px;
-    margin-top: 30px;
-    text-align: center;
-    height: 48px;
-    border-radius: 6px;
-    background-color: #53c794;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-}
+
 main .card a {
-    margin-top: 500px;
-    width: 70%;
+  margin-top: 500px;
+  width: 70%;
 }
-
-
-
-
-  
