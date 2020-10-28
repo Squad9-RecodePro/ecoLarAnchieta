@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
 	<meta charset="UTF-8" />
@@ -17,21 +17,23 @@
 
 		<!--Aqui começa a parte do cadastro (lado esquerdo)-->
 		<form id="form-cadastro" onsubmit="return validateForm(event)" action="php/cadastro.php" method="post">
-			<input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required><br>
-			<input id="email" type="email" name="email" placeholder="Digite um e-mail" required><br>
-			<input id="cpf" type="text" name="cpf" placeholder="Digite o seu CPF" required><br>
-			<input id="endereco" type="text" name="endereco" placeholder="Digite o seu endereço" required><br>
-			<input id="numero-rua" type="text" name="numero-rua" placeholder="Digite o número de sua residência"
-				required><br>
-			<input id="complemento" type="text" name="complemento" placeholder="Digite o complemento"><br>
-			<input id="bairro" type="text" name="bairro" placeholder="Digite o nome de seu Bairro" required><br>
-			<input id="cidade" type="text" name="cidade" placeholder="Digite o nome de sua cidade" required><br>
-			<input id="cep" type="text" name="cep" placeholder="Digite o seu CEP" required><br>
 
+			<p>Dados pessoais</p> <hr />
+
+			<label for="nome">Nome completo</label>
+			<input id="nome" type="text" name="nome" placeholder="Nome completo" required /> <br />
+
+			<label>Renda mensal</label><br>
 			<select>
-				<option name="estado" value="estado">São Paulo</option>
-			</select><br>
-			<label>Quantidade de moradores:</label><br>
+				<option name="salario"></option>
+				<option name="salario">Menos da metade de um salário minimo (R$522,50)</option>
+				<option name="salario">Até Um salário minimo (R$1045,00)</option>
+				<option name="salario">Até dois salários minimos (R$2090,00)</option>
+				<option name="salario">Não quero Informar</option>
+			</select> <br />
+
+			<label>Quantidade de moradores</label> <br />
+
 			<input id="qtdmoradores" type="radio" name="qtd-pessoas" value="1" required />
 			<label for="qtd-pessoas">1</label>
 			<input id="qtdmoradores" type="radio" name="qtd-pessoas" value="2" required />
@@ -39,22 +41,50 @@
 			<input id="qtdmoradores" type="radio" name="qtd-pessoas" value="3" required />
 			<label for="qtd-pessoas">3</label>
 			<input id="qtdmoradores" type="radio" name="qtd-pessoas" value="4" required />
-			<label for="qtd-pessoas">4 ou mais</label>
-			<br>
-			<label>Renda Mensal:</label><br>
-			<select>
-				<option name="salario"></option>
-				<option name="salario">Menos da metade de um salário minimo (R$522,50)</option>
-				<option name="salario">Até Um salário minimo (R$1045,00)</option>
-				<option name="salario">Até dois salários minimos (R$2090,00)</option>
-				<option name="salario">Não quero Informar</option>
-			</select><br>
+			<label for="qtd-pessoas">4 ou mais</label> <br />
 
-			<input id="senha" type="password" name="senha" placeholder="Digite uma senha" required><br>
-			<input id="confirmar-senha" type="password" name="confirmar-senha" placeholder="Confirme a sua senha"
-				required><br>
-			<button type="submit"><b>Cadastre-se</b></button><br>
-			<a href="./index.html">Já possui cadastro? Realize o login.</a>
+			<p>Dados para contato</p> <hr />
+
+			<label for="telefone">Telefone</label>
+			<input id="telefone" type="tel" name="telefone" placeholder="Ex: (11) 95555-1111" required /> <br />
+
+			<label for="endereco">Endereço</label>
+			<input id="endereco" type="text" name="endereco" placeholder="Ex: Av, Rua, etc. . ." required />
+	
+			<label for="numero">N°</label>
+			<input id="numero-rua" type="text" name="numero-rua" placeholder="Ex: 55" required />
+
+			<label for="complemento">Compl</label>
+			<input id="complemento" type="text" name="complemento" placeholder="Ex: casa 2" /> <br />
+
+			<label for="bairro">Bairro</label>
+			<input id="bairro" type="text" name="bairro" placeholder="Ex: Vl Anchieta" required />
+
+			<label for="cidade">Cidade</label>
+			<input id="cidade" type="text" name="cidade" placeholder="Cidade" required /> <br />
+
+			<label for="cep">CEP</label>
+			<input id="cep" type="text" name="cep" placeholder="Ex: 04531-000" required />
+
+			<select>
+				<option name="estado" value="estado">SP</option>
+			</select> <br />			
+
+			<p>Dados da conta</p> <hr />
+
+			<label for="email">E-mail</label> <br />
+			<input id="email" type="email" name="email" placeholder="Digite um e-mail" required /> <br />
+
+			<label for="senha">Criar senha</label> <br />
+			<input id="senha" type="password" name="senha" placeholder="Digite uma senha" required /><br>
+
+			<label for="conf-senha">Confirmar senha</label> <br />
+			<input id="conf-senha" type="password" name="confirmar-senha" placeholder="Confirme a sua senha" required /> <br /> <br />			
+
+			<button type="submit"><b>Cadastre-se</b></button> <br /> <br />
+
+			<a href="./index.html"> Já possui cadastro? Realize o login. </a>
+
 		</form>
 	</div>
 

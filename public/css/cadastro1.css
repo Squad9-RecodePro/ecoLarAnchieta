@@ -1,32 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Imagem\ pagina\ cadastro\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .card {
-    width: 100vw;
-    height: 100vh;
+    width: 60%;
+    background-color: #f5e12a;
     text-align: center;
-    background-color: #41414144;
-}
-
-.card input {
-    width: 50%;
-    margin: 0.6rem;
-    padding: 0.8rem;
     border-radius: 0.8rem;
-    /* border: none; */
 }
 
-.card label {
-    font-size: 2.3rem;
-    padding-right: 60px;
-    text-align: center;
+.card h1 {
+    font-size: 2.4rem;
 }
 
-#qtdmoradores {
-    width: 30px;
+#form-cadastro label {
+    font-size: 1.6rem;
+
 }
 
-.card select {
-    width: 40%;
-    border-radius: 0.8rem;
-    /* border: none; */
-    margin: 0.6rem;
-    padding: 0.8rem;
+#form-cadastro p {
+    font-size: 1.8rem;
+    margin: 0.6rem 0rem;
+}
+
+#form-cadastro input {
+    border-radius: 0.5rem;
+    border: none;
+    margin: 8px;
+    height: 17px;
+}
+
+#numero-rua {
+    width: 30px
+}
+
+#complemento {
+    width: 85px;
+}
+
+#form-cadastro hr {
+    bord
+}
+
+#form-cadastro select {
+    border-radius: 0.5rem;
+}
+
+#form-cadastro button {
+    border-radius: 0.5rem;
+    border: 1px solid blue;
+    width: 20vw;
+    height: 4vh;
+
 }
