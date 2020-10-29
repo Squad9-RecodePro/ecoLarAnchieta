@@ -20,7 +20,6 @@ body {
 
 #form-cadastro label {
     font-size: 1.6rem;
-
 }
 
 #form-cadastro p {
@@ -44,11 +43,11 @@ body {
 }
 
 #form-cadastro hr {
-    bord
+    width: 10px;
 }
 
 #form-cadastro select {
-    border-radius: 0.5rem;
+    border-radius: 5px;
 }
 
 #form-cadastro button {
@@ -56,5 +55,4 @@ body {
     border: 1px solid blue;
     width: 20vw;
     height: 4vh;
-
 }

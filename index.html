@@ -1,30 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EcoCasa</title>
-  <link rel="icon" href="./public/images/logo.svg" />
-
-  <link rel="stylesheet" href="./public/css/global.css" />
+  <link rel="icon" href="./images/logo.svg" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="menu">
-    <a href="./index.html">
-      <!-- Clica no logo e Redireciona para index -->
-      <img src="./public/images/logo2.svg" alt="logo" title="Logo EcoCasa" /></a>
-    <br> <br>
-    <hr>
-  </header>
-  <br><br><br><br>
+  <!-- Menu de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./images/logopage.png" width="50%"></a>
+      <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./cadastro.html">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Lista de Cadastro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Cards informativos -->
+  <div class="row container m-auto ">
+       <div class="card col-5 bg-info">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+    <div class="card col-7 bg-info">
+      <div class="card-body">
+        <h5 class="card-title">O que é uma ocupação?</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+      </div>
+    </div>
 
-
-  <footer>
-    <br> <br> <br> <br>
-    <p class="direitos_autorais">2020&copy; Todos os Direitos Reservados</p>
-  </footer>
+  </div>
 </body>
 
 </html>
