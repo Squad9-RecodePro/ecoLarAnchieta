@@ -2,6 +2,19 @@
     margin-top:92px !important;
 }
 
+.formulario h1 {
+    text-align: center;
+}
+
+#cep, #estado, #telefone {
+    width: 16vw;
+}
+
+#botao {
+    color: #ffffff;
+    background-color: #3A54B4;
+}
+
 
 
 
