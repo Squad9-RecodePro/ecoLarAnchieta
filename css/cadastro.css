@@ -1,60 +1,65 @@
-
-.linha-vertical {
-  position: relative;
-  width: 2px;
-  height: 500px;
-  left: 50%;
-  top: 150px;
-  border: 2px solid #85C872;
+.formulario{
+    margin-top:92px !important;
 }
 
-main {
-  /*background esverdeado atras do box de cadastro */
-  height: 50rem;
-  width: 100%;
-  background-color: #6ce2af;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Imagem\ pagina\ cadastro\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-main .card {
-  /* box de cadastro */
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.466);
-  width: 32.5rem;
-  height: 49rem;
-  border-radius: 6px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.card {
+    width: 60%;
+    background-color: #f5e12a;
+    text-align: center;
+    border-radius: 0.8rem;
 }
 
-main .card ul li input {
-  /*seleciona todos inputs (caixas de inserção de dados) */
-  display: center;
-  width: 420px;
-  margin-top: 10px;
-  padding-left: 16px;
-  height: 42px;
-  border-radius: 6px;
-  border: 1px solid #b8b8b8
+.card h1 {
+    font-size: 2.4rem;
 }
 
-main .card ul li button {
-  /* Define o estilo do botao */
-  width: 420px;
-  margin-top: 30px;
-  text-align: center;
-  height: 48px;
-  border-radius: 6px;
-  background-color: #53c794;
-  border: 0;
-  color: #fff;
-  cursor: pointer;
+#form-cadastro label {
+    font-size: 1.6rem;
 }
 
-main .card a {
-  margin-top: 500px;
-  width: 70%;
+#form-cadastro p {
+    font-size: 1.8rem;
+    margin: 0.6rem 0rem;
 }
+
+#form-cadastro input {
+    border-radius: 0.5rem;
+    border: none;
+    margin: 8px;
+    height: 17px;
+}
+
+#numero-rua {
+    width: 30px
+}
+
+#complemento {
+    width: 85px;
+}
+
+#form-cadastro hr {
+    width: 10px;
+}
+
+#form-cadastro select {
+    border-radius: 5px;
+}
+
+#form-cadastro button {
+    border-radius: 0.5rem;
+    border: 1px solid blue;
+    width: 20vw;
+    height: 4vh;
+} */
