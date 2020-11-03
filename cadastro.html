@@ -33,9 +33,9 @@
 					<li class="nav-item">
 						<a class="nav-link text-dark" href="./login.html">Login</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link text-dark" href="./cadastro.html">Cadastro</a>
-					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link text-dark" href="./cadastro.html">Cadastre-se</a>
+					</li> -->
 					<li class="nav-item">
 						<a class="nav-link text-dark" href="#">Lista de Cadastro</a>
 					</li>
@@ -65,23 +65,23 @@
 
 				<label>Renda mensal</label>
 
-				<select class="form-control">
-					<option value="salario"></option>
-					<option value="salario">Menos da metade de um salário minimo (R$522,50)</option>
-					<option value="salario">Até Um salário minimo (R$1045,00)</option>
-					<option value="salario">Até dois salários minimos (R$2090,00)</option>
-					<option value="salario">Não quero Informar</option>
+				<select id="salario" name="salario" class="form-control">
+					<option value=""></option>
+					<option value="Menos da metade de um salário minimo (R$522,50)">Menos da metade de um salário minimo (R$522,50)</option>
+					<option value="Até Um salário minimo (R$1045,00)">Até Um salário minimo (R$1045,00)</option>
+					<option value="Até dois salários minimos (R$2090,00)">Até dois salários minimos (R$2090,00)</option>
+					<option value="Não quero Informar">Não quero Informar</option>
 				</select>
 
 			</div>
 
 			<div class="form-group">
 				<label for="profissao">Qual sua profissão</label>
-				<input type="text" class="form-control" placeholder="Ex: Pedreiro">
+				<input id="profissao" type="text" class="form-control" placeholder="Ex: Pedreiro">
 			</div>
 
 			<div class="form-group form-check">
-				<input type="checkbox" class="form-check-input" checked>
+				<input id="checkColaboracao" type="checkbox" class="form-check-input" checked>
 				<label class="form-check-label" for="exampleCheck1"> Quero colaborar com a comunidade de alguma
 					forma</label>
 			</div>
@@ -89,14 +89,14 @@
 			<div class="form-group">
 				<label>Quantidade de moradores</label><br />
 
-				<input id="qtdmoradores" type="radio" name="qtd-pessoas" value="1" required />
-				<label for="qtd-pessoas">1</label>
-				<input id="qtdmoradores" type="radio" name="qtd-pessoas" value="2" required />
-				<label for="qtd-pessoas">2</label>
-				<input id="qtdmoradores" type="radio" name="qtd-pessoas" value="3" required />
-				<label for="qtd-pessoas">3</label>
-				<input id="qtdmoradores" type="radio" name="qtd-pessoas" value="4" required />
-				<label for="qtd-pessoas">4 ou mais</label>
+				<input id="qtdmoradores_1" type="radio" name="qtd-pessoas" value="1" required />
+				<label for="qtd-pessoas_1">1</label>
+				<input id="qtdmoradores_2" type="radio" name="qtd-pessoas" value="2" required />
+				<label for="qtd-pessoas_2">2</label>
+				<input id="qtdmoradores_3" type="radio" name="qtd-pessoas" value="3" required />
+				<label for="qtd-pessoas_3">3</label>
+				<input id="qtdmoradores_4" type="radio" name="qtd-pessoas" value="4" required />
+				<label for="qtd-pessoas_4">4 ou mais</label>
 			</div>
 
 			<h4>Dados para contato</h4>
