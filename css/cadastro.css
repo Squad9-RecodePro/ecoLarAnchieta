@@ -1,3 +1,10 @@
+#menu{
+    background-color: #244879 !important;
+}
+.nav-item a{
+    color:white !important;
+
+}
 .formulario{
     margin-top:92px !important;
 }
@@ -16,63 +23,3 @@
 }
 
 
-
-
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/Imagem\ pagina\ cadastro\ \(2\).jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.card {
-    width: 60%;
-    background-color: #f5e12a;
-    text-align: center;
-    border-radius: 0.8rem;
-}
-
-.card h1 {
-    font-size: 2.4rem;
-}
-
-#form-cadastro label {
-    font-size: 1.6rem;
-}
-
-#form-cadastro p {
-    font-size: 1.8rem;
-    margin: 0.6rem 0rem;
-}
-
-#form-cadastro input {
-    border-radius: 0.5rem;
-    border: none;
-    margin: 8px;
-    height: 17px;
-}
-
-#numero-rua {
-    width: 30px
-}
-
-#complemento {
-    width: 85px;
-}
-
-#form-cadastro hr {
-    width: 10px;
-}
-
-#form-cadastro select {
-    border-radius: 5px;
-}
-
-#form-cadastro button {
-    border-radius: 0.5rem;
-    border: 1px solid blue;
-    width: 20vw;
-    height: 4vh;
-} */
