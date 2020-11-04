@@ -77,11 +77,11 @@
 
 			<div class="form-group">
 				<label for="profissao">Qual sua profissão</label>
-				<input id="profissao" type="text" class="form-control" placeholder="Ex: Pedreiro">
+				<input id="profissao" name="profissao" type="text" class="form-control" placeholder="Ex: Pedreiro">
 			</div>
 
 			<div class="form-group form-check">
-				<input id="checkColaboracao" type="checkbox" class="form-check-input" checked>
+				<input id="checkColaboracao" name="checkColaboracao" type="checkbox" class="form-check-input" checked>
 				<label class="form-check-label" for="exampleCheck1"> Quero colaborar com a comunidade de alguma
 					forma</label>
 			</div>
@@ -142,9 +142,9 @@
 				<input class="form-control" type="text" name="cep" placeholder="Ex: 04531-000" required />
 			</div>
 
-			<div class="form-group" id="estado">
-				<select class="form-control">
-					<option name="estado" value="estado">SP</option>
+			<div class="form-group">
+				<select id="estado" class="form-control" name="estado">
+					<option value="estado">SP</option>
 				</select>
 			</div>
 

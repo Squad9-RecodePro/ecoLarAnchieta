@@ -18,4 +18,8 @@ else{
     echo "Conectado com sucesso";
 }
 
+function cadastro($dados){
+    echo "Inserido!";
+}
+
 ?>
