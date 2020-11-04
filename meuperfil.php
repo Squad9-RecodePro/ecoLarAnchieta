@@ -11,7 +11,7 @@ if (!isset($_SESSION['nome'])) {
 
     foreach ($postagens as $postagem){
 
-        echo $postagem 
+        echo $postagem
     }
 
 }
@@ -26,7 +26,7 @@ if (!isset($_SESSION['nome'])) {
     <title>EcoCasa - Cadastre-se</title>
     <link rel="icon" href="./images/iconlogo.svg" /> <!-- Icone no Title -->
 
-    <link rel="stylesheet" href="#" />
+    <link rel="stylesheet" href="./css/meuperfil.css" />
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -35,14 +35,14 @@ if (!isset($_SESSION['nome'])) {
 
 <body>
     <!-- Menu de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-white shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow" id="menu">
         <div class="container">
 
             <a class="navbar-brand" href="index.html">
                 <img src="./images/logopage.png" width="50%" title="Logo Eco Casa">
             </a>
 
-            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
