@@ -1,10 +1,10 @@
 <?php
 
 //Aqui definimos os parametros para a conexao com o banco de dados
-define('Hostname', 'localhost');
-define('Username', 'root');
-define('Password', '');
-define('DB', 'login');
+define('Hostname', 'sql311.epizy.com');
+define('Username', 'epiz_27075315');
+define('Password', 'SByyuy8eL3Rwqrr');
+define('DB', 'epiz_27075315_cadastro');
 
 //Fazemos uma conexao com o banco de dados passando os parametros definidos anteriormente
 $conexao = mysqli_connect(Hostname, Username, Password, DB);
