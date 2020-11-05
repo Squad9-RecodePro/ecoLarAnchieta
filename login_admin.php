@@ -18,8 +18,8 @@
         <div class="card border-0 col-lg-5 col-md-8 col-12 py-5">
             <img src="./images/logopage.png" width="100%" title="Logo EcoCasa">
             <form action="#" method="#">
-                <input type="email" class="form-control mt-4" placeholder="E-mail" required />
-                <input type="password" class="form-control mt-3" placeholder="Senha" required />
+                <input type="email" name="nome" class="form-control mt-4" placeholder="E-mail" required />
+                <input type="password" name="senha" class="form-control mt-3" placeholder="Senha" required />
                 <button class="btn btn-custom mt-3 w-100">Entrar</button>
             </form>
         </div>

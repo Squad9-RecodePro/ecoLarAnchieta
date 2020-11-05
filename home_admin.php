@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light shadow" id="menu">
         <div class="container">
-            <a class="navbar-brand" href="./home_admin.html">
+            <a class="navbar-brand" href="./home_admin.php">
                 <img src="./images/logopage.png" width="50%" title="Logo EcoCasa">
             </a>
             <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./moradores_admin.html">Moradores</a>
+                        <a class="nav-link text-white" href="./moradores_admin.php">Moradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./trabalho_voluntario_admin.html">Trabalhos voluntários</a>
+                        <a class="nav-link text-white" href="./trabalho_voluntario_admin.php">Trabalhos voluntários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./index.html">Sair</a>
+                        <a class="nav-link text-white" href="./servidor/sair.php">Sair</a>
                     </li>
                 </ul>
             </div>

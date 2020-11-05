@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['nome'])) {
+   header('Location: index.php');
+   exit;
+}
+else {
+
+   $conn = mysqli_connect("localhost", "root", "", "ecocasa");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

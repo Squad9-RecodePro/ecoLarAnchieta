@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light shadow" id="menu">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="./index.php">
                 <img src="./images/logopage.png" width="50%" title="Logo EcoCasa">
             </a>
         </div>
@@ -25,8 +25,8 @@
         <div class="card border-0 col-lg-5 col-md-8 col-12 py-5">
             <h2 class="text-center text-dark">Entre ou cadastre-se</h2>
             <form action="#" method="#">
-                <input type="email" class="form-control mt-4" placeholder="E-mail" required />
-                <input type="password" class="form-control mt-3" placeholder="Senha" required />
+                <input type="email" name="nome" class="form-control mt-4" placeholder="E-mail" required />
+                <input type="password" senha="senha" class="form-control mt-3" placeholder="Senha" required />
                 <button class="btn btn-custom mt-3 w-100">Entrar</button>
                 <a href="./cadastro_usuario.html" class="mt-2">Ainda não possui cadastro? Clique aqui</a>
             </form>
