@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cep = $_POST ["cep"];
     $estado = $_POST ["estado"];
     $email = $_POST ["email"];
-    $senha = md5($_POST ["senha"]);
-    $confSenha = md5($_POST ["confirmar-senha"]);
+    $senha = $_POST ["senha"];
+    $confSenha = $_POST ["confirmar-senha"];
 
 
     foreach($_POST as $key => $value) {
@@ -92,10 +92,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </script>"; 
     }
 
+    $senha_cripto = md5($senha);
     $conn = mysqli_connect("localhost", "root", "", "ecocasa");
 
     $sql = "INSERT INTO moradores (nome, renda, profissao, colaborar, qtd_moradores, telefone, endereco, numero, complemento, bairro, cidade, cep, estado, email, senha)
-    VALUES ('$nome', '$salario', '$profissao', '$checkColaboracao', '$qtdPessoas', '$telefone', '$endereco', '$numeroRua', '$complemento', '$bairro', '$cidade', '$cep', '$estado', '$email', '$senha')";
+    VALUES ('$nome', '$salario', '$profissao', '$checkColaboracao', '$qtdPessoas', '$telefone', '$endereco', '$numeroRua', '$complemento', '$bairro', '$cidade', '$cep', '$estado', '$email', '$senha_cripto')";
 
     if (!$conn) {
 
