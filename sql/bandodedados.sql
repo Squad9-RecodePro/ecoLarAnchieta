@@ -33,7 +33,8 @@ default collate utf8_general_ci;
 CREATE TABLE moradores (
   
   id int PRIMARY KEY AUTO_INCREMENT,
+  nome varchar(80) NOT NULL,
   email varchar(80) UNIQUE NOT NULL,
-  senha varchar(32) NOT NULL
+  senha char(32) NOT NULL
 
 ) DEFAULT charset= utf8;

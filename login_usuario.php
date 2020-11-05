@@ -24,15 +24,24 @@
     <main class="row container align-items-center justify-content-center m-auto" style="height: 89vh;">
         <div class="card border-0 col-lg-5 col-md-8 col-12 py-5">
             <h2 class="text-center text-dark">Entre ou cadastre-se</h2>
-            <form action="#" method="#">
+
+            <form action="home_usuario.php" method="post">
+
                 <input type="email" name="nome" class="form-control mt-4" placeholder="E-mail" required />
                 <input type="password" senha="senha" class="form-control mt-3" placeholder="Senha" required />
                 <button class="btn btn-custom mt-3 w-100">Entrar</button>
-                <a href="./cadastro_usuario.html" class="mt-2">Ainda não possui cadastro? Clique aqui</a>
+
+                <a href="./cadastro_usuario.php" class="mt-2">Ainda não possui cadastro? Clique aqui</a>
+
             </form>
         </div>
     </main>
 
+
+
+
+
+    <script src="./js/validacao_form.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

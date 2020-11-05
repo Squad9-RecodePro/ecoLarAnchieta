@@ -23,18 +23,24 @@
     
     <main class="row container align-items-center justify-content-center m-auto" style="height: 89vh;">
         <div class="card border-0 col-lg-5 col-md-8 col-12 py-5">
+
             <h2 class="text-center text-dark">Cadastre-se</h2>
-            <form action="cadastro_usuario.php" method="post">
+            <form action="./servidor/valcadastro_usuario.php" method="post">
+
                 <input type="text" name="nome" class="form-control mt-4" placeholder="Nome" required />
                 <input type="email" name="email" class="form-control mt-3" placeholder="E-mail" required />
                 <input type="password" name="senha" class="form-control mt-3" placeholder="Senha" required />
                 <input type="password" name="conf_senha" class="form-control mt-3" placeholder="Confirmar senha" required />
-                <button class="btn btn-custom mt-3 w-100">Entrar</button>
-                <a href="./login_usuario.html" class="mt-2">Já possui cadastro? Realize o login</a>
+
+                <button type="submit" class="btn btn-custom mt-3 w-100">Entrar</button>
+
+                <a href="./login_usuario.php" class="mt-2">Já possui cadastro? Realize o login</a>
             </form>
         </div>
     </main>
 
+
+    <script src="./js/validacao_form.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
