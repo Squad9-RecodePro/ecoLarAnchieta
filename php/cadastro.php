@@ -6,22 +6,8 @@ function apenasNumero($str){
     return preg_replace("/[^0-9]/", "", $str); 
 }
 
-function validaemail($email){
-	//verifica se e-mail esta no formato correto de escrita
-	if (!ereg('^([a-zA-Z0-9.-_])*([@])([a-z0-9]).([a-z]{2,3})',$email)){
-		$mensagem='E-mail Inv&aacute;lido!';
-		return $mensagem;
-    }
-    else{
-		//Valida o dominio
-		$dominio=explode('@',$email);
-		if(!checkdnsrr($dominio[1],'A')){
-			$mensagem='E-mail Inv&aacute;lido!';
-			return $mensagem;
-		}
-        else
-            return true; // Retorno true para indicar que o e-mail é valido
-	}
+function validaemail($email) {
+    return (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $email)) ? FALSE : TRUE;
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -74,24 +60,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
-        if ($key == 'checkColaboracao') {
-            if(gettype($value) != "boolean"){
-                echo $value;
-                echo gettype($value);
-                echo "O campo deve colaboração deve ser verdadeiro ou falso";
-                die();
-            }
-        }
-
         if ($key == 'email') {
-            if(gettype($value) == True){
+            if(!validaemail($value)){
                 echo "O campo deve email deve ser um email válido";
                 die();
             }
         }
 
         if ($key == 'senha') {
-            if(strlen($value) >= 6){
+            if(strlen($value) < 6){
                 echo "A senha deve conter pelo menos 6 caracteres";
                 die();
             }
