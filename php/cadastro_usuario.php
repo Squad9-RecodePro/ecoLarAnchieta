@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha_cripto = md5($senha);
     $conn = mysqli_connect("localhost", "root", "", "ecocasa");
 
-    $sql = "INSERT INTO moradores (nome, renda, profissao, colaborar, qtd_moradores, telefone, endereco, numero, complemento, bairro, cidade, cep, estado, email, senha)
+    $sql = "INSERT INTO moradores (nome, renda, profissao, colaborar, qtd_moradores, telefone, endereco, numero, complemento, bairro, cidade, cep, uf, email, senha)
     VALUES ('$nome', '$salario', '$profissao', '$checkColaboracao', '$qtdPessoas', '$telefone', '$endereco', '$numeroRua', '$complemento', '$bairro', '$cidade', '$cep', '$estado', '$email', '$senha_cripto')";
 
     if (!$conn) {

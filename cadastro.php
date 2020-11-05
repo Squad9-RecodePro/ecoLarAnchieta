@@ -117,7 +117,7 @@
 
 			<div class="form-group">
 				<label for="numero">N°</label>
-				<input class="form-control" id="numero-rua" type="text" name="numero-rua" placeholder="Ex: 55"
+				<input class="form-control" id="numero-rua" type="text" name="numero-rua" placeholder="Se não tiver numero digite SN"
 					required />
 			</div>
 
