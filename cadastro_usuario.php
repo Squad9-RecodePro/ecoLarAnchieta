@@ -25,7 +25,7 @@
         <div class="card border-0 col-lg-5 col-md-8 col-12 py-5">
 
             <h2 class="text-center text-dark">Cadastre-se</h2>
-            <form action="./servidor/valcadastro_usuario.php" method="post">
+            <form action="./servidor/acesso_usuario.php" method="post">
 
                 <input type="text" name="nome" class="form-control mt-4" placeholder="Nome" required />
                 <input type="email" name="email" class="form-control mt-3" placeholder="E-mail" required />
