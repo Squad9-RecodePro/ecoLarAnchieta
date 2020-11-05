@@ -1,5 +1,68 @@
 <?php
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $conf_senha = $_POST['conf_senha'];
 
+    if (strlen($nome) > 3 && strlen($email) > 3 && strlen($senha) > 3 && $senha === $conf_senha) {
+        
+        $senha_cripto = md5($senha);
+
+        // $conn = mysqli_connect(host, user, senha, database);
+        $conn = mysqli_connect("localhost", "root", "", "ecocasa");
+
+        $sql = "INSERT INTO usuarios (nome, email, senha) values ('$nome', '$email', '$senha_cripto')";
+        $conn->query($sql); 
+        
+        echo "<script>
+        alert('Cadastro Efetuado')
+        window.location.href = 'login_usuario.php'
+        </script>
+            "; 
+    }
+    else if (strlen($nome) <=3) {
+
+        echo "<script>
+        alert('Digite um nome valido para efetuar o cadastro')
+        window.location.href = 'cadastro_usuario.php'
+        </script>
+            "; 
+
+    }
+    else if (strlen($email) <= 3) {
+
+        echo "<script>
+        alert('Digite um email valido para efetuar o cadastro')
+        window.location.href = 'cadastro_usuario.php'
+        </script>
+            ";
+    }
+    else if (strlen($senha) <= 3) {
+
+        echo "<script>
+        alert('Digite uma senha valida para efetuar o cadastro')
+        window.location.href = 'cadastro_usuario.php'
+        </script>
+            ";
+    }
+    else if ($senha != $conf_senha) {
+
+        echo "<script>
+        alert('Digite uma senha valida para efetuar o cadastro')
+        window.location.href = 'cadastro_usuario.php'
+        </script>
+            ";
+    }
+
+
+
+
+
+
+
+
+
+/*
 function apenasNumero($str){ 
     return preg_replace("/[^0-9]/", "", $str); 
 }

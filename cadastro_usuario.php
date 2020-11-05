@@ -24,11 +24,11 @@
     <main class="row container align-items-center justify-content-center m-auto" style="height: 89vh;">
         <div class="card border-0 col-lg-5 col-md-8 col-12 py-5">
             <h2 class="text-center text-dark">Cadastre-se</h2>
-            <form action="#" method="#">
-                <input type="text" class="form-control mt-4" placeholder="Nome" required />
-                <input type="email" class="form-control mt-3" placeholder="E-mail" required />
-                <input type="password" class="form-control mt-3" placeholder="Senha" required />
-                <input type="password" class="form-control mt-3" placeholder="Confirmar senha" required />
+            <form action="cadastro_usuario.php" method="post">
+                <input type="text" name="nome" class="form-control mt-4" placeholder="Nome" required />
+                <input type="email" name="email" class="form-control mt-3" placeholder="E-mail" required />
+                <input type="password" name="senha" class="form-control mt-3" placeholder="Senha" required />
+                <input type="password" name="conf_senha" class="form-control mt-3" placeholder="Confirmar senha" required />
                 <button class="btn btn-custom mt-3 w-100">Entrar</button>
                 <a href="./login_usuario.html" class="mt-2">Já possui cadastro? Realize o login</a>
             </form>

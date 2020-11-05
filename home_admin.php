@@ -46,7 +46,7 @@
         </div>
 
         <div class="card col-lg-6 col-12 p-5 text-center border shadow">
-            <h3>Trabalhos voluntários cadastrados</h3>
+            <h3>Moradores voluntários cadastrados</h3>
             <h1>8</h1>
         </div>
     
