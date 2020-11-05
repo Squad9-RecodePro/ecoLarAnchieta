@@ -19,7 +19,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark shadow" id="menu">
 		<div class="container">
 
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="index.php">
 				<img src="./images/logopage.png" width="50%" title="Logo Eco Casa">
 			</a>
 
@@ -31,7 +31,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link text-dark" href="./login.html">Login</a>
+						<a class="nav-link text-dark" href="./login.php">Login</a>
 					</li>
 					<!-- <li class="nav-item">
 						<a class="nav-link text-dark" href="./cadastro.html">Cadastre-se</a>
@@ -50,7 +50,7 @@
 		<h1>Cadastre-se</h1> <br />
 
 		<!--Aqui começa a parte do cadastro (lado esquerdo)-->
-		<form id="form-cadastro" onsubmit="return validateForm(event)" action="php/cadastro.php" method="post">
+		<form id="form-cadastro" onsubmit="return validateForm(event)" action="./php/cadastro_usuario.php" method="post">
 
 			<h4>Dados pessoais</h4>
 
@@ -171,7 +171,7 @@
 
 			<button id="botao" class="btn" type="submit">Cadastre-se </button> <br />
 
-			<a href="./login.html"> Já possui cadastro? Realize o login. </a> <br /> <br />
+			<a href="./login.php"> Já possui cadastro? Realize o login. </a> <br /> <br />
 
 		</form>
 	</div>
@@ -179,16 +179,14 @@
 
 
 
-
-
-	<script defer type="text/javascript" src="./js/validacao_form.js"></script>
-	<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	<script type="text/javascript" src="./js/validacao_form.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
-	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
 		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 		crossorigin="anonymous"></script>
-	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
 

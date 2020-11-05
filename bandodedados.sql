@@ -72,3 +72,30 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- Outro exemplo de Banco --
+
+CREATE DATABASE ecocasa
+default character set utf8
+default collate utf8_general_ci;
+
+CREATE TABLE moradores (
+  
+  id int PRIMARY KEY AUTO_INCREMENT,
+  nome varchar(70) NOT NULL,
+  renda varchar(100) NOT NULL,
+  profissao varchar(30),
+  colaborar char(3),
+  qtd_moradores varchar(10),
+  telefone varchar(15),
+  endereco varchar(60) NOT NULL,
+  numero varchar(10),
+  complemento varchar(15),
+  bairro varchar(50) DEFAULT 'Comunidade Anchieta',
+  cidade varchar(60) DEFAULT 'São Paulo',
+  cep varchar(20),
+  estado varchar(10) DEFAULT 'SP',
+  email varchar(60) UNIQUE NOT NULL,
+  senha varchar(20) NOT NULL
+
+) DEFAULT charset= utf8;
