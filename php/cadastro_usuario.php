@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($value) && $key != 'complemento'){
             echo "<script>
                     alert('Se não tiver número, digite o número SN')
-                    window.location.href = 'cadastro_usuario.php'      
+                    window.location.href = '../cadastro.php'      
                 </script>";
         }
 
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if(strlen(apenasNumero($value)) != 11 && strlen(apenasNumero($value)) != 13){
                 echo "<script>
                         alert('Digite o telefone com DDD, Ex.(DDD + telefone)')
-                        window.location.href = 'cadastro_usuario.php'      
+                        window.location.href = '../cadastro.php'         
                     </script>";
             }
         }
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if(strlen(apenasNumero($value)) != 8){
                 echo "<script>
                         alert('O CEP deve conter 8 números!')
-                        window.location.href = 'cadastro_usuario.php'      
+                        window.location.href = '../cadastro.php'         
                     </script>";
             }
         }
@@ -67,29 +67,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if(!validaemail($value)){
                 echo "<script>
                         alert('Digite um email valido!')
-                        window.location.href = 'cadastro_usuario.php'     
+                        window.location.href = '../cadastro.php'        
                     </script>";
             }
         }
 
         if ($key == 'senha') {
 
-            if(strlen($value) < 6){
+            if(strlen($value) < 6) {
 
                 echo "<script>
                         alert('A senha deve ter pelo menos 6 caracteres!')
-                        window.location.href = 'cadastro_usuario.php'      
+                        window.location.href = '../cadastro.php'         
                     </script>";
             }
         }
     }
 
-    if ($senha != $confSenha){
+    if ($senha != $confSenha) {
 
         echo "<script>
                 alert('As senhas devem ser iguais!')
-                window.location.href = '../login.php'      
-            </script>";
+                window.location.href = '../cadastro.php'      
+            </script>"; 
+    }
 
     $conn = mysqli_connect("localhost", "root", "", "ecocasa");
 
@@ -100,10 +101,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         die("Erro ao realizar conexão com o Banco de Dados" . mysqli_connect_error());
 
-        echo "<script>
-                alert('Cadastro efetuado com sucesso!')
-                window.location.href = '../index.php'      
-            </script>";
     }
     else {
         $conn->query($sql);

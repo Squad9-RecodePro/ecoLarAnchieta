@@ -43,7 +43,7 @@ CREATE TABLE `cadastro` (
   `cep` char(9) DEFAULT NULL,
   `estado` char(2) DEFAULT NULL,
   `email` varchar(30) DEFAULT NULL,
-  `senha` char(16) DEFAULT NULL
+  `senha` varchar(32) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -96,6 +96,6 @@ CREATE TABLE moradores (
   cep varchar(20),
   estado varchar(10) DEFAULT 'SP',
   email varchar(60) UNIQUE NOT NULL,
-  senha varchar(20) NOT NULL
+  senha varchar(35) NOT NULL
 
 ) DEFAULT charset= utf8;
