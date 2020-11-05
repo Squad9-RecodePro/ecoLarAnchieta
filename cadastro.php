@@ -144,7 +144,7 @@
 
 			<div class="form-group">
 				<select id="estado" class="form-control" name="estado">
-					<option value="estado">SP</option>
+					<option value="SP">SP</option>
 				</select>
 			</div>
 
