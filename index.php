@@ -52,15 +52,27 @@
 
         <div class="col-lg-3 col-12 mt-lg-0 mt-5">
             <h2 class="text-center text-dark">Ocupação Anchieta</h2>
+            <h5 class="text-center text-dark pt-2">É possível viver nessas áreas preservando os recursos naturais?</h5>
             <p class="pt-4 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sed pariatur ipsum similique voluptatem aperiam ducimus 
-                totam dolorem alias aut sapiente maiores consequatur, nisi magni, 
-                obcaecati amet autem dolore laboriosam repellendus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sed pariatur ipsum similique voluptatem aperiam ducimus 
-                totam dolorem alias aut sapiente maiores consequatur, nisi magni, 
-                obcaecati amet autem dolore laboriosam repellendus.
+            Os lotes estão em terrenos privados e estão sendo negociadas com o proprietário da área, 
+            o Instituto Anchieta do Grajaú, que inclui um projeto de urbanização. As fontes termais 
+            da região foram colocadas em quarentena e a Sabesp também estuda a implantação de instalações 
+            de saneamento básico.
+            </p>
+        </div>
+        <div class="col-lg-12 col-12 mt-lg-5 mt-5">
+            <h2 class="text-center text-dark">O que você conhece das ocupações por moradia?</h2>
+            <p class="pt-4 text-center">
+            Sempre vemos na televisão o momento em que a polícia invade o terreno com violência e as máquinas 
+            já estão lá fazendo o ‘serviço’ de Reintegração de Posse, a mando da Prefeitura. 
+            Mas o que vem antes? Às vezes vemos e não nos perguntamos por que as pessoas vivem lá e como vivem.
+            </p>
+            <p class="pt-3 text-center">
+            “Estamos aqui pelo nosso direito a ter onde morar, onde viver, quem agora vive nesse terreno são famílias, 
+            muitas com crianças, que não teriam outro lugar para morar” 
+            </p>
+            <p class="pt-3 text-right">
+            <u><i>fala de um morador da ocupação.</i></u>
             </p>
         </div>
     </section>
@@ -80,20 +92,24 @@
                 <h2 class="text-center">R$1.045,00</h2>
                 <p class="text-center">
                     muitos vivem com menos de um salário<br>
-                    minimo
+                    mínimo
                 </p>
             </div>
 
             <div class="col-md-4 col-12 my-5">
                 <h2 class="text-center">1100 Familias</h2>
                 <p class="text-center">
-                    é o número de familias que vivem nesse
-                    ocupação<br>eem estado de pobreza
+                    é o número de familias que vivem nessa
+                    ocupação<br>em extrema pobreza
                 </p>
             </div>
         </div>
     </section>
-
+    <footer>
+    <div class="footer-copyright text-center py-3">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
+    9</b>. Para o <a href="https://www.recodepro.org.br/">Recode Pro</a>.
+</div>
+    </footer>
 
 
 
