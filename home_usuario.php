@@ -1,13 +1,13 @@
 <?php
+
 session_start();
-
+// Se não existir um valor
 if(!isset($_SESSION['nome'])) {
-   header('Location: index.php');
-   exit;
+    header('Location: ./login_usuario.php');
+    exit;
 }
-else {
 
-   $conn = mysqli_connect("localhost", "root", "", "ecocasa");
+// session_destroy();
 
 ?>
 
@@ -36,6 +36,8 @@ else {
     </nav>
     
     <h1>Olá, mundo</h1>
+
+    <a href="<?php session_destroy();?>">Sair</a>
 
 
 
