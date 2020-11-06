@@ -41,7 +41,7 @@ include_once('./servidor/conn.php');
 
     <div class="card text-center">
         <div class="card-body">
-            <h5 class="card-title">Seja Bem-vindo</h5>
+            <h5 class="card-title">Seja Bem-vindo <?php echo $_SESSION['nome']; ?></h5>
             <p class="card-text">Veja algumas vagas para que você possa colaborar com a sua comunidade:</p>
         </div>
     </div>

@@ -61,7 +61,7 @@ include_once('./servidor/conn.php');
         <tbody>
 
           <?php
-          $sql = "select * from moradores";
+          $sql = "select * from voluntariado";
           // alterar para o select from voluntariado
           $result = $conn->query($sql);
 
@@ -70,13 +70,12 @@ include_once('./servidor/conn.php');
           ?>
           <!-- alterar o nome para titulo, imagem, descricao e nvagas -->
               <tr>
-                <th scope="row"><?php echo $rows["nome"]; ?></th>
-                <td><?php echo $rows["nome"]; ?></td>
-                <td><?php echo $rows["nome"]; ?></td>
-                <td><?php echo $rows["nome"]; ?></td>
+                <th name="<?php echo $rows['id'];?>" scope="row"><?php echo $rows["titulo"]; ?></th>
+                <td><?php echo $rows["imagem"]; ?></td>
+                <td><?php echo $rows["descricao"]; ?></td>
+                <td><?php echo $rows["nvagas"]; ?></td>
                 <td>
-                  <button class="btn btn-info">Editar</button>
-                  <button class="btn btn-danger">Remover</button>
+                  <a class="btn btn-danger" href="./servidor/delete.php?id='<?php echo $rows['id'];?>' ">Remover</a>
                 </td>
               </tr>
           <?php
@@ -136,16 +135,17 @@ include_once('./servidor/conn.php');
         <form action="./servidor/voluntariado_cadastro.php" method="POST">
 
           <input type="text" name="titulo" class="form-control mt-3" placeholder="Título" />
-          <input type="url" name="imagem" class="form-control mt-3" placeholder="Imagem" />
+          <input type="file" name="imagem" class="form-control mt-3" placeholder="Imagem" />
           <textarea name="descricao" class="form-control mt-3" cols="30" rows="5" placeholder="Descrição"></textarea>
           <input name="nvagas" type="number" class="form-control mt-3" placeholder="Número de vagas" />
 
+        <div class="modal-footer">
+         <button type="submit" class="btn btn-info">Salvar mudanças</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-info">Salvar mudanças</button>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-      </div>
+
     </div>
   </div>
 </div>
