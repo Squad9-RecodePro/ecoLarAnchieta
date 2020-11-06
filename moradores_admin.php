@@ -33,7 +33,7 @@ include_once('./servidor/conn.php');
                         <a class="nav-link text-white" href="./trabalho_voluntario_admin.php">Trabalhos voluntários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="<?php session_destroy(); ?>">Sair</a>
+                        <a class="nav-link text-white" href="./sair.php">Sair</a>
                     </li>
                 </ul>
             </div>

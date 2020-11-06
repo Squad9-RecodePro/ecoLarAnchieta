@@ -4,7 +4,7 @@ include_once('./conn.php');
 
 $id  = $_GET['id'];
 
-$sql = "DELETE FROM moradores where id = $id";
+$sql = "DELETE FROM voluntariado where id = $id";
 
 $result = $conn->query($sql);
 
