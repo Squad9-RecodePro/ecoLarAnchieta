@@ -1,36 +1,31 @@
 <?php
-
-//Inicio da conexão com o banco de dados
-define('Hostname', 'localhost');
-define('Username', 'root');
-define('Password', '');
-define('DB', 'administradores');
-
-$conn = mysqli_connect(Hostname, Username, Password, DB) or die('Não foi possível conectar'); 
-
-//Aqui verificamos se os campos de email e senha não estão vazios
-if(empty($_POST['email']) || empty($_POST['senha'])){
-    header('Location: ./index.php');
-    exit();
-}
-
+session_start();
+// Resgatando dados do input
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$query = "select * from adm where email = '{$email}' and senha = '{$senha}' ";
-
-$result = mysqli_query($conn, $query);
-
-$row = mysqli_num_rows($result);
-
-if($row == 1){
-    $_SESSION['email'] = $email;
+if (strlen($email) > 3 && strlen($senha) > 3) {
+    // Conexão com o banco
+    include_once('./conn.php');
+    // Instrução SQL
+    $sql = "SELECT * FROM adm WHERE email = '$email' AND senha = '$senha' ";
+    // Execução da instrução sql
+    $resultadoConsulta = $conn->query($sql);
+    // Essa variavel recebe a lista de moradores cadastrados no banco
+    $adm = mysqli_fetch_all($resultadoConsulta);
+    // Essas variaveis globais recebem o valor da consulta no banco
+    $_SESSION['nome'] = $adm[0][1];
+    $_SESSION['email'] = $adm[0][2];
+    $_SESSION['senha'] = $adm[0][3];
+    // Redirecionado para a pagina de adm
     header('Location: ../home_admin.php');
-    exit();
 }
-else{
-    header('Location: ../index.php');
-    exit();
+else {
+    echo "
+        <script>
+            alert('Email ou Senha invalidos!')
+            location.href = './login_admin.php'
+        </script>    
+    ";
 }
 
-?>
