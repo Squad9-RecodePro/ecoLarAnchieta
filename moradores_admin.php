@@ -67,8 +67,8 @@
                         <td>Thamirez</td>
                         <td>thamirez@hotmail.com</td>
                         <td>
-                            <button class="btn btn-info">Editar</button>
-                            <button class="btn btn-danger">Remover</button>
+                            <button type="submit" class="btn btn-info">Editar</button>
+                            <button type="submit" class="btn btn-danger">Remover</button>
                         </td>
                     </tr>
                     <tr>

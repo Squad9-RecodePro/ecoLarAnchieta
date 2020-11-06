@@ -9,7 +9,7 @@ if (strlen($email) > 3 && strlen($senha) > 3) {
     //criptografia ca senha
     $senha_cripto = md5($senha);
     // Conexão com o banco
-    $conn = mysqli_connect("localhost", "root", "", "ecocasa");
+    include_once('./conn.php');
     // Instrução SQL
     $sql = "SELECT * FROM moradores WHERE email = '$email' AND senha = '$senha_cripto'";
     // Execução da instrução sql
