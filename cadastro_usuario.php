@@ -1,6 +1,3 @@
-<?php
-    include_once('./servidor/conn.php');
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -29,12 +26,12 @@
         <div class="card border-0 col-lg-5 col-md-8 col-12 py-5">
 
             <h2 class="text-center text-dark">Cadastre-se</h2>
-            <form action="./servidor/acesso_cadastro_usuario.php" method="post">
+            <form id="form-cadastro" onsubmit="return validateForm(event)" action="./servidor/acesso_cadastro_usuario.php" method="post">
 
-                <input type="text" name="nome" class="form-control mt-4" placeholder="Nome" required />
-                <input type="email" name="email" class="form-control mt-3" placeholder="E-mail" required />
-                <input type="password" name="senha" class="form-control mt-3" placeholder="Senha" required />
-                <input type="password" name="conf_senha" class="form-control mt-3" placeholder="Confirmar senha" required />
+                <input type="text" id="nome" name="nome" class="form-control mt-4" placeholder="Nome" required />
+                <input type="email" id="email" name="email" class="form-control mt-3" placeholder="E-mail" required />
+                <input type="password" id="senha" name="senha" class="form-control mt-3" placeholder="Senha" required />
+                <input type="password" id="conf_senha" name="conf_senha" class="form-control mt-3" placeholder="Confirmar senha" required />
 
                 <button type="submit" class="btn btn-custom mt-3 w-100">Entrar</button>
 

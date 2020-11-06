@@ -2,46 +2,18 @@ function validateForm(){
     const formulario = document.getElementById('form-cadastro');
     
     const nome = formulario.nome;
-    const salario = formulario.salario;
-    const profissao = formulario.profissao;
-    const checkColaboracao = formulario.checkColaboracao.checked;
-    const qtdmoradores = radioValue("qtd-pessoas");
-    const telefone = formulario.telefone;
-    const endereco = formulario.endereco;
-    const numeroRua= formulario['numero-rua'];
-    //const complemento = formulario.complemento;
-    const bairro = formulario.bairro;
-    const cidade = formulario.cidade;
-    const cep = formulario.cep;
     const email = formulario.email;
     const senha = formulario.senha;
-    const confSenha = formulario['conf-senha'];
+    const confSenha = formulario['conf_senha'];
 
     const elementosObrigatorios = [
         nome,
-        salario,
-        profissao,
-        telefone,
-        endereco,
-        numeroRua,
-        bairro,
-        cidade,
-        cep,
         email,
         senha,
         confSenha
     ];
 
-    if (!typeof checkColaboracao == "undefined"){
-        alert("Escolha uma opção de colaboração!");
-        return false;
-    }
-
-    if (!qtdmoradores){
-        alert("Escolha a quantidade de moradores!");
-        return false;
-    }
-
+    //Valida os elementos obrigatórios, ou seja todos 
     elementosObrigatorios.forEach(element => {
         //console.log(element);
         if (!validar(element,validaPreenchimento)){
@@ -59,35 +31,16 @@ function validateForm(){
         return false;
     }
 
-    // Validando Telefone
-    let telNumeros = onlyNumbers(telefone.value);
-    let validacaoTel = validaNumCaracteres(telNumeros,11);
-    let validacaoTel2 = validaNumCaracteres(telNumeros,13);
-    if (!validacaoTel.retorno && !validacaoTel2.retorno){
-        alert(validacaoTel.erro);
-        telefone.focus();
-        return false;
-    }
-
-    // Validando Cep
-    let cepNumeros = onlyNumbers(cep.value);
-    let validacaoCep = validaNumCaracteres(cepNumeros,8);
-    if (!validacaoCep.retorno){
-        alert(validacaoCep.erro);
-        cep.focus();
-        return false;
-    }
-
     // Validando senha
     if (senha.value != confSenha.value){
         alert("As senhas devem ser iguais!");
         senha.focus();
         return false;
     }
-
     return true;
 }
 
+//Criando a função para validar o email
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const ret = re.test(email);
@@ -103,7 +56,9 @@ function validateEmail(email) {
     }
 }
   
-
+//Função de validar qualquer campo
+//Recebe dois parâmetros, o primeiro é o elemento HTML e o segundo é a função de validação
+//Função de validação precisa retornar um objeto com as propriedades retorno do tipo booleano e erro do tipo string
 function validar(elemento,funcao){
     const validacao = funcao(elemento.value);
     if(!validacao.retorno){
@@ -114,21 +69,6 @@ function validar(elemento,funcao){
         return true;
     }
 }
-
-//Radio
-function radioValue(name){
-    const radios = document.getElementsByName(name);
-    let radio_value;
-    radios.forEach((radio) => {
-        if (radio.checked)
-            radio_value = radio.value;
-    });
-
-    return radio_value;
-}
-
-
-//Dados Pessoais 
 //Nome
 function validaNome(nome){
 
@@ -155,23 +95,18 @@ function validaNome(nome){
 
 // validacao preenchimento
 function validaPreenchimento (valor) {
-    if (!valor){
+    if (valor){
+        return {
+            "retorno": true
+        };
+    }
+    else {
         return {
             "retorno": false, 
             "erro": "O campo deve ser preenchido"
         };
     }
-    else {
-        return {
-            "retorno": true
-        };
-    }
 }
-
-function onlyNumbers(text){
-    return text.replace(/\D/g, '');
-}
-
 function validaNumCaracteres (valor,nCaracteres){
     let contarCaracteres = valor.length;
     if (contarCaracteres == nCaracteres) {
