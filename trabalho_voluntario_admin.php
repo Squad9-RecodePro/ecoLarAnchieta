@@ -34,7 +34,7 @@ include_once('./servidor/conn.php');
             <a class="nav-link text-white" href="./trabalho_voluntario_admin.php">Trabalhos voluntários</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="./servidor/sair.php">Sair</a>
+            <a class="nav-link text-white" href="<?php session_destroy(); ?>">Sair</a>
           </li>
         </ul>
       </div>
@@ -68,42 +68,23 @@ include_once('./servidor/conn.php');
           if ($result->num_rows > 0) {
             while ($rows = $result->fetch_assoc()) {
           ?>
-          <!-- alterar o nome para titulo, imagem, descricao e nvagas -->
+              <!-- alterar o nome para titulo, imagem, descricao e nvagas -->
               <tr>
-                <th name="<?php echo $rows['id'];?>" scope="row"><?php echo $rows["titulo"]; ?></th>
+                <th name="<?php echo $rows['id']; ?>" scope="row"><?php echo $rows["titulo"]; ?></th>
                 <td><?php echo $rows["imagem"]; ?></td>
                 <td><?php echo $rows["descricao"]; ?></td>
                 <td><?php echo $rows["nvagas"]; ?></td>
                 <td>
-                  <a class="btn btn-danger" href="./servidor/delete.php?id='<?php echo $rows['id'];?>' ">Remover</a>
+                  <a class="btn btn-danger" href="./servidor/delete.php?id='<?php echo $rows['id']; ?>' ">Remover</a>
                 </td>
               </tr>
           <?php
             }
           } else {
-            echo "Nenhum produto cadastrado";
+            echo "Nenhuma vaga cadastrada";
           }
           ?>
-          <!-- <tr>
-            <th scope="row">Teste</th>
-            <td>Teste</td>
-            <td>Teste</td>
-            <td>Teste</td>
-            <td>
-              <button class="btn btn-info">Editar</button>
-              <button class="btn btn-danger">Remover</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Teste</th>
-            <td>Teste</td>
-            <td>Teste</td>
-            <td>Teste</td>
-            <td>
-              <button class="btn btn-info">Editar</button>
-              <button class="btn btn-danger">Remover</button>
-            </td>
-          </tr> -->
+
         </tbody>
       </table>
     </div>
@@ -139,10 +120,10 @@ include_once('./servidor/conn.php');
           <textarea name="descricao" class="form-control mt-3" cols="30" rows="5" placeholder="Descrição"></textarea>
           <input name="nvagas" type="number" class="form-control mt-3" placeholder="Número de vagas" />
 
-        <div class="modal-footer">
-         <button type="submit" class="btn btn-info">Salvar mudanças</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-        </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-info">Salvar mudanças</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
         </form>
       </div>
 

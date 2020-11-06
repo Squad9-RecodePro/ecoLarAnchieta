@@ -1,4 +1,4 @@
--- -- Outro exemplo de Banco completo --
+-- -- Outro exemplo de Banco completo futura implementação --
 
 -- CREATE DATABASE ecocasa
 -- default character set utf8
@@ -26,6 +26,8 @@
 -- ) DEFAULT charset= utf8;
 
 
+-- banco pagina login_admin / e retorna dados no moradores_admin
+
 CREATE DATABASE ecocasa
 default character set utf8
 default collate utf8_general_ci;
@@ -36,7 +38,6 @@ CREATE TABLE moradores (
   nome varchar(80) NOT NULL,
   email varchar(80) UNIQUE NOT NULL,
   senha char(32) NOT NULL
-
 ) DEFAULT charset = utf8;
 
 
@@ -48,5 +49,4 @@ titulo varchar (60),
 imagem varchar(100),
 descricao varchar(200),
 nvagas varchar(10)
-
 ) DEFAULT charset = utf8;

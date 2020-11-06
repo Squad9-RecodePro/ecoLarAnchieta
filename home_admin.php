@@ -31,7 +31,7 @@
                         <a class="nav-link text-white" href="./trabalho_voluntario_admin.php">Trabalhos voluntários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./servidor/sair.php">Sair</a>
+                        <a class="nav-link text-white" href="<?php session_destroy(); ?>">Sair</a>
                     </li>
                 </ul>
             </div>

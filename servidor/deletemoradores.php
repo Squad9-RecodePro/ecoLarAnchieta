@@ -8,4 +8,4 @@ $sql = "DELETE FROM moradores where id = $id";
 
 $result = $conn->query($sql);
 
-header('Location: ../trabalho_voluntario_admin.php');
+header('Location: ../moradores_admin.php');
