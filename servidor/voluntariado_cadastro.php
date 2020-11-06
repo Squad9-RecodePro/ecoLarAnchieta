@@ -8,8 +8,7 @@ include_once('./conn.php');
 
 
 
-
-
+// para form modal 
 
 // $titulo = $_POST['titulo'];
 // $imagem = $_POST['imagem'];

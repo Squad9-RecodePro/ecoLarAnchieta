@@ -1,3 +1,8 @@
+<?php
+include_once('./servidor/conn.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -54,7 +59,33 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+
+          <?php
+          $sql = "select * from moradores";
+          // alterar para o select from voluntariado
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+            while ($rows = $result->fetch_assoc()) {
+          ?>
+          <!-- alterar o nome para titulo, imagem, descricao e nvagas -->
+              <tr>
+                <th scope="row"><?php echo $rows["nome"]; ?></th>
+                <td><?php echo $rows["nome"]; ?></td>
+                <td><?php echo $rows["nome"]; ?></td>
+                <td><?php echo $rows["nome"]; ?></td>
+                <td>
+                  <button class="btn btn-info">Editar</button>
+                  <button class="btn btn-danger">Remover</button>
+                </td>
+              </tr>
+          <?php
+            }
+          } else {
+            echo "Nenhum produto cadastrado";
+          }
+          ?>
+          <!-- <tr>
             <th scope="row">Teste</th>
             <td>Teste</td>
             <td>Teste</td>
@@ -73,17 +104,7 @@
               <button class="btn btn-info">Editar</button>
               <button class="btn btn-danger">Remover</button>
             </td>
-          </tr>
-          <tr>
-            <th scope="row">Teste</th>
-            <td>Teste</td>
-            <td>Teste</td>
-            <td>Teste</td>
-            <td>
-              <button class="btn btn-info">Editar</button>
-              <button class="btn btn-danger">Remover</button>
-            </td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
     </div>

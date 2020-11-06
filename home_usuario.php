@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Se não existir um valor
-if(!isset($_SESSION['nome'])) {
+if (!isset($_SESSION['nome'])) {
     header('Location: ./login_usuario.php');
     exit;
     // session_destroy();
@@ -34,16 +34,18 @@ include_once('./servidor/conn.php');
         </div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-white" href="<?php session_destroy();?>"> Sair </a>
+                <a class="nav-link text-white" href="<?php session_destroy(); ?>"> Sair </a>
             </li>
         </ul>
     </nav>
+
     <div class="card text-center">
         <div class="card-body">
             <h5 class="card-title">Seja Bem-vindo</h5>
             <p class="card-text">Veja algumas vagas para que você possa colaborar com a sua comunidade:</p>
         </div>
     </div>
+
     <?php
     $sql = "select * from voluntariado";
     // alterar para o select from
@@ -58,9 +60,9 @@ include_once('./servidor/conn.php');
                         <div class="card">
                             <div class="card-body">
                                 <img src="<?php echo $rows["imagem"]; ?>">
-                                <h5 class="card-title"><?php echo $rows["titulo"]; ?>titulo</h5>
-                                <p class="card-text"><?php echo $rows["descricao"]; ?>descrição</p>
-                                <p class="card-text"><?php echo $rows["nvagas"]; ?>numero de vagas</p>
+                                <h5 class="card-title"><?php echo $rows["titulo"]; ?></h5>
+                                <p class="card-text"><?php echo $rows["descricao"]; ?></p>
+                                <p class="card-text"><?php echo $rows["nvagas"]; ?></p>
 
 
                             </div>
