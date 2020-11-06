@@ -38,3 +38,14 @@ CREATE TABLE moradores (
   senha char(32) NOT NULL
 
 ) DEFAULT charset= utf8;
+
+
+-- banco pagina trabalho_voluntario_admin / voluntariado_cadastro
+
+create table voluntariado(
+id int PRIMARY KEY AUTO_INCREMENT,
+titulo varchar (60),
+imagem varchar(100),
+descricao varchar(200),
+nvagas varchar(10)
+);
