@@ -30,6 +30,15 @@ CREATE DATABASE ecocasa
 default character set utf8
 default collate utf8_general_ci;
 
+CREATE TABLE adm (
+  
+  id int PRIMARY KEY AUTO_INCREMENT,
+  nome varchar(80) NOT NULL,
+  email varchar(80) UNIQUE NOT NULL,
+  senha char(32) NOT NULL
+
+) DEFAULT charset = utf8;
+
 CREATE TABLE moradores (
   
   id int PRIMARY KEY AUTO_INCREMENT,
@@ -40,13 +49,14 @@ CREATE TABLE moradores (
 ) DEFAULT charset = utf8;
 
 
--- banco pagina trabalho_voluntario_admin / voluntariado_cadastro
+-- banco pagina trabalho_voluntario_admin / voluntariado_cadastro --
 
-create table voluntariado (
+CREATE TABLE voluntariado (
+
 id int PRIMARY KEY AUTO_INCREMENT,
-titulo varchar (60),
-imagem varchar(100),
-descricao varchar(200),
+titulo varchar (80),
+imagem varchar(200),
+descricao varchar(150),
 nvagas varchar(10)
 
 ) DEFAULT charset = utf8;
