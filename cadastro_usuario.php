@@ -1,3 +1,7 @@
+<?php
+    include_once('./servidor/conn.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

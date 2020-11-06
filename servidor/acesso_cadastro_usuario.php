@@ -9,7 +9,7 @@ if (strlen($nome) > 3 && strlen($email) > 3 && strlen($senha) > 3 && $senha === 
 
     $senha_cripto = md5($senha);
  
-    $conn = mysqli_connect("localhost", "root", "", "ecocasa");
+    include_once('./conn.php');
 
     $sql = "INSERT INTO moradores (nome, email, senha)
     VALUES ('$nome', '$email', '$senha_cripto')"; 

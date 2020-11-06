@@ -1,15 +1,14 @@
 <?php
-
 session_start();
 // Se não existir um valor
 if(!isset($_SESSION['nome'])) {
     header('Location: ./login_usuario.php');
     exit;
+    // session_destroy();
 }
 ?>
 
 <?php
-// session_destroy();
 include_once('./servidor/conn.php');
 ?>
 
