@@ -26,11 +26,13 @@
 -- ) DEFAULT charset= utf8;
 
 
--- banco pagina login_admin / e retorna dados no moradores_admin
 
 CREATE DATABASE ecocasa
 default character set utf8
 default collate utf8_general_ci;
+
+-- banco pagina login_admin / e retorna dados no home_admin
+
 
 CREATE TABLE adm (
   
@@ -40,6 +42,8 @@ CREATE TABLE adm (
   senha char(32) NOT NULL
 
 ) DEFAULT charset = utf8;
+
+-- banco pagina de login_usuario / moradores_admin
 
 CREATE TABLE moradores (
   

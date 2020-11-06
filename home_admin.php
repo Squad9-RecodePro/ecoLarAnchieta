@@ -48,22 +48,16 @@ if (!isset($_SESSION['email'])) {
     <main class="row m-auto container align-items-center" style="height: 88vh">
 
         <div class="card col-lg-6 col-12 p-5 text-center border shadow">
-            <h3>Moradores cadastrados</h3>
-            <h1>32</h1>
+            <h3>Total de Familias na Ocupação</h3>
+            <h1>1100</h1>
         </div>
 
         <div class="card col-lg-6 col-12 p-5 text-center border shadow">
-            <h3>Moradores voluntários cadastrados</h3>
+            <h3>Quantidade de casas</h3>
             <h1>8</h1>
         </div>
 
     </main>
-
-    <footer>
-    <div class="footer-copyright text-center py-3">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
-    9</b>. Para o <a href="https://www.recodepro.org.br/">Recode Pro</a>.
-</div>
-    </footer>
 
 
     <script src="./js/validacao_form.js"></script>

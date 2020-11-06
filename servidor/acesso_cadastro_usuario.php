@@ -31,7 +31,7 @@ if (strlen($nome) > 3 && strlen($email) > 3 && strlen($senha) > 3 && $senha === 
 }    
 
 
-/*
+/* 
 
 function apenasNumero($str){ 
     return preg_replace("/[^0-9]/", "", $str); 

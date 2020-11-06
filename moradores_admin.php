@@ -84,11 +84,6 @@ include_once('./servidor/conn.php');
         </div>
     </main>
 
-    <footer>
-    <div class="footer-copyright text-center py-3">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
-    9</b>. Para o <a href="https://www.recodepro.org.br/">Recode Pro</a>.
-</div>
-    </footer>
     
     <script src="./js/validacao_form.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
