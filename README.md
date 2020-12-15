@@ -17,11 +17,11 @@ podendo assim proporciona uma moradia acessivél e digna.
 <h2>Tecnologias utilizadas</h2>
 As seguintes ferramentas foram usadas na construção do projeto até o momento:
 
-HTMl
+HTML
 CSS
 React
 JavaScript
-Php
+PHP
 MySQL
 
 
