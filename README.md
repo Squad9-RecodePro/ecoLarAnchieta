@@ -19,12 +19,11 @@ As seguintes ferramentas foram usadas na construção do projeto até o momento:
 
 HTML
 CSS
+React
 JavaScript
-Php
+PHP
 MySQL
-Bootstrap v4.5
 
-Link da Aplicação 
-http://ecocasa.infinityfreeapp.com/
+
 
 <h3> 👩‍💻 Projeto em Desenvolvimento.</h3>
