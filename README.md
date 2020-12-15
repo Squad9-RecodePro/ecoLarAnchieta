@@ -17,14 +17,13 @@ podendo assim proporciona uma moradia acessivél e digna.
 <h2>Tecnologias utilizadas</h2>
 As seguintes ferramentas foram usadas na construção do projeto até o momento:
 
-HTML
+HTMl
 CSS
+React
 JavaScript
 Php
 MySQL
-Bootstrap v4.5
 
-Link da Aplicação 
-http://ecocasa.infinityfreeapp.com/
+
 
 <h3> 👩‍💻 Projeto em Desenvolvimento.</h3>
