@@ -1,10 +1,13 @@
 import React from 'react';
+import Routes from './Routes.jsx';
+import Menu from './components/Menu.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Em Construção</h2>
-    </div>
+    <>
+      <Menu />
+      <Routes />
+    </>
   );
 }
 
