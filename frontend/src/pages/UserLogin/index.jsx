@@ -12,23 +12,23 @@ const UserLogin = () => {
                     <br />
                     <span className="ecoLar"> EcoLar Anchieta</span>
                 </h1>
-            </div>
-            <form>
-                <div className="container">
-                    <label className="label">Email:</label>
-                    <input className="input" type="text" name="email" placeholder="Email" />
 
-                </div>
-                <div className="container">
-                    <label className="label">Senha:</label>
-                    <input className="input" type="password" name="password" placeholder="Senha" />
-                </div>
-                <button type="submit" className="btn container">Enviar</button>
-                <a href="../RegisterUser">
-                    Ainda não possui uma conta? Clique em mim!
+                <form>
+                    <div className="container">
+                        <label className="label">Email:</label>
+                        <input className="input" type="text" name="email" placeholder="Email" />
+
+                    </div>
+                    <div className="container">
+                        <label className="label">Senha:</label>
+                        <input className="input" type="password" name="password" placeholder="Senha" />
+                    </div>
+                    <button type="submit" className="btn container">Enviar</button>
+                    <a href="../RegisterUser">
+                        Ainda não possui uma conta? Clique em mim!
                 </a>
-            </form>
-
+                </form>
+            </div>
             <div className="container-1">
                 <div className="aboutUs">
                     <h3>Sobre EcoLar Anchieta</h3>
