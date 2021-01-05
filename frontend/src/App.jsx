@@ -1,6 +1,6 @@
 import React from 'react';
 import Routes from './Routes.jsx';
-import Menu from './components/Menu.jsx';
+import Menu from './components/Menu/index';
 
 function App() {
   return (

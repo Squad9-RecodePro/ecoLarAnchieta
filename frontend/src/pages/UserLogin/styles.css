@@ -1,0 +1,106 @@
+.container-0 {
+    display: flex;
+    width: 96vw;
+    height: 90vh;
+    margin: 45px 0px 0px 18px;
+    background-color: blueviolet;
+}
+
+.container-0 .content {
+    margin: 80px 0px 0px 67px;
+    height: 25vh;
+}
+
+.container-0 .h1 {
+    color: #1C3079;
+    opacity: 80%;
+    font-size: 20px;
+    margin: 12px 0px 0px 12px;
+}
+
+h1 .ecoLar { 
+    font-size: 42px;
+}
+
+form {
+    margin: 225px 86px 0px 0px;
+}
+
+form .container {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0 15px 16px;
+    border: none;
+}
+
+form .label {
+    color: #EEE9E9;
+}
+
+form .container .input {
+    display: flex;
+    opacity: 93%;
+    border-radius: 4px 4px 4px 4px;
+    border: 0;
+    border-bottom: 2px solid #1c83f6;
+    padding-left: 7px;
+    margin-top: 7px;
+    width: 20vw;
+    height: 5vh;
+    outline: none;
+}
+
+form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 7px 7px 7px 7px;
+    border: none;
+    color: #EEE9E9;
+    background-color: #12B87C;
+    outline: none;
+    cursor: pointer;
+}
+
+form a {
+    color: #1C3079;
+    margin: 0px 0px 0px 30px;
+    font-size: 14px;
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    height: 80vh;
+}
+
+.container-1 .aboutUs {
+    opacity: 80%;
+    width: 45vw;
+    margin: 18px 12px 7px 0px;
+}
+
+.container-1 h3 {
+    margin: 7px 10px 7px 0px;
+    color: #1C3079;
+    font-size: 25px;
+}
+
+.container-1 p {
+   color: #EEE9E9;
+   margin: 0px 0px 0px 30px;
+}
+
+.container-1 img {
+    margin-top: 15px;
+    display: flex;
+    width: 50vw;
+    height: 68.7vh;
+}
