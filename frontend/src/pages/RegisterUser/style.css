@@ -1,0 +1,17 @@
+
+.containerRegister {
+    display: flex;
+    width: 96vw;
+    height: 90vh;
+    background-color: orange;
+}
+
+.containerRegister .content-1 {
+    width: 48vw;
+    background-color: blue;
+}
+
+.containerRegister .content-2 {
+   width: 48vw;
+   background-color: green;
+}

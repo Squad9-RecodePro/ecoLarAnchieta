@@ -1,35 +1,45 @@
 import React from 'react';
 
 import '../../assets/styles/global.css';
-import './styles.css';
+import './style.css';
 
 const RegisterUser = () => {
     return (
-        <div>
-            <form id="form-cadastro" onsubmit="return validateForm(event)" action="http://localhost:8080/ecocasa/backend/cadastro_usuario.php" method="post">
+        <div className="containerRegister">
 
-                <div>
-                    <label>Nome</label>
-                    <input type="text" id="nome" name="nome" class="form-control mt-4" placeholder="Nome" required />
+            <div className="content-1">
+                <div className="aboutUs">
+                    <h3>Sobre EcoLar Anchieta</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum iste nulla atque <br /> blanditiis vel esse nihil similique earum! Similique necessitatibus ad illo dignissimos <br /> iste vero adipisci non nihil in!</p>
                 </div>
 
-                <div>
-                    <label>email</label>
-                    <input type="text" name="email" placeholder="Email"/>
-                </div>
+            </div>
+            <div className="content-2">
+                <form action="http://localhost:8080/ecocasa/backend/cadastro_usuario.php" method="post">
 
-                <div>
-                    <label>Senha</label>
-                    <input type="password" id="senha" name="senha" class="form-control mt-3" placeholder="Senha" required />
-                </div>
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required />
+                    </div>
 
-                <div>
-                    <label>Confirme a senha: </label>
-                    <input type="password" id="conf_senha" name="conf_senha" class="form-control mt-3" placeholder="Confirmar senha" required />
-                </div>
+                    <div>
+                        <label>email</label>
+                        <input type="text" name="email" placeholder="Email"/>
+                    </div>
 
-                <button type="submit">Enviar</button>
-            </form>
+                    <div>
+                        <label>Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required />
+                    </div>
+
+                    <div>
+                        <label>Confirme a senha: </label>
+                        <input type="password" name="conf_senha" placeholder="Confirmar senha" required />
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     );
 
