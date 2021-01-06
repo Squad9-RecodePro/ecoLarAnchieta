@@ -21,7 +21,7 @@ const UserLogin = () => {
                     </div>
                     <div className="container">
                         <label className="label">Senha:</label>
-                        <input className="input" type="password" name="password" placeholder="Senha" />
+                        <input className="input" type="password" name="senha" placeholder="Senha" />
                     </div>
                     <button type="submit" className="btn container">Enviar</button>
                     <a href="../RegisterUser">
