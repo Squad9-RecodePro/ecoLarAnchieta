@@ -13,7 +13,7 @@ const UserLogin = () => {
                     <span className="ecoLar"> EcoLar Anchieta</span>
                 </h1>
 
-                <form>
+                <form action="http://localhost:8080/ecocasa/backend/login_usuario.php" method="post">
                     <div className="container">
                         <label className="label">Email:</label>
                         <input className="input" type="text" name="email" placeholder="Email" />
@@ -26,7 +26,7 @@ const UserLogin = () => {
                     <button type="submit" className="btn container">Enviar</button>
                     <a href="../RegisterUser">
                         Ainda não possui uma conta? Clique em mim!
-                </a>
+                    </a>
                 </form>
             </div>
             <div className="container-1">
