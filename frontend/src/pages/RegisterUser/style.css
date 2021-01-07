@@ -1,17 +1,105 @@
-
 .containerRegister {
-    display: flex;
-    width: 96vw;
-    height: 90vh;
-    background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 94vh;
+  background-color: orange;
 }
 
-.containerRegister .content-1 {
-    width: 48vw;
-    background-color: blue;
+.containerRegister .informationRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 34vw;
+  height: 48vh;
+  color: #fff;
+  background-color: seagreen;
 }
 
-.containerRegister .content-2 {
-   width: 48vw;
-   background-color: green;
+.containerRegister .informationRegister h1 {
+  font-size: 32px;
+  margin: 0px 0px 30px 0px;
+  opacity: 93%;
+
+}
+
+.containerRegister .informationRegister p {
+  margin: 0px 0px 18px 0px;
+  font-size: 18px;
+  opacity: 93%;
+}
+
+.containerRegister .informationRegister button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0px 0px 16px;
+  width: 14vw;
+  height: 5vh;
+  border-radius: 14px 14px 14px 14px;
+  background: transparent;
+  border: solid 2px #fff;
+  color: #eee9e9;
+  outline: none;
+  cursor: pointer;
+}
+
+.containerRegister .registerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48vw;
+  height: 48vh;
+}
+
+.containerRegister .registerForm h2 {
+  font-size: 32px;
+  display: flex;
+  opacity: 93%;
+  color: #fff;
+}
+
+.containerRegister .registerForm .content {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #1c83f6;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.containerRegister .registerForm .content i {
+  display: flex;
+  padding-top: 14px;
+  margin-right: 6px;
+  color: #fff;
+}
+
+.containerRegister .formInput {
+  background: none;
+  display: flex;
+  opacity: 93%;
+  font-size: 16px;
+  border-radius: 4px 4px 4px 4px;
+  border: 0;
+  padding-left: 7px;
+  margin-top: 7px;
+  width: 20vw;
+  height: 5vh;
+  outline: none;
+}
+
+.containerRegister .registerForm button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0px 0px 42px;
+  width: 14vw;
+  height: 5vh;
+  border-radius: 14px 14px 14px 14px;
+  background: transparent;
+  border: solid 2px #fff;
+  color: #eee9e9;
+  outline: none;
+  cursor: pointer;
 }

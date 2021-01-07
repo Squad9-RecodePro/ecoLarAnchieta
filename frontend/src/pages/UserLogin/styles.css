@@ -1,104 +1,115 @@
 .mainUserLogin {
-    background: linear-gradient(to right, #00ccff 0%, rgb(0, 102, 204) 105%);
-    width: 100vw;
-    height: 100vh;
+  background: linear-gradient(to right, #00ccff 0%, rgb(0, 102, 204) 105%);
+  width: 100vw;
+  height: 94vh;
 }
 
 .mainUserLogin .containerUserLogin {
-    display: flex;
-    width: 78vw;
-    height: 76vh;
-    margin: auto;
+  display: flex;
+  width: 78vw;
+  height: 76vh;
+  margin: auto;
 }
 
 .mainUserLogin .containerUserLogin .content {
-    padding: 48px 0px 0px 128px;
-    height: 76vh;
-    width: 40vw;
-    background-color: #fff;
-    border-radius: 18px 0px 0px 18px;
+  padding: 48px 0px 0px 128px;
+  height: 76vh;
+  width: 40vw;
+  background-color: #fff;
+  border-radius: 18px 0px 0px 18px;
 }
 
 .mainUserLogin .containerUserLogin .content .header {
-    color: rgb(19, 19, 19);
-    opacity: 95%;
-    font-size: 20px;
+  color: rgb(19, 19, 19);
+  opacity: 95%;
+  font-size: 20px;
 }
 
 .mainUserLogin .containerUserLogin .content .header img {
-    width: 32px;
-    
+  width: 32px;
 }
 
 .mainUserLogin .containerUserLogin .content form {
-    margin: 80px 86px 0px 0px;
+  margin: 80px 86px 0px 0px;
 }
 
 .mainUserLogin .containerUserLogin .content form .container {
-    display: flex;
-    flex-direction: column;
-    margin: 16px 0 15px 16px;
-    border: none;
+  display: flex;
+  margin: 16px 0 15px 16px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  border-bottom: 2px solid #1c83f6;
+}
+
+.mainUserLogin .containerUserLogin .content form h2 {
+  color:#1c83f6;
+  display: flex;
+  padding-left: 14px;
+  
 }
 
 .mainUserLogin .containerUserLogin .content form .label {
-    color: #7c7b7b;
+  color: #7c7b7b;
 }
 
 .mainUserLogin .containerUserLogin .content form .container .input {
-    display: flex;
-    opacity: 93%;
-    border-radius: 4px 4px 4px 4px;
-    border: 0;
-    border-bottom: 2px solid #1c83f6;
-    padding-left: 7px;
-    margin-top: 7px;
-    width: 20vw;
-    height: 5vh;
-    outline: none;
+  display: flex;
+  opacity: 93%;
+  border: 0;
+  padding-left: 7px;
+  margin-top: 7px;
+  width: 20vw;
+  height: 5vh;
+  outline: none;
 }
 
 .mainUserLogin .containerUserLogin .content form .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20vw;
-    height: 5vh;
-    border-radius: 7px 7px 7px 7px;
-    border: none;
-    color: #EEE9E9;
-    background: linear-gradient(to right, #66ff33 0%, #009933 105%);
-    outline: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px 0px 0px 36px;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 7px 7px 7px 7px;
+  border: none;
+  color: #eee9e9;
+  background: linear-gradient(to right, #66ff33 0%, #009933 105%);
+  outline: none;
+  cursor: pointer;
 }
 
 .mainUserLogin .containerUserLogin .content form a {
-    color: #fff;
-    margin: 0px 0px 0px 30px;
-    font-size: 14px;
-    display: flex;
-    width: 20vw;
-    justify-content: space-between;
+  color: #6495ED;
+  margin: 14px 0px 0px 36px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainUserLogin .containerUserLogin .content .container i {
+  display: flex;
+  padding-top: 14px;
+  margin-right: 6px;
+  color: #00ccff;
 }
 
 .mainUserLogin .containerUserLogin .container-1 {
-    width: 38vw;
-    height: 76vh;
-    color: rgb(19, 19, 19);
-    background-color: #d8d6d6;
-    border-radius: 0px 18px 18px 0px;
+  width: 38vw;
+  height: 76vh;
+  color: rgb(19, 19, 19);
+  background-color: #d8d6d6;
+  border-radius: 0px 18px 18px 0px;
 }
 
 .mainUserLogin .containerUserLogin .container-1 .aboutUs {
-    opacity: 95%;
-    margin: 36px 7px 0px 20px;
+  opacity: 95%;
+  margin: 36px 7px 0px 20px;
 }
 
 .mainUserLogin .containerUserLogin .container-1 h3 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .mainUserLogin .containerUserLogin .container-1 .aboutUs img {
-    width: 500px;
-    
+  width: 500px;
 }

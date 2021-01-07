@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../../assets/styles/global.css';
 import './styles.css';
+import Footer from '../../components/Footer';
 
 import Tijolo from '../../assets/images/tijolo.svg';
 import Houses from '../../assets/images/Building-rafiki.svg';
@@ -20,16 +21,16 @@ const UserLogin = () => {
                     </div>
 
                     <form action="http://localhost:8080/ecocasa/backend/login_usuario.php" method="post">
-                        <div className="container">
-                            <label className="label">Email:</label>
+                        <h2>Login</h2>
+                        <div className="container">                            
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             <input className="input" type="text" name="email" placeholder="Email" />
-
                         </div>
                         <div className="container">
-                            <label className="label">Senha:</label>
+                            <i class="fa fa-lock" aria-hidden="true"></i>
                             <input className="input" type="password" name="senha" placeholder="Senha" />
                         </div>
-                        <button type="submit" className="btn container">Enviar</button>
+                        <button type="submit" className="btn container">Entrar</button>
                         <a href="../RegisterUser">
                             Ainda não possui uma conta? Clique em mim!
                     </a>
@@ -45,7 +46,7 @@ const UserLogin = () => {
                 </div>
 
             </div>
-            
+            <Footer />
         </div>
     );
 
