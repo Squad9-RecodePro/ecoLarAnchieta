@@ -7,8 +7,8 @@ import './styles.css';
 const Menu = () => {
     return (
         <>
-        <a href="./UserLogin">Login</a>
-        <a href="./RegisterUser">Inscreva-se</a>
+            <a href="./UserLogin">Login</a>
+            <a href="./RegisterUser">Inscreva-se</a>
         </>
     );
 }

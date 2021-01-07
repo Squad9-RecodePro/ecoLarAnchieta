@@ -28,7 +28,7 @@ if (strlen($email) > 3 && strlen($senha) > 3) {
     $_SESSION['senha'] = $moradores[0][3];
     
     // Redirecionado para a pagina de user
-    header('Location: ../home_usuario.php'); //ainda mudaremos o endereço desta página 
+    header('Location: ../frontend/index.jsx'); //ainda mudaremos o endereço desta página 
 }
 else {
     echo "
