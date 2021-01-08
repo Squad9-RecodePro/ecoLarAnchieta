@@ -24,7 +24,7 @@ const UserLogin = () => {
                     <form action="http://localhost:8080/ecocasa/backend/login_usuario.php" method="post">
                         <h2>Login</h2>
                         <div className="container">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
                             <input className="input" type="text" name="email" placeholder="Email" />
                         </div>
                         <div className="container">
@@ -34,7 +34,7 @@ const UserLogin = () => {
                         <button type="submit" className="btn container">Entrar</button>
                         <a href="../RegisterUser">
                             Ainda não possui uma conta? Clique em mim!
-                    </a>
+                        </a>
                     </form>
                 </div>
 

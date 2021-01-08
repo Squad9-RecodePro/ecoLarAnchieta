@@ -21,12 +21,12 @@ const RegisterUser = () => {
                     <form>
                         <h2>Cadastre-se</h2>
                         <div className="content">
-                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <i class="fa fa-user" aria-hidden="true"></i>
                             <input className="formInput" type="text" name="nome" placeholder="Nome" required />
                         </div>
 
                         <div className="content">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
                             <input className="formInput" type="text" name="email" placeholder="Email" />
                         </div>
 

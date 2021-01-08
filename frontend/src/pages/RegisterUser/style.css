@@ -4,7 +4,8 @@
   justify-content: center;
   width: 100vw;
   height: 94vh;
-  background-color: orange;
+  background: linear-gradient(to right, #00ccff 0%, rgb(0, 102, 204) 105%);
+  
 }
 
 .containerRegister .informationRegister {
@@ -13,23 +14,15 @@
   align-items: center;
   justify-content: center;
   width: 34vw;
-  height: 48vh;
-  color: #fff;
-  background-color: seagreen;
+  height: 64vh;
+  color: rgb(19, 19, 19);
+  opacity: 95%;
+  font-size: 20px;
+  padding-bottom: 32px;
+  background-color: #d8d6d6;
+  border-radius: 6px 0px 0px 6px;
 }
 
-.containerRegister .informationRegister h1 {
-  font-size: 32px;
-  margin: 0px 0px 30px 0px;
-  opacity: 93%;
-
-}
-
-.containerRegister .informationRegister p {
-  margin: 0px 0px 18px 0px;
-  font-size: 18px;
-  opacity: 93%;
-}
 
 .containerRegister .informationRegister button {
   display: flex;
@@ -39,7 +32,7 @@
   width: 14vw;
   height: 5vh;
   border-radius: 14px 14px 14px 14px;
-  background: transparent;
+  background:  #1c83f6;
   border: solid 2px #fff;
   color: #eee9e9;
   outline: none;
@@ -51,17 +44,19 @@
   justify-content: center;
   align-items: center;
   width: 48vw;
-  height: 48vh;
+  height: 64vh;
+  background-color: #fff;
+  border-radius: 0px 6px 6px 0px;
 }
 
 .containerRegister .registerForm h2 {
-  font-size: 32px;
+  font-size: 36px;
   display: flex;
   opacity: 93%;
-  color: #fff;
+  color: #12B87C;
 }
 
-.containerRegister .registerForm .content {
+.containerRegister .registerForm form .content {
   display: flex;
   justify-content: center;
   border-bottom: 2px solid #1c83f6;
@@ -70,9 +65,9 @@
 
 .containerRegister .registerForm .content i {
   display: flex;
-  padding-top: 14px;
-  margin-right: 6px;
-  color: #fff;
+  padding-top: 18px;
+  margin: 0 6px;
+  color: #aaa7a7;
 }
 
 .containerRegister .formInput {
@@ -97,7 +92,7 @@
   width: 14vw;
   height: 5vh;
   border-radius: 14px 14px 14px 14px;
-  background: transparent;
+  background: #12B87C;
   border: solid 2px #fff;
   color: #eee9e9;
   outline: none;

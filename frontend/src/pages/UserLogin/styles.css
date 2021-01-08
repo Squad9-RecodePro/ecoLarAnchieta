@@ -9,25 +9,27 @@
 }
 
 .containerUserLogin .content {
-  padding: 48px 0px 0px 128px;
+  /* padding: 48px 0px 0px 128px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 48vw;
-  height: 48vh;
+  height: 64vh;
   background-color: #fff;
   border-radius: 6px 0px 0px 6px;
 }
+
 
 .containerUserLogin .content .header {
   color: rgb(19, 19, 19);
   opacity: 95%;
   font-size: 20px;
+  padding-bottom: 32px;
 }
 
 .containerUserLogin .content .header img {
   width: 32px;
-}
-
-.containerUserLogin .content form {
-  
 }
 
 .containerUserLogin .content form .container {
@@ -37,14 +39,10 @@
 }
 
 .containerUserLogin .content form h2 {
-  color: #1c83f6;
-  font-size: 32px;
+  color:#12B87C;
+  font-size: 36px;
   display: flex;
   opacity: 93%;
-}
-
-.containerUserLogin .content form .label {
-  color: #7c7b7b;
 }
 
 .containerUserLogin .content form .container .input {
@@ -56,7 +54,7 @@
   border: 0;
   padding-left: 7px;
   margin-top: 7px;
-  width: 26vw;
+  width: 20vw;
   height: 5vh;
   outline: none;
 }
@@ -69,8 +67,7 @@
   width: 14vw;
   height: 5vh;
   border-radius: 14px 14px 14px 14px;
-  background-color: #1c83f6;
-  ;
+  background-color: #12B87C;
   border: solid 2px #fff;
   color: #eee9e9;
   outline: none;
@@ -78,23 +75,23 @@
 }
 
 .containerUserLogin .content form a {
-  color: #6495ED;
+  color: #0496eb;
   margin: 14px 0px 0px 36px;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
 }
 
 .containerUserLogin .content .container i {
   display: flex;
-  padding-top: 14px;
-  margin-right: 6px;
-  color: #00ccff;
+  padding-top: 18px;
+  margin: 0 6px;
+  color: #aaa7a7;
 }
 
 .containerUserLogin .container-1 {
   width: 34vw;
-  height: 48vh;
+  height: 64vh;
   color: rgb(19, 19, 19);
   background-color: #d8d6d6;
   border-radius: 0px 6px 6px 0px;
