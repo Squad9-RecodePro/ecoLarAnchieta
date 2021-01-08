@@ -1,0 +1,52 @@
+.containerAdminStart {
+    width: 100vw;
+    height: 94vh;
+}
+
+.containerAdminStart .content {
+    width: 100vw;   
+    display: flex;
+}
+
+.containerAdminStart .content h1 {
+    width: 70vw;
+}
+
+.containerAdminStart .content h1 img {
+    width: 32px;
+}
+
+.containerAdminStart .content .adminNav {
+    width: 30vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+}
+
+.containerAdminStart .informations {
+    height: 58vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containerAdminStart .totalFamily {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    height: 30vh;
+    background-color: hotpink;
+}
+
+.containerAdminStart .totalHouses {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    height: 30vh;
+    background-color: lawngreen;
+}

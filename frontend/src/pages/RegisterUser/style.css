@@ -24,7 +24,7 @@
 }
 
 
-.containerRegister .informationRegister button {
+.containerRegister .informationRegister a {
   display: flex;
   align-items: center;
   justify-content: center;

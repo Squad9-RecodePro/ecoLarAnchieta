@@ -3,8 +3,6 @@ import React from 'react';
 import '../../assets/styles/global.css';
 import './style.css';
 
-import Footer from '../../components/Footer';
-
 const RegisterUser = () => {
     return (
         <>
@@ -13,7 +11,7 @@ const RegisterUser = () => {
                 <div className="informationRegister">
                     <h1>Bem Vindo de Volta!</h1>
                     <p>Se você já é um morador cadastrado,<br /> realize o Login aqui!</p>
-                    <button>Entrar</button>
+                    <a href="../UserLogin">Entrar</a>
                 </div>
 
                 <div className="registerForm">
@@ -44,7 +42,6 @@ const RegisterUser = () => {
                     </form>
                 </div>
             </div>
-            <Footer />
         </>
 
     );

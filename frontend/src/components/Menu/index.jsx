@@ -9,6 +9,7 @@ const Menu = () => {
         <>
             <a href="./UserLogin">Login</a>
             <a href="./RegisterUser">Inscreva-se</a>
+            <a href="./AdminLogin">Login Administrador</a>
         </>
     );
 }
