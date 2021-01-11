@@ -9,6 +9,46 @@
 
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        .container-devs{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .teste {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 60vw;
+
+        }
+
+        .teste2 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 60vw;
+
+        }
+
+        .teste img {
+            width: 20vw !important;
+            width: 20vh !important;
+        }
+
+        .teste2 img {
+            width: 20vw !important;
+            width: 20vh !important;
+
+        }
+
+        .cardDev {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -77,7 +117,8 @@
     </section>
 
     <section class="m-auto shadow border">
-        <h2 class="text-center text-dark mt-5">Ocupação Anchieta</h2>
+        <h2 class="text-center text-dark mt-5">Estatisticas</h2>
+        <h4 class="text-center text-dark mt-5">A ocupação em números</h4>
         <div class="row container mx-auto py-5 px-0">
             <div class="col-md-4 col-12 my-5">
                 <h2 class="text-center">70%</h2>
@@ -102,8 +143,65 @@
                     ocupação<br>em extrema pobreza
                 </p>
             </div>
+            <p class="pt-3 text-right">
+                <u><i>Informações cedidas pela organização Anchieta.</i></u>
+            </p>
         </div>
-       
+        <div class="container-devs">
+            <h2>Desenvolvedores</h2>
+            <div class="col-12 teste mt-3">
+                <div class="cardDev">
+                    <img src="./assets/images/devs/edson.jpeg" alt="..." class="rounded-circle">
+                    <h4>Edson</h4>
+                    <div class="social">
+                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt="">teste</a>
+                    </div>
+                </div>
+                <div class="cardDev">
+                    <img src="./assets/images/devs/elnatan.jpeg" alt="..." class="rounded-circle">
+                    <h4>Elnatan</h4>
+                    <div class="social">
+                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt="">teste</a>
+                    </div>
+                </div>
+                <div class="cardDev">
+                    <img src="./assets/images/devs/frederico.jpeg" alt="..." class="rounded-circle">
+                    <h4>Frederico</h4>
+                    <div class="social">
+                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt="">teste</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 teste2 mt-3">
+                <div class="cardDev">
+                    <img src="./assets/images/devs/gustavo.jpeg" alt="..." class="rounded-circle">
+                    <h4>Gustavo</h4>
+                    <div class="social">
+                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt="">teste</a>
+                    </div>
+                </div>
+                <div class="cardDev">
+                    <img src="./assets/images/devs/taina.jpeg" alt="..." class="rounded-circle">
+                    <h4>Taina</h4>
+                    <div class="social">
+                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt="">teste</a>
+                    </div>
+                </div>
+                <div class="cardDev">
+                    <img src="./assets/images/devs/thamirez.jpeg" alt="..." class="rounded-circle">
+                    <h4>Thamirez</h4>
+                    <div class="social">
+                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt="">teste</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footer-copyright text-center py-3">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
