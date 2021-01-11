@@ -8,8 +8,7 @@
     <link rel="icon" href="./assets/images/iconlogo.svg" />
 
     <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
@@ -33,46 +32,46 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" id="imgcarousel">
-                    <img class="d-block" height="500" src="./assets/images/imgcarousel1.jpg" alt="Primeiro Slide">
+                    <img class="d-block w-100" src="./assets/images/imgcarousel1.jpg" alt="Primeiro Slide">
                 </div>
                 <div class="carousel-item" id="imgcarousel">
-                    <img class="d-block" height="500" src="./assets/images/imgcarousel1.jpg" alt="Segundo Slide">
+                    <img class="d-block w-100" src="./assets/images/imgcarousel2.jpg" alt="Segundo Slide">
                 </div>
                 <div class="carousel-item" id="imgcarousel">
-                    <img class="d-block" height="500" src="./assets/images/imgcarousel1.jpg" alt="Terceiro Slide">
+                    <img class="d-block w-100" src="./assets/images/imgcarousel3.jpg" alt="Terceiro Slide">
                 </div>
                 <div class="carousel-item" id="imgcarousel">
-                    <img class="d-block" height="500" src="./assets/images/imgcarousel1.jpg" alt="Quarto Slide">
+                    <img class="d-block w-100" src="./assets/images/imgcarousel4.jpeg" alt="Quarto Slide">
                 </div>
-                <div class="carousel-item" id="imgcarousel">
-                    <img class="d-block" height="500" src="./assets/images/imgcarousel1.jpg" alt="Quinto Slide">
+                <div class="carousel-item " id="imgcarousel">
+                    <img class="d-block w-100" src="./assets/images/imgcarousel5.jpeg" alt="Quinto Slide">
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-12 mt-lg-0 mt-5">
+        <div class="col-3 mt-lg-0 mt-5">
             <h2 class="text-center text-dark">Ocupação Anchieta</h2>
             <h5 class="text-center text-dark pt-2">É possível viver nessas áreas preservando os recursos naturais?</h5>
             <p class="pt-4 text-center">
-            Os lotes estão em terrenos privados e estão sendo negociadas com o proprietário da área, 
-            o Instituto Anchieta do Grajaú, que inclui um projeto de urbanização. As fontes termais 
-            da região foram colocadas em quarentena e a Sabesp também estuda a implantação de instalações 
-            de saneamento básico.
+                Os lotes estão em terrenos privados e estão sendo negociadas com o proprietário da área,
+                o Instituto Anchieta do Grajaú, que inclui um projeto de urbanização. As fontes termais
+                da região foram colocadas em quarentena e a Sabesp também estuda a implantação de instalações
+                de saneamento básico.
             </p>
         </div>
         <div class="col-lg-12 col-12 mt-lg-5 mt-5">
             <h2 class="text-center text-dark">O que você conhece das ocupações por moradia?</h2>
             <p class="pt-4 text-center">
-            Sempre vemos na televisão o momento em que a polícia invade o terreno com violência e as máquinas 
-            já estão lá fazendo o ‘serviço’ de Reintegração de Posse, a mando da Prefeitura. 
-            Mas o que vem antes? Às vezes vemos e não nos perguntamos por que as pessoas vivem lá e como vivem.
+                Sempre vemos na televisão o momento em que a polícia invade o terreno com violência e as máquinas
+                já estão lá fazendo o ‘serviço’ de Reintegração de Posse, a mando da Prefeitura.
+                Mas o que vem antes? Às vezes vemos e não nos perguntamos por que as pessoas vivem lá e como vivem.
             </p>
             <p class="pt-3 text-center">
-            “Estamos aqui pelo nosso direito a ter onde morar, onde viver, quem agora vive nesse terreno são famílias, 
-            muitas com crianças, que não teriam outro lugar para morar” 
+                “Estamos aqui pelo nosso direito a ter onde morar, onde viver, quem agora vive nesse terreno são famílias,
+                muitas com crianças, que não teriam outro lugar para morar”
             </p>
             <p class="pt-3 text-right">
-            <u><i>fala de um morador da ocupação.</i></u>
+                <u><i>fala de um morador da ocupação.</i></u>
             </p>
         </div>
     </section>
@@ -104,11 +103,12 @@
                 </p>
             </div>
         </div>
+       
     </section>
     <footer>
-    <div class="footer-copyright text-center py-3">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
-    9</b>. Para o <a href="https://www.recodepro.org.br/">Recode Pro</a>.
-</div>
+        <div class="footer-copyright text-center py-3">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
+                9</b>. Para o <a href="https://www.recodepro.org.br/">Recode Pro</a>.
+        </div>
     </footer>
 
 
@@ -116,15 +116,9 @@
 
 
     <script src="./js/validacao_form.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 
 </html>

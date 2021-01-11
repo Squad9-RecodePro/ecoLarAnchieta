@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light shadow" id="menu">
         <div class="container">
-            <a class="navbar-brand" href="./home_usuario.php">
+            <a class="navbar-brand" href="./index.php">
                 <img src="./assets/images/logopage.png" width="50%" title="Logo EcoCasa">
             </a>
         </div>
