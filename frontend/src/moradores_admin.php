@@ -56,12 +56,13 @@ include_once('../../backend/servidor/conn.php');
                 </thead>
                 <tbody>
                     <?php
-                    $sql = "select * from moradores";
+                    $sql = "SELECT * FROM moradores";
                     // tem que ser o select from moradores
                     $result = $conn->query($sql);
 
-                    if ($result->num_rows > 0) {
-                        while ($rows = $result->fetch_assoc()) {
+                    if ($result->rowCount() > 0) {
+                        //while ($rows = $result->fetch_assoc()) {
+                        foreach($result->fetchAll(PDO::FETCH_ASSOC) as $rows){ 
                     ?>
                             <!-- os valores precisam ser id, nome, email -->
                             <tr>

@@ -1,5 +1,5 @@
 <?php
-include_once('../backend/servidor/conn.php');
+include_once('../../backend/servidor/conn.php');
 ?>
 
 
@@ -65,8 +65,10 @@ include_once('../backend/servidor/conn.php');
           // alterar para o select from voluntariado
           $result = $conn->query($sql);
 
-          if ($result->num_rows > 0) {
-            while ($rows = $result->fetch_assoc()) {
+          if ($result->rowCount() > 0) {
+            //while ($rows = $result->fetch_assoc()) {
+            foreach($result->fetchAll(PDO::FETCH_ASSOC) as $rows){ 
+
           ?>
               <!-- alterar o nome para titulo, imagem, descricao e nvagas -->
               <tr>
