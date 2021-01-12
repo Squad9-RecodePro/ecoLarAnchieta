@@ -31,7 +31,7 @@
                 <input type="password" id="senha" name="senha" class="form-control mt-3" placeholder="Senha" required />
                 <input type="password" id="conf_senha" name="conf_senha" class="form-control mt-3" placeholder="Confirmar senha" required />
 
-                <button type="submit" class="btn btn-custom mt-3 w-100">Entrar</button>
+                <button type="submit" class="btn btn-custom mt-3 w-100">Cadastrar</button>
 
                 <a href="./login_usuario.php" class="mt-2">Já possui cadastro? Realize o login</a>
             </form>
