@@ -10,6 +10,7 @@ if (!isset($_SESSION['nome'])) {
 
 <?php
 include_once('../../backend/servidor/conn.php');
+//$conn = mysqli_connect("localhost", "root", "", "ecocasa");
 ?>
 
 <!DOCTYPE html>
@@ -47,12 +48,15 @@ include_once('../../backend/servidor/conn.php');
     </div>
 
     <?php
-    $sql = "select * from voluntariado";
+    $sql = "SELECT * from voluntariado";
     // alterar para o select from
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        while ($rows = $result->fetch_assoc()) {
+    if ($result->rowCount() > 0) {
+        // while ($rows = $result->fetch(PDO::FETCH_ASSOC)) {
+        // while ($rows = $result->fetch_assoc()) {
+        //var_dump($result->fetch(PDO::FETCH_ASSOC)); 
+        foreach($result->fetchAll(PDO::FETCH_ASSOC) as $rows){   
     ?>
             <div class="container">
                 <div class="row">
