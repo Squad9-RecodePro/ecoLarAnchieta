@@ -6,10 +6,13 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 
 if (strlen($email) > 3 && strlen($senha) > 3) {
-    //criptografia ca senha
+    //criptografia da senha
     $senha_cripto = md5($senha);
+    
     // Conexão com o banco
-    include_once('./conn.php');
+    //include_once('./conn.php');
+    $conn = mysqli_connect("localhost", "root", "", "ecocasa");
+
     // Instrução SQL
     $sql = "SELECT * FROM moradores WHERE email = '$email' AND senha = '$senha_cripto'";
     // Execução da instrução sql
