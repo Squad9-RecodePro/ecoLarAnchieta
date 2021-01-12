@@ -1,6 +1,7 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "ecocasa");
+// $conn = mysqli_connect("localhost", "root", "", "ecocasa");
+$conn = new PDO("mysql:host=localhost;dbname=ecocasa;charset=utf8", "root", "");
 
 if (!$conn) {
 
