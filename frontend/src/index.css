@@ -1,0 +1,109 @@
+
+
+.photos {
+    width: 100vw!important;
+    height: 80vh;
+    display:flex;
+    align-items: flex-end;
+    background-image: url(./assets/images/imgcarousel1.jpg);
+    background-size: cover;
+    animation-name: bg-photos;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    float: right;
+    
+}
+.statistics{
+    color:  #24487994 !important;
+    font-size: 62px !important;
+    
+}
+
+.btn-index:nth-child(1) {
+    background-color: #000000a2 !important;
+    color: #fff;
+    margin:0px 0px 100px 200px;
+    
+}
+.btn-index:nth-child(2) {
+    background-color: #244879 !important;
+    color: #fff;
+    margin:0px 0px 100px 20px;
+    
+}
+
+.container-devs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teste {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60vw !important;
+}
+
+.teste2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60vw !important;
+}
+
+.teste img {
+    width: 20vw !important;
+    width: 20vh !important;
+}
+
+.teste2 img {
+    width: 20vw !important;
+    width: 20vh !important;
+}
+
+.cardDev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes bg-photos {
+    40% {
+        background-image: url(./assets/images/imgcarousel2.jpg);
+        background-size: cover;
+    }
+    60% {
+        background-image: url(./assets/images/imgcarousel3.jpg);
+        background-size: cover;
+    }
+    80% {
+        background-image: url(./assets/images/imgcarousel4.jpeg);
+        background-size: cover;
+    }
+    100% {
+        background-image: url(./assets/images/imgcarousel5.jpeg);
+        background-size: cover;
+    }
+}
+
+/* @media (min-width: 576px) {
+    ...
+}
+
+// Dispositivos médios (tablets com 768px ou mais)
+@media (min-width: 768px) {
+    ...
+}
+
+// Dispositivos large (desktops com 992px ou mais)
+@media (min-width: 992px) {
+    ...
+}
+
+// Dispositivos extra large (desktops grandes com 1200px ou mais)
+@media (min-width: 1200px) {
+    ...
+} */

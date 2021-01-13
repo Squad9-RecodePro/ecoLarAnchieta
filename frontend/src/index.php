@@ -8,47 +8,9 @@
     <link rel="icon" href="./assets/images/iconlogo.svg" />
 
     <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <style>
-        .container-devs{
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .teste {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 60vw;
-
-        }
-
-        .teste2 {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 60vw;
-
-        }
-
-        .teste img {
-            width: 20vw !important;
-            width: 20vh !important;
-        }
-
-        .teste2 img {
-            width: 20vw !important;
-            width: 20vh !important;
-
-        }
-
-        .cardDev {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
 </head>
 
 <body>
@@ -57,49 +19,24 @@
             <a class="navbar-brand" href="./index.php">
                 <img src="./assets/images/logopage.png" width="50%" title="Logo EcoLar">
             </a>
-            <a class="btn btn-outline-light" href="./login_usuario.php">Entre ou Cadastre-se</a>
+
         </div>
     </nav>
-
-    <section class="row container my-5 mx-auto px-0">
-        <div id="carouselExampleIndicators" class="carousel slide col-lg-9 col-12" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" id="imgcarousel">
-                    <img class="d-block w-100" src="./assets/images/imgcarousel1.jpg" alt="Primeiro Slide">
-                </div>
-                <div class="carousel-item" id="imgcarousel">
-                    <img class="d-block w-100" src="./assets/images/imgcarousel2.jpg" alt="Segundo Slide">
-                </div>
-                <div class="carousel-item" id="imgcarousel">
-                    <img class="d-block w-100" src="./assets/images/imgcarousel3.jpg" alt="Terceiro Slide">
-                </div>
-                <div class="carousel-item" id="imgcarousel">
-                    <img class="d-block w-100" src="./assets/images/imgcarousel4.jpeg" alt="Quarto Slide">
-                </div>
-                <div class="carousel-item " id="imgcarousel">
-                    <img class="d-block w-100" src="./assets/images/imgcarousel5.jpeg" alt="Quinto Slide">
-                </div>
-            </div>
+    <div class="mask-photos">
+        <div class="container-fluid photos">
+            <a class="btn btn-lg btn-outline-light btn-index" href="./cadastro_usuario.php">Cadastrar</a>
+            <a class="btn btn-lg btn-index" href="./login_usuario.php">Entrar</a>
         </div>
-
-        <div class="col-3 mt-lg-0 mt-5">
-            <h2 class="text-center text-dark">Ocupação Anchieta</h2>
-            <h5 class="text-center text-dark pt-2">É possível viver nessas áreas preservando os recursos naturais?</h5>
+    </div>
+    <div class="container ">
+        <div class=" mt-lg-5 mt-5">
+            <h2 class="text-center text-dark">O Projeto</h2>
             <p class="pt-4 text-center">
-                Os lotes estão em terrenos privados e estão sendo negociadas com o proprietário da área,
-                o Instituto Anchieta do Grajaú, que inclui um projeto de urbanização. As fontes termais
-                da região foram colocadas em quarentena e a Sabesp também estuda a implantação de instalações
-                de saneamento básico.
+               texto sobre nosso projeto
             </p>
+            
         </div>
-        <div class="col-lg-12 col-12 mt-lg-5 mt-5">
+        <div class=" mt-lg-5 mt-5">
             <h2 class="text-center text-dark">O que você conhece das ocupações por moradia?</h2>
             <p class="pt-4 text-center">
                 Sempre vemos na televisão o momento em que a polícia invade o terreno com violência e as máquinas
@@ -114,10 +51,9 @@
                 <u><i>fala de um morador da ocupação.</i></u>
             </p>
         </div>
-    </section>
-
-    <section class="m-auto shadow border">
-        <h2 class="text-center text-dark mt-5">Estatisticas</h2>
+    </div>
+    <section class="m-auto">
+        <h2 class="text-center mt-5 statistics">ESTATÍSTICAS</h2>
         <h4 class="text-center text-dark mt-5">A ocupação em números</h4>
         <div class="row container mx-auto py-5 px-0">
             <div class="col-md-4 col-12 my-5">
@@ -175,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 teste2 mt-3">
+            <div class="col-12 teste2 my-3">
                 <div class="cardDev">
                     <img src="./assets/images/devs/gustavo.jpeg" alt="..." class="rounded-circle">
                     <h4>Gustavo</h4>
@@ -204,7 +140,7 @@
         </div>
     </section>
     <footer>
-        <div class="footer-copyright text-center py-3">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
+        <div class="footer-copyright text-center py-3 border shadow">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
                 9</b>. Para o <a href="https://www.recodepro.org.br/">Recode Pro</a>.
         </div>
     </footer>
