@@ -53,8 +53,23 @@ if (!isset($_SESSION['email'])) {
         </div>
 
         <div class="card col-lg-6 col-12 p-5 text-center border shadow">
-            <h3>Quantidade de casas</h3>
-            <h1>8</h1>
+            <h3>Moradores cadastrados</h3>
+
+            <?php
+                // $result_moradores = "SELECT * FROM moradores";
+                // $resultado_moradores = mysqli_query($conn, $result_moradores);
+                // while($row_usuario = )
+                include_once('../../backend/servidor/conn.php');
+                $sql = "SELECT * from moradores";
+                $result = $conn->query($sql);
+                if ($result->rowCount() > 0) {
+                    $i = 0;
+                    foreach($result->fetchAll(PDO::FETCH_ASSOC) as $rows){
+                        $i = $i + 1;
+                    }
+                }
+            ?>
+            <h1><?php echo $i?></h1>
         </div>
 
     </main>
