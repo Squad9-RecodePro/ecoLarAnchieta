@@ -71,6 +71,7 @@ include_once('../../backend/servidor/conn.php');
                                 <td><?php echo $rows["email"]; ?></td>
                                 <td>
                                     <a class="btn btn-danger" href="../../backend/servidor/deletemoradores.php?id='<?php echo $rows['id']; ?>' ">Remover</a>
+                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalAlterar">Alterar</button>
                                 </td>
                             </tr>
                     <?php
@@ -93,3 +94,31 @@ include_once('../../backend/servidor/conn.php');
 </body>
 
 </html>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalAlterar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Altere os dados</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="../../backend/servidor/alterar_moradores.php?id='<?php echo $rows['id']; ?>'" method="POST">
+
+          <input type="text" name="nome" class="form-control mt-3" placeholder="Nome" />
+          <input type="text" name="email" class="form-control mt-3" placeholder="E-mail" />
+          
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Alterar</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

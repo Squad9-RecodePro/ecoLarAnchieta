@@ -78,6 +78,7 @@ include_once('../../backend/servidor/conn.php');
                 <td><?php echo $rows["nvagas"]; ?></td>
                 <td>
                   <a class="btn btn-danger" href="../../backend/servidor/delete.php?id='<?php echo $rows['id']; ?>' ">Remover</a>
+                  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalAlterar">Alterar</button>
                 </td>
               </tr>
           <?php
@@ -123,6 +124,37 @@ include_once('../../backend/servidor/conn.php');
 
           <div class="modal-footer">
             <button type="submit" class="btn btn-info">Salvar mudanças</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="modalAlterar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Altere os dados</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="../../backend/servidor/alterar_voluntario.php?id='<?php echo $rows['id']; ?>'" method="POST">
+
+          <input type="text" name="titulo" class="form-control mt-3" placeholder="Título" />
+          <input type="file" name="imagem" class="form-control mt-3" placeholder="Imagem" />
+          <textarea name="descricao" class="form-control mt-3" cols="30" rows="5" placeholder="Descrição"></textarea>
+          <input name="nvagas" type="number" class="form-control mt-3" placeholder="Número de vagas" />
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Alterar</button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
           </div>
         </form>

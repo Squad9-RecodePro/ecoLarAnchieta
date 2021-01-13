@@ -35,6 +35,10 @@ include_once('../../backend/servidor/conn.php');
         </div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+                <a class="nav-link text-white" href="./complemento_cadastro.php"> Complete o seu cadastro aqui. </a> 
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link text-white" href="./sair.php"> Sair </a>
             </li>
         </ul>
