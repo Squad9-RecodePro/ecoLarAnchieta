@@ -57,7 +57,7 @@
             <a class="navbar-brand" href="./index.php">
                 <img src="./assets/images/logopage.png" width="50%" title="Logo EcoLar">
             </a>
-            <a class="btn btn-outline-light" href="login_usuario.php">Entre ou Cadastre-se</a>
+            <a class="btn btn-outline-light" href="./login_usuario.php">Entre ou Cadastre-se</a>
         </div>
     </nav>
 

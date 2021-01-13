@@ -67,18 +67,21 @@ include_once('../../backend/servidor/conn.php');
 
           if ($result->rowCount() > 0) {
             //while ($rows = $result->fetch_assoc()) {
-            foreach($result->fetchAll(PDO::FETCH_ASSOC) as $rows){ 
+            foreach ($result->fetchAll(PDO::FETCH_ASSOC) as $rows) {
 
           ?>
               <!-- alterar o nome para titulo, imagem, descricao e nvagas -->
               <tr>
+
                 <th name="<?php echo $rows['id']; ?>" scope="row"><?php echo $rows["titulo"]; ?></th>
                 <td><?php echo $rows["imagem"]; ?></td>
                 <td><?php echo $rows["descricao"]; ?></td>
                 <td><?php echo $rows["nvagas"]; ?></td>
                 <td>
-                  <a class="btn btn-danger" href="../../backend/servidor/delete.php?id='<?php echo $rows['id']; ?>' ">Remover</a>
+
                   <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalAlterar">Alterar</button>
+                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalRemover">Remover</button>
+
                 </td>
               </tr>
           <?php
@@ -92,7 +95,7 @@ include_once('../../backend/servidor/conn.php');
       </table>
     </div>
   </main>
-   
+
 
   <script src="./assets/js/validacao_form.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -157,6 +160,29 @@ include_once('../../backend/servidor/conn.php');
             <button type="submit" class="btn btn-primary">Alterar</button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
           </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalRemover" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>Tem certeza que deseja remover?</h4>
+
+        <div class="modal-footer">
+          <a class="btn btn-success" href="../../backend/servidor/delete.php?id='<?php echo $rows['id']; ?>' ">Aceitar</a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Recusar</button>
+        </div>
         </form>
       </div>
 

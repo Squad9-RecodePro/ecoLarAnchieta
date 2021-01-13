@@ -62,17 +62,15 @@ include_once('../../backend/servidor/conn.php');
         //var_dump($result->fetch(PDO::FETCH_ASSOC)); 
         foreach($result->fetchAll(PDO::FETCH_ASSOC) as $rows){   
     ?>
-            <div class="container">
+            <div class="container mt-5 mb-5 w-50">
                 <div class="row">
-                    <div class="col-lg-12 md-6">
-                        <div class="card">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="card shadow-lg">
                             <div class="card-body">
                                 <img src="<?php echo $rows["imagem"]; ?>">
                                 <h5 class="card-title"><?php echo $rows["titulo"]; ?></h5>
                                 <p class="card-text">Descrição:</br><?php echo $rows["descricao"]; ?></p>
                                 <p class="card-text">N° de vagas: <?php echo $rows["nvagas"]; ?></p>
-
-
                             </div>
                         </div>
                     </div>

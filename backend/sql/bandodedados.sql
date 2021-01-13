@@ -15,7 +15,8 @@ CREATE TABLE moradores (
 
 
 CREATE TABLE moradores_complemento (
-	id int NOT NULL,
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	idMoradores int NOT NULL,
 	email varchar(30) NOT NULL,
   	renda varchar(100) NOT NULL,
   	profissao varchar(30),
@@ -28,10 +29,11 @@ CREATE TABLE moradores_complemento (
   	bairro varchar(50) DEFAULT 'Comunidade Anchieta',
   	cidade varchar(60) DEFAULT 'São Paulo',
   	cep varchar(20),
-  	uf char(2) DEFAULT 'SP'	
+  	uf char(2) DEFAULT 'SP',
+	FOREIGN KEY (idMoradores) REFERENCES moradores (id)
 );
 
-ALTER TABLE moradores_complemento ADD CONSTRAINT FK_ID FOREIGN KEY (id) REFERENCES moradores (id);
+SELECT * FROM moradores_complemento INNER JOIN moradores ON moradores.id = moradores_complemento.idMoradores;
 
 
 CREATE DATABASE ecocasa

@@ -67,6 +67,8 @@ if (!isset($_SESSION['email'])) {
                     foreach($result->fetchAll(PDO::FETCH_ASSOC) as $rows){
                         $i = $i + 1;
                     }
+                } else {
+                    $i = ("0");
                 }
             ?>
             <h1><?php echo $i?></h1>
