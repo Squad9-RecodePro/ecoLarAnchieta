@@ -6,25 +6,32 @@ default collate utf8_general_ci;
 
 CREATE TABLE moradores (
   
-  id int PRIMARY KEY AUTO_INCREMENT,
-  nome varchar(80) NOT NULL,
-  renda varchar(100) NOT NULL,
-  profissao varchar(30),
-  colaborar char(3),
-  qtd_moradores varchar(10),
-  telefone varchar(15),
-  endereco varchar(60) NOT NULL,
-  numero varchar(10),
-  complemento varchar(15),
-  bairro varchar(50) DEFAULT 'Comunidade Anchieta',
-  cidade varchar(60) DEFAULT 'São Paulo',
-  cep varchar(20),
-  uf char(2) DEFAULT 'SP',
-  email varchar(80) UNIQUE NOT NULL,
-  senha varchar(32) NOT NULL
+  	id int AUTO_INCREMENT,
+	nome varchar(80) NOT NULL,
+  	email varchar(80) UNIQUE NOT NULL,
+  	senha varchar(32) NOT NULL,
+	primary key (email)
 
 ) DEFAULT charset= utf8;
 
+
+CREATE TABLE moradoresComplemento (
+	id int AUTO_INCREMENT,
+	email varchar (80) UNIQUE NOT NULL,
+	foreign key(email) references moradores(email),
+  	renda varchar(100) NOT NULL,
+  	profissao varchar(30),
+  	colaborar char(3),
+  	qtd_moradores varchar(10),
+  	telefone varchar(15),
+  	endereco varchar(60) NOT NULL,
+  	numero varchar(10),
+  	complemento varchar(15),
+  	bairro varchar(50) DEFAULT 'Comunidade Anchieta',
+  	cidade varchar(60) DEFAULT 'São Paulo',
+  	cep varchar(20),
+  	uf char(2) DEFAULT 'SP'	
+);
 
 
 CREATE DATABASE ecocasa
