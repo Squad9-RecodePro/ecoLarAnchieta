@@ -16,7 +16,7 @@
     
     <main class="row container align-items-center justify-content-center m-auto" style="height: 100vh;">
         <div class="card border-0 col-lg-5 col-md-8 col-12 py-5">
-            <img src="./assets/images/logoadmin.png" width="100%" title="Logo EcoCasa">
+            <img src="./assets/images/logoadmin.png" width="100%" title="Logo EcoLar">
 
             <form action="../../backend/servidor/acesso_admin.php" method="POST">
             

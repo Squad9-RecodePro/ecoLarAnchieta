@@ -24,7 +24,7 @@ if (!isset($_SESSION['email'])) {
     <nav class="navbar navbar-expand-lg navbar-light shadow" id="menu">
         <div class="container">
             <a class="navbar-brand" href="./home_admin.php">
-                <img src="./assets/images/logopage.png" width="50%" title="Logo EcoCasa">
+                <img src="./assets/images/logopage.png" width="50%" title="Logo EcoLar">
             </a>
             <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

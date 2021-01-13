@@ -55,7 +55,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow" id="menu">
         <div class="container">
             <a class="navbar-brand" href="./index.php">
-                <img src="./assets/images/logopage.png" width="50%" title="Logo EcoCasa">
+                <img src="./assets/images/logopage.png" width="50%" title="Logo EcoLar">
             </a>
             <a class="btn btn-outline-light" href="login_usuario.php">Entre ou Cadastre-se</a>
         </div>
