@@ -7,7 +7,7 @@
 </head>
 <body>
     <form id="form-cadastro" onsubmit="return validateForm(event)" action="../../backend/servidor/acesso_complemento_cadastro.php" method="post">
-
+        <input type="email" id="email" name="email" class="form-control mt-4" placeholder="Digite o seu email" required />
         <input type="text" id="renda" name="renda" class="form-control mt-4" placeholder="Digite a renda de sua familia" required />
         <input type="text" id="profissao" name="profissao" class="form-control mt-3" placeholder="digite sua profissão" required />
         <input type="text" id="colaborar" name="colaborar" class="form-control mt-3" placeholder="confirme se gostaria de colaborar" required />
