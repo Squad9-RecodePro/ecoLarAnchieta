@@ -5,20 +5,18 @@ default character set utf8
 default collate utf8_general_ci;
 
 CREATE TABLE moradores (
-  
-  	id int AUTO_INCREMENT,
+  	id int AUTO_INCREMENT NOT NULL,
 	nome varchar(80) NOT NULL,
-  	email varchar(80) UNIQUE NOT NULL,
+  	email varchar(80) NOT NULL,
   	senha varchar(32) NOT NULL,
-	primary key (email)
+	primary key (id)
 
 ) DEFAULT charset= utf8;
 
 
-CREATE TABLE moradoresComplemento (
-	id int AUTO_INCREMENT,
-	email varchar (80) UNIQUE NOT NULL,
-	foreign key(email) references moradores(email),
+CREATE TABLE moradores_complemento (
+	id int NOT NULL,
+	email varchar(30) NOT NULL,
   	renda varchar(100) NOT NULL,
   	profissao varchar(30),
   	colaborar char(3),
@@ -32,6 +30,8 @@ CREATE TABLE moradoresComplemento (
   	cep varchar(20),
   	uf char(2) DEFAULT 'SP'	
 );
+
+ALTER TABLE moradores_complemento ADD CONSTRAINT FK_ID FOREIGN KEY (id) REFERENCES moradores (id);
 
 
 CREATE DATABASE ecocasa
