@@ -29,13 +29,7 @@
         </div>
     </div>
     <div class="container ">
-        <div class=" mt-lg-5 mt-5">
-            <h2 class="text-center text-dark">O Projeto</h2>
-            <p class="pt-4 text-center">
-               texto sobre nosso projeto
-            </p>
-            
-        </div>
+
         <div class=" mt-lg-5 mt-5">
             <h2 class="text-center text-dark">O que você conhece das ocupações por moradia?</h2>
             <p class="pt-4 text-center">
@@ -51,32 +45,52 @@
                 <u><i>fala de um morador da ocupação.</i></u>
             </p>
         </div>
+        <div class=" mt-lg-5 mt-5">
+            <h2 class=" text-dark">O Projeto</h2>
+            <p class="pt-4 ">
+                texto sobre nosso projeto
+            </p>
+
+        </div>
     </div>
-    <section class="m-auto">
+    <section class="m-auto statistics-section">
         <h2 class="text-center mt-5 statistics">ESTATÍSTICAS</h2>
-        <h4 class="text-center text-dark mt-5">A ocupação em números</h4>
+        <h3 class="text-center text-dark mt-1">A ocupação em números</h3>
         <div class="row container mx-auto py-5 px-0">
             <div class="col-md-4 col-12 my-5">
-                <h2 class="text-center">70%</h2>
+                <h2 class="text-center statistics-value">1100 +</h2>
                 <p class="text-center">
-                    dos trabalhadores perderam os seus
-                    empregos por conta da Pandemia
+                    familias moram no local.
                 </p>
             </div>
 
             <div class="col-md-4 col-12 my-5">
-                <h2 class="text-center">R$1.045,00</h2>
+                <h2 class="text-center statistics-value">770 +</h2>
                 <p class="text-center">
-                    muitos vivem com menos de um salário<br>
-                    mínimo
+                    perderam o trabalho na </br>
+                    pandemia.
                 </p>
             </div>
 
             <div class="col-md-4 col-12 my-5">
-                <h2 class="text-center">1100 Familias</h2>
+                <h2 class="text-center statistics-value">779 +</h2>
                 <p class="text-center">
-                    é o número de familias que vivem nessa
-                    ocupação<br>em extrema pobreza
+                    são moradores com menos </br>
+                    de 12 anos.
+                </p>
+            </div>
+            <div class="col-md-6 col-12 my-5">
+                <h2 class="text-center statistics-value">252 +</h2>
+                <p class="text-center">
+                    são moradores com mais</br>
+                    de 60 anos.
+                </p>
+            </div>
+            <div class="col-md-6 col-12 my-5">
+                <h2 class="text-center statistics-value">115 +</h2>
+                <p class="text-center">
+                    são moradores que possuem</br>
+                    alguma deficiencia.
                 </p>
             </div>
             <p class="pt-3 text-right">
@@ -85,29 +99,29 @@
         </div>
         <div class="container-devs">
             <h2>Desenvolvedores</h2>
-            <div class="col-12 teste mt-3">
+            <div class="col-12 teste mt-5">
                 <div class="cardDev">
                     <img src="./assets/images/devs/edson.jpeg" alt="..." class="rounded-circle">
                     <h4>Edson</h4>
                     <div class="social">
-                        <a href="google.com" alt="">teste</a>
-                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="cardDev">
                     <img src="./assets/images/devs/elnatan.jpeg" alt="..." class="rounded-circle">
                     <h4>Elnatan</h4>
                     <div class="social">
-                        <a href="google.com" alt="">teste</a>
-                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="cardDev">
                     <img src="./assets/images/devs/frederico.jpeg" alt="..." class="rounded-circle">
                     <h4>Frederico</h4>
                     <div class="social">
-                        <a href="google.com" alt="">teste</a>
-                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -116,24 +130,24 @@
                     <img src="./assets/images/devs/gustavo.jpeg" alt="..." class="rounded-circle">
                     <h4>Gustavo</h4>
                     <div class="social">
-                        <a href="google.com" alt="">teste</a>
-                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="cardDev">
                     <img src="./assets/images/devs/taina.jpeg" alt="..." class="rounded-circle">
                     <h4>Taina</h4>
                     <div class="social">
-                        <a href="google.com" alt="">teste</a>
-                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="cardDev">
                     <img src="./assets/images/devs/thamirez.jpeg" alt="..." class="rounded-circle">
                     <h4>Thamirez</h4>
                     <div class="social">
-                        <a href="google.com" alt="">teste</a>
-                        <a href="google.com" alt="">teste</a>
+                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -150,6 +164,7 @@
 
 
     <script src="./js/validacao_form.js"></script>
+    <script src="https://kit.fontawesome.com/5768a690e2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>

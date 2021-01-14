@@ -1,9 +1,7 @@
-
-
 .photos {
     width: 100vw!important;
     height: 80vh;
-    display:flex;
+    display: flex;
     align-items: flex-end;
     background-image: url(./assets/images/imgcarousel1.jpg);
     background-size: cover;
@@ -13,31 +11,39 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     float: right;
-    
 }
-.statistics{
-    color:  #24487994 !important;
+
+.statistics {
+    color: #12b87b6c !important;
     font-size: 62px !important;
-    
+}
+
+.statistics-value {
+    color: #1C3079 !important;
 }
 
 .btn-index:nth-child(1) {
     background-color: #000000a2 !important;
     color: #fff;
-    margin:0px 0px 100px 200px;
-    
+    margin: 0px 0px 100px 200px;
 }
+
 .btn-index:nth-child(2) {
     background-color: #244879 !important;
     color: #fff;
-    margin:0px 0px 100px 20px;
-    
+    margin: 0px 0px 100px 20px;
 }
 
 .container-devs {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+}
+
+.container-devs h2 {
+    color: #12b87b6c !important;
+    font-size: 48px !important;
 }
 
 .teste {
