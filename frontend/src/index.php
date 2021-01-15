@@ -20,24 +20,35 @@
                 <img src="./assets/images/logopage.png" width="50%" title="Logo EcoLar">
             </a>
 
-        </div>
-    </nav>
-    <div class="mask-photos">
-        <div class="container-fluid photos">
-            <a class="btn btn-lg btn-outline-light btn-index" href="./cadastro_usuario.php">Cadastrar</a>
-            <a class="btn btn-lg btn-index" href="./login_usuario.php">Entrar</a>
-        </div>
-    </div>
-    <div class="container ">
 
-        <div class=" mt-lg-5 mt-5">
+        </div>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./cadastro_usuario.php">Cadastrar</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./login_usuario.php"> Entrar</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <div class="mask-photos">
+        <div class="container-fluid photos">
+
+        </div>
+    </div> -->
+
+
+    <div class="container">
+
+        <div class="col-lg-12 mt-5 container-moradia-descricao">
             <h2 class="text-center text-dark">O que você conhece das ocupações por moradia?</h2>
-            <p class="pt-4 text-center">
+            <p class="pt-4 ">
                 Sempre vemos na televisão o momento em que a polícia invade o terreno com violência e as máquinas
                 já estão lá fazendo o ‘serviço’ de Reintegração de Posse, a mando da Prefeitura.
                 Mas o que vem antes? Às vezes vemos e não nos perguntamos por que as pessoas vivem lá e como vivem.
             </p>
-            <p class="pt-3 text-center">
+            <p class="pt-3 ">
                 “Estamos aqui pelo nosso direito a ter onde morar, onde viver, quem agora vive nesse terreno são famílias,
                 muitas com crianças, que não teriam outro lugar para morar”
             </p>
@@ -45,10 +56,67 @@
                 <u><i>fala de um morador da ocupação.</i></u>
             </p>
         </div>
-        <div class=" mt-lg-5 mt-5">
-            <h2 class=" text-dark">O Projeto</h2>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../src/assets/images/imgcarousel1.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                        <span>Fotos retiradas em uma das nossas visitas até o local</span>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../src/assets/images/imgcarousel2.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                        <span>Fotos retiradas em uma das nossas  visitas até o local</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../src/assets/images/imgcarousel3.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                        <span>Fotos retiradas em uma das nossas  visitas até o local</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../src/assets/images/imgcarousel4.jpeg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                        <span>Fotos retiradas em uma das nossas visitas até o local</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../src/assets/images/imgcarousel5.jpeg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                        <span>Fotos retiradas em uma das nossas visitas até o local</span>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <div class=" col-lg-12 mt-5 container-proj-descricao">
+            <h2 class=" text-center text-dark ">O Projeto</h2>
             <p class="pt-4 ">
-                texto sobre nosso projeto
+                Começamos com o intuito de simplesmente apresentar um projeto social para conseguir alcançar nossos objetivos.Não tínhamos conhecido a comunidade, as pessoas, mas a vontade de ajudar se tornou maior então pensamos em ajudar, mas como ajudar um problema que é tão complexo.</br>
+                Com o tempo e os primeiros contatos, tivemos uma virada 360°, conhecemos a realidade dos moradores e da precariedade da ocupação.
+                Moradias com pouca ou nenhuma estrutura, crianças e adolescentes em meio a situações de risco, idosos sem apoio, pais e mães sem sustento diário.
+                Muitos questionamentos e dúvidas de como poderíamos fazer a diferença naquela comunidade.O que 6 estudantes que acabaram de se conhecer poderiam fazer para ajudar no que se foi proposto?</br>
+                Pensamos, conversamos com os moradores, conversamos com vários líderes, amigos e parceiros.
+                Ao ter ciência de fato que o problema era ainda maior do que imaginamos, percebemos que não íamos conseguir resolver o problema como um todo, mas que poderíamos ajudar a amenizar a situação.
+                Pensando nisso, resolvemos criar uma plataforma onde eles conseguiriam  se organizar para ver dentro daquela realidade quais pessoas iriam ser priorizadas de uma forma justa, analisando quantidade de moradores por residência, renda... 
+                Com qual intuito seria feito essa análise? Sendo um grupo de estudantes e sem dinheiro, a própria comunidade nos sugeriu que uma máquina de tijolos já mudaria a realidade deles,</br>
+                sugerimos a arrecadação de dinheiro dividido por pela quantidade de famílias no local. A Plataforma irá funcionar básicamente como controle de moradores,pedidos de ajuda e o cadastro para verificar quem será priorizado e a partir daí a comunidade irá se unir</br>
+                em multirões para se ajudarem mutuamente através de doações de tempo e dedicação com o outro para que quando chegar sua vez receba dessa mesma forma. Pode parecer pequena essa iniciativa, mas é um ponto inicial e sabemos que não vai resolver tudo que essas pessoas precisam, mas acreditamos que podemos fazer a diferença.Se ao menos uma pessoa for beneficiada por nossa iniciativa, já ajudamos a transformação daquela comunidade.
             </p>
 
         </div>
@@ -58,7 +126,7 @@
         <h3 class="text-center text-dark mt-1">A ocupação em números</h3>
         <div class="row container mx-auto py-5 px-0">
             <div class="col-md-4 col-12 my-5">
-                <h2 class="text-center statistics-value">1100 +</h2>
+                <h2 class="text-center statistics-value value1">1100 +</h2>
                 <p class="text-center">
                     familias moram no local.
                 </p>
@@ -102,7 +170,7 @@
             <div class="col-12 teste mt-5">
                 <div class="cardDev">
                     <img src="./assets/images/devs/edson.jpeg" alt="..." class="rounded-circle">
-                    <h4>Edson</h4>
+                    <h4 class=" text-center text-dark mt-3">Edson Oliveira</h4>
                     <div class="social">
                         <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
                         <a href="google.com" alt=""><i class="fab fa-github"></i></a>
@@ -110,7 +178,7 @@
                 </div>
                 <div class="cardDev">
                     <img src="./assets/images/devs/elnatan.jpeg" alt="..." class="rounded-circle">
-                    <h4>Elnatan</h4>
+                    <h4 class=" text-center text-dark mt-3">Elnatan Souza</h4>
                     <div class="social">
                         <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
                         <a href="google.com" alt=""><i class="fab fa-github"></i></a>
@@ -118,7 +186,7 @@
                 </div>
                 <div class="cardDev">
                     <img src="./assets/images/devs/frederico.jpeg" alt="..." class="rounded-circle">
-                    <h4>Frederico</h4>
+                    <h4 class=" text-center text-dark mt-3">Frederico Reid</h4>
                     <div class="social">
                         <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
                         <a href="google.com" alt=""><i class="fab fa-github"></i></a>
@@ -128,7 +196,7 @@
             <div class="col-12 teste2 my-3">
                 <div class="cardDev">
                     <img src="./assets/images/devs/gustavo.jpeg" alt="..." class="rounded-circle">
-                    <h4>Gustavo</h4>
+                    <h4 class=" text-center text-dark mt-3">Gustavo Cavalcante</h4>
                     <div class="social">
                         <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
                         <a href="google.com" alt=""><i class="fab fa-github"></i></a>
@@ -136,7 +204,7 @@
                 </div>
                 <div class="cardDev">
                     <img src="./assets/images/devs/taina.jpeg" alt="..." class="rounded-circle">
-                    <h4>Taina</h4>
+                    <h4 class=" text-center text-dark mt-3 ">Tainá Ferreira</h4>
                     <div class="social">
                         <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
                         <a href="google.com" alt=""><i class="fab fa-github"></i></a>
@@ -144,7 +212,7 @@
                 </div>
                 <div class="cardDev">
                     <img src="./assets/images/devs/thamirez.jpeg" alt="..." class="rounded-circle">
-                    <h4>Thamirez</h4>
+                    <h4 class=" text-center text-dark mt-3">Thamirez Bastos</h4>
                     <div class="social">
                         <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
                         <a href="google.com" alt=""><i class="fab fa-github"></i></a>

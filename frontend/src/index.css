@@ -13,25 +13,32 @@
     float: right;
 }
 
+.container-proj-descricao h2 {
+    color: #244879 !important;
+    font-size: 48px;
+}
+
+.container-moradia-descricao h2 {
+    color: #244879 !important;
+    font-size: 32px;
+}
+
+.statistics-section {
+    color: #fff;
+    background-color: #244879 !important;
+}
+
+.statistics-section h3 {
+    color: #fff !important;
+}
+
 .statistics {
-    color: #12b87b6c !important;
+    color: #ffffff !important;
     font-size: 62px !important;
 }
 
 .statistics-value {
-    color: #1C3079 !important;
-}
-
-.btn-index:nth-child(1) {
-    background-color: #000000a2 !important;
-    color: #fff;
-    margin: 0px 0px 100px 200px;
-}
-
-.btn-index:nth-child(2) {
-    background-color: #244879 !important;
-    color: #fff;
-    margin: 0px 0px 100px 20px;
+    color: #ffffffc9 !important;
 }
 
 .container-devs {
@@ -42,7 +49,7 @@
 }
 
 .container-devs h2 {
-    color: #12b87b6c !important;
+    color: #244879 !important;
     font-size: 48px !important;
 }
 
