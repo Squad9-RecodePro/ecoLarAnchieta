@@ -16,8 +16,7 @@ CREATE TABLE moradores (
 
 CREATE TABLE moradores_complemento (
 	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	idMoradores int NOT NULL,
-	email varchar(30) NOT NULL,
+	idMoradores int NOT NULL UNIQUE,
   	renda varchar(100) NOT NULL,
   	profissao varchar(30),
   	colaborar char(3),
