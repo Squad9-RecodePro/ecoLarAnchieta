@@ -56,7 +56,7 @@ include_once('../../backend/servidor/conn.php');
                 </thead>
                 <tbody>
                     <?php
-                    $sql = "SELECT * FROM moradores";
+                    $sql = "SELECT m.id as id_moradores, m.nome, m.email, mc.id as id_moradores_complemento, mc.renda, mc.profissao, mc.colaborar, mc.qtd_moradores, mc.telefone, mc.endereco, mc.numero, mc.complemento, mc.bairro, mc.cidade, mc.cep, mc.uf FROM moradores m left join moradores_complemento mc on m.id = mc.idMoradores";
                     // tem que ser o select from moradores
                     $result = $conn->query($sql);
 
@@ -66,11 +66,23 @@ include_once('../../backend/servidor/conn.php');
                     ?>
                             <!-- os valores precisam ser id, nome, email -->
                             <tr>
-                                <th name="<?php echo $rows['id']; ?>" scope="row"><?php echo $rows["id"]; ?></th>
-                                <td><?php echo $rows["nome"]; ?></td>
-                                <td><?php echo $rows["email"]; ?></td>
+                                <th name="<?php echo $rows['id_moradores']; ?>" scope="row"><?php echo $rows['id_moradores']; ?></th>
+                                    <td><?php echo $rows['nome']; ?></td>
+                                    <td><?php echo $rows["email"]; ?></td>
+                                    <td><?php echo $rows["renda"]; ?></td>
+                                    <td><?php echo $rows["profissao"]; ?></td>
+                                    <td><?php echo $rows["colaborar"]; ?></td>
+                                    <td><?php echo $rows["qtd_moradores"]; ?></td>
+                                    <td><?php echo $rows["telefone"]; ?></td>
+                                    <td><?php echo $rows["endereco"]; ?></td>
+                                    <td><?php echo $rows["numero"]; ?></td>
+                                    <td><?php echo $rows["complemento"]; ?></td>
+                                    <td><?php echo $rows["bairro"]; ?></td>
+                                    <td><?php echo $rows["cidade"]; ?></td>
+                                    <td><?php echo $rows["cep"]; ?></td>
+                                    <td><?php echo $rows["uf"]; ?></td>
                                 <td>
-                                    <a class="btn btn-danger" href="../../backend/servidor/deletemoradores.php?id='<?php echo $rows['id']; ?>' ">Remover</a>
+                                    <a class="btn btn-danger" href="../../backend/servidor/deletemoradores.php?id='<?php echo $rows['id_moradores']; ?>' ">Remover</a>
                                     <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalAlterar">Alterar</button>
                                 </td>
                             </tr>
