@@ -1,5 +1,6 @@
 <?php
-
+// Sessão iniciada!
+session_start();
 $email = $_POST['email'];
 $renda = $_POST['renda'];
 $profissao = $_POST['profissao'];
@@ -20,29 +21,38 @@ if (strlen($telefone) > 10 && strlen($cidade) > 3 ) {
  
     include_once('./conn.php');
 
-    $sql = "SELECT * FROM moradores_complemento WHERE email = $email";
+    //$sql = "SELECT * FROM moradores WHERE email = '$email'";
 
-    $resultadoConsulta = $conn->query($sql);
+    //$resultadoConsulta = $conn->query($sql);
+    //echo gettype ($resultadoConsulta) . "<br>";
 
-    $moradores = $resultadoConsulta->fetch(PDO::FETCH_ASSOC);
+    //$moradores = $resultadoConsulta->fetch(PDO::FETCH_ASSOC);
             
-    $_SESSION['email'] = $moradores['email'];
+    //$_SESSION['id'] = $moradores['id'];
+    //$_SESSION['idMoradores'] = $moradores['id'];
     
-    
+    $idMoradores=$_SESSION['idMoradores'];
+
+    $sql1 = "REPLACE INTO moradores_complemento (idMoradores, renda, profissao, colaborar, qtd_moradores, telefone, endereco, numero, complemento, bairro, cidade, cep, uf)
+    VALUES ($idMoradores, '$renda', '$profissao', '$colaborar', '$qtd_moradores', '$telefone', '$endereco', '$numero', '$complemento', '$bairro', '$cidade', '$cep', '$uf')"; 
+
+    $conn->query($sql1);
+
     echo "<script>
-            alert('Seu cadastro já está completo, não é necessário inserir novas informações!')
-            window.location.href = '../../frontend/src/home_usuario.php'      
-        </script>";
+    alert('Cadastro efetuado com sucesso!')
+    window.location.href = '../../frontend/src/home_usuario.php'      
+    </script>"; 
+
+    
 
 }   
 
 else{
-    $sql1 = "INSERT INTO moradores_complemento (email, renda, profissao, colaborar, qtd_moradores, telefone, endereco, numero, complemento, bairro, cidade, cep, uf)
-    VALUES ('$email', '$renda', '$profissao', '$colaborar', '$qtd_moradores', '$telefone', '$endereco', '$numero', '$complemento', '$bairro', '$cidade', '$cep', '$uf')"; 
+    
+     echo "<script>
+             alert('!')
+             window.location.href = '../../frontend/src/home_usuario.php'      
+         </script>";
 
-    echo "<script>
-            alert('Cadastro efetuado com sucesso!')
-            window.location.href = '../../frontend/src/home_usuario.php'      
-        </script>";
 }
 
