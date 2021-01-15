@@ -27,6 +27,7 @@ if (strlen($email) > 3 && strlen($senha) > 3) {
     $_SESSION['nome'] = $moradores['nome'];
     $_SESSION['email'] = $moradores['email'];
     $_SESSION['senha'] = $moradores['senha'];
+    $_SESSION['id'] = $moradores['id'];
     
     // Redirecionado para a pagina de user
     header('Location: ../../frontend/src/home_usuario.php');
