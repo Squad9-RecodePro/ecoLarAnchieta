@@ -1,10 +1,10 @@
 <h1>Projeto em desenvolvimento pelo Squad9-SP1 como proposta do curso de FullStack da RecodePro (2020)</h1>
 
-<h3>Tema Moradia - :house_with_garden: Aplicação EcoCasa</h3>
+<h3>Tema Moradia - :house_with_garden: Aplicação EcoLar Anchieta</h3>
 
 💻 Um pouco sobre o projeto
 
-<h2>ECOCASA</h2>
+<h2>ECOLAR ANCHIETA</h2>
 
 :deciduous_tree: :earth_americas: Ecocasa
 A plataforma tem como objetivo inicial viabilizar uma ferramenta tecnologica para cadastro dos moradores da ocupação anchieta,

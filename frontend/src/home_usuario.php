@@ -35,7 +35,7 @@ include_once('../../backend/servidor/conn.php');
         </div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-white" href="./complemento_cadastro.php"> Complete o seu cadastro aqui. </a> 
+                <a class="nav-link text-white" href="./complemento_cadastro.php"> Complete o seu cadastro aqui. </a>
             </li>
 
             <li class="nav-item">
@@ -60,7 +60,7 @@ include_once('../../backend/servidor/conn.php');
         // while ($rows = $result->fetch(PDO::FETCH_ASSOC)) {
         // while ($rows = $result->fetch_assoc()) {
         //var_dump($result->fetch(PDO::FETCH_ASSOC)); 
-        foreach($result->fetchAll(PDO::FETCH_ASSOC) as $rows){   
+        foreach ($result->fetchAll(PDO::FETCH_ASSOC) as $rows) {
     ?>
             <div class="container mt-5 mb-5 w-50">
                 <div class="row">
@@ -76,20 +76,20 @@ include_once('../../backend/servidor/conn.php');
                     </div>
                 </div>
             </div>
-            <?php
+        <?php
         }
-    }  else { ?>
-        
-    <div class="alert alert-primary" role="alert">
-  <h4 class="alert-heading">Oops!</h4>
-  <p>Ainda não temos nenhuma vaga de voluntariado para se cadastrar.</p>
-  <hr>
-  <p class="mb-0">Obrigado, fique atento pois futuramente poderá surgir novas vagas!</p>
-</div>
-  <?php  } ?>
-    
-    
-    
+    } else { ?>
+
+        <div class="alert alert-primary" role="alert">
+            <h4 class="alert-heading">Oops!</h4>
+            <p>Ainda não temos nenhuma vaga de voluntariado para se cadastrar.</p>
+            <hr>
+            <p class="mb-0">Obrigado, fique atento pois futuramente poderá surgir novas vagas!</p>
+        </div>
+    <?php  } ?>
+
+
+
     <script src="./assets/js/anima-num.js"></script>
     <script src="./js/validacao_form.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
