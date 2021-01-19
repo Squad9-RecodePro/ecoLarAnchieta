@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light shadow" id="menu">
+    <nav class="navbar navbar-expand-lg navbar-light shadow nav-menu" id="menu">
         <div class="container">
             <a class="navbar-brand" href="./index.php">
                 <img src="./assets/images/logopage.png" width="50%" title="Logo EcoLar">
@@ -22,7 +22,7 @@
 
 
         </div>
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto nav-menu-btn">
             <li class="nav-item">
                 <a class="nav-link text-white" href="./cadastro_usuario.php">Cadastrar</a>
             </li>
@@ -61,7 +61,7 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="../src/assets/images/imgcarousel1.jpg" alt="Primeiro Slide">
                     <div class="carousel-caption d-none d-md-block">
-                        
+
                         <span>Fotos retiradas em uma das nossas visitas até o local</span>
 
                     </div>
@@ -69,28 +69,28 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="../src/assets/images/imgcarousel2.jpg" alt="Segundo Slide">
                     <div class="carousel-caption d-none d-md-block">
-                       
-                        <span>Fotos retiradas em uma das nossas  visitas até o local</span>
+
+                        <span>Fotos retiradas em uma das nossas visitas até o local</span>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="../src/assets/images/imgcarousel3.jpg" alt="Terceiro Slide">
                     <div class="carousel-caption d-none d-md-block">
-                       
-                        <span>Fotos retiradas em uma das nossas  visitas até o local</span>
+
+                        <span>Fotos retiradas em uma das nossas visitas até o local</span>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="../src/assets/images/imgcarousel4.jpeg" alt="Terceiro Slide">
                     <div class="carousel-caption d-none d-md-block">
-                        
+
                         <span>Fotos retiradas em uma das nossas visitas até o local</span>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="../src/assets/images/imgcarousel5.jpeg" alt="Terceiro Slide">
                     <div class="carousel-caption d-none d-md-block">
-                        
+
                         <span>Fotos retiradas em uma das nossas visitas até o local</span>
                     </div>
                 </div>
@@ -125,14 +125,14 @@
         <h2 class="text-center mt-5 statistics">ESTATÍSTICAS</h2>
         <h3 class="text-center text-dark mt-1">A ocupação em números</h3>
         <div class="row container mx-auto py-5 px-0">
-            <div class="col-md-4 col-12 my-5">
-                <h2 class="text-center statistics-value value1">1100 +</h2>
+            <div class="col-md-4 col-12 my-5 statistics-card">
+                <h2 class="text-center statistics-value">1100 +</h2>
                 <p class="text-center">
                     familias moram no local.
                 </p>
             </div>
 
-            <div class="col-md-4 col-12 my-5">
+            <div class="col-md-4 col-12 my-5 statistics-card">
                 <h2 class="text-center statistics-value">770 +</h2>
                 <p class="text-center">
                     perderam o trabalho na </br>
@@ -140,87 +140,88 @@
                 </p>
             </div>
 
-            <div class="col-md-4 col-12 my-5">
+            <div class="col-md-4 col-12 my-5 statistics-card">
                 <h2 class="text-center statistics-value">779 +</h2>
                 <p class="text-center">
                     são moradores com menos </br>
                     de 12 anos.
                 </p>
             </div>
-            <div class="col-md-6 col-12 my-5">
+            <div class="col-md-6 col-12 my-5 statistics-card">
                 <h2 class="text-center statistics-value">252 +</h2>
                 <p class="text-center">
                     são moradores com mais</br>
                     de 60 anos.
                 </p>
             </div>
-            <div class="col-md-6 col-12 my-5">
+            <div class="col-md-6 col-12 my-5 statistics-card">
                 <h2 class="text-center statistics-value">115 +</h2>
                 <p class="text-center">
                     são moradores que possuem</br>
                     alguma deficiencia.
                 </p>
             </div>
-            <p class="pt-3 text-right">
+            <p class="pt-3  ml-3 mt-2 text-right ">
                 <u><i>Informações cedidas pela organização Anchieta.</i></u>
             </p>
         </div>
-        <div class="container-devs">
-            <h2>Desenvolvedores</h2>
-            <div class="col-12 teste mt-5">
-                <div class="cardDev">
-                    <img src="./assets/images/devs/edson.jpeg" alt="..." class="rounded-circle">
-                    <h4 class=" text-center text-dark mt-3">Edson Oliveira</h4>
-                    <div class="social">
-                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="cardDev">
-                    <img src="./assets/images/devs/elnatan.jpeg" alt="..." class="rounded-circle">
-                    <h4 class=" text-center text-dark mt-3">Elnatan Souza</h4>
-                    <div class="social">
-                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="cardDev">
-                    <img src="./assets/images/devs/frederico.jpeg" alt="..." class="rounded-circle">
-                    <h4 class=" text-center text-dark mt-3">Frederico Reid</h4>
-                    <div class="social">
-                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
-                    </div>
+    </section>
+    <div class="container-devs">
+        <h2>Desenvolvedores</h2>
+        <div class="col-lg-12 teste mt-5">
+            <div class="cardDev mt-2">
+                <img src="./assets/images/devs/edson.jpeg" alt="..." class="rounded-circle">
+                <h4 class=" text-center text-dark mt-3 namedev">Edson Oliveira</h4>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/edson-oliver" alt=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/EdsonOliveiraSilva" alt=""><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <div class="col-12 teste2 my-3">
-                <div class="cardDev">
-                    <img src="./assets/images/devs/gustavo.jpeg" alt="..." class="rounded-circle">
-                    <h4 class=" text-center text-dark mt-3">Gustavo Cavalcante</h4>
-                    <div class="social">
-                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
-                    </div>
+            <div class="cardDev mt-2">
+                <img src="./assets/images/devs/elnatan.jpeg" alt="..." class="rounded-circle">
+                <h4 class=" text-center text-dark mt-3 namedev">Elnatan Souza</h4>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/elnatan-souza-5ba191193/" alt=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ElnatanSouza" alt=""><i class="fab fa-github"></i></a>
                 </div>
-                <div class="cardDev">
-                    <img src="./assets/images/devs/taina.jpeg" alt="..." class="rounded-circle">
-                    <h4 class=" text-center text-dark mt-3 ">Tainá Ferreira</h4>
-                    <div class="social">
-                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="cardDev">
-                    <img src="./assets/images/devs/thamirez.jpeg" alt="..." class="rounded-circle">
-                    <h4 class=" text-center text-dark mt-3">Thamirez Bastos</h4>
-                    <div class="social">
-                        <a href="google.com" alt=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href="google.com" alt=""><i class="fab fa-github"></i></a>
-                    </div>
+            </div>
+            <div class="cardDev mt-2">
+                <img src="./assets/images/devs/frederico.jpeg" alt="..." class="rounded-circle">
+                <h4 class=" text-center text-dark mt-3 namedev">Frederico Reid</h4>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/frederico-reid-649601180" alt=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.github.com/FredericoReid" alt=""><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="col-lg-12 teste2 mt-3 mb-3">
+            <div class="cardDev mt-2">
+                <img src="./assets/images/devs/gustavo.jpeg" alt="..." class="rounded-circle">
+                <h4 class=" text-center text-dark mt-3 namedev">Gustavo Cavalcante</h4>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/gustavocavalcant" alt=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/GustavoCavalcant" alt=""><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="cardDev mt-2">
+                <img src="./assets/images/devs/taina.jpeg" alt="..." class="rounded-circle">
+                <h4 class=" text-center text-dark mt-3 namedev">Tainá Ferreira</h4>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/tainafrodrigues/" alt=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Taina-Ferreira" alt=""><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="cardDev mt-2">
+                <img src="./assets/images/devs/thamirez.jpeg" alt="..." class="rounded-circle">
+                <h4 class=" text-center text-dark mt-3 namedev">Thamirez Bastos</h4>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/thamirez-bastos-siqueira-b45698161/" alt=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ThamirezBastos" alt=""><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-copyright text-center py-3 border shadow">&copy; Copyright: 2020. Todos os direitos Reservados <br /> Criado com <img draggable="false" class="emoji" alt=":heart:" src="https://s.w.org/images/core/emoji/11.2.0/svg/2764.svg" width="12px"> pelo <b>Squad
                 9</b>. Para o <a href="https://www.recodepro.org.br/">Recode Pro</a>.

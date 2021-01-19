@@ -102,21 +102,48 @@
     }
 }
 
-/* @media (min-width: 576px) {
-    ...
+@media (max-width: 576px) {
+    .nav-menu {
+        height: 15vh;
+    }
+    
+    .nav-menu-btn {
+        display: flex!important;
+        flex-direction: row !important;
+    }
+    .nav-menu-btn li {
+       margin: 0px 6px 0px 6px;
+       
+    }
+    .statistics {
+        font-size: 48px !important;
+    }
+    .statistics-section {
+        width: 100vw;
+    }
+    .statistics-card {
+        height: 5vh;
+    }
+    .statistics-value {
+        padding: 0;
+    }
+    .cardDev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .teste {
+        justify-content: center;
+    }
+    .teste2 {
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    .namedev {
+        font-size: 18px;
+    }
+    .container-devs h2 {
+        color: #244879 !important;
+        font-size: 32px !important;
+    }
 }
-
-// Dispositivos médios (tablets com 768px ou mais)
-@media (min-width: 768px) {
-    ...
-}
-
-// Dispositivos large (desktops com 992px ou mais)
-@media (min-width: 992px) {
-    ...
-}
-
-// Dispositivos extra large (desktops grandes com 1200px ou mais)
-@media (min-width: 1200px) {
-    ...
-} */
