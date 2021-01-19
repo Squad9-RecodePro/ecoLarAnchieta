@@ -121,19 +121,19 @@
 
         </div>
     </div>
-    <section class="m-auto statistics-section">
+    <section class="m-auto statistics-section" data-anime="scroll">
         <h2 class="text-center mt-5 statistics">ESTATÍSTICAS</h2>
         <h3 class="text-center text-dark mt-1">A ocupação em números</h3>
         <div class="row container mx-auto py-5 px-0">
             <div class="col-md-4 col-12 my-5">
-                <h2 class="text-center statistics-value value1">1100 +</h2>
+                <h2 class="text-center statistics-value value1">1100</h2>
                 <p class="text-center">
                     familias moram no local.
                 </p>
             </div>
 
             <div class="col-md-4 col-12 my-5">
-                <h2 class="text-center statistics-value">770 +</h2>
+                <h2 class="text-center statistics-value">770</h2>
                 <p class="text-center">
                     perderam o trabalho na </br>
                     pandemia.
@@ -141,21 +141,21 @@
             </div>
 
             <div class="col-md-4 col-12 my-5">
-                <h2 class="text-center statistics-value">779 +</h2>
+                <h2 class="text-center statistics-value">779</h2>                
                 <p class="text-center">
                     são moradores com menos </br>
                     de 12 anos.
                 </p>
             </div>
             <div class="col-md-6 col-12 my-5">
-                <h2 class="text-center statistics-value">252 +</h2>
+                <h2 class="text-center statistics-value">252</h2>                
                 <p class="text-center">
                     são moradores com mais</br>
                     de 60 anos.
                 </p>
             </div>
             <div class="col-md-6 col-12 my-5">
-                <h2 class="text-center statistics-value">115 +</h2>
+                <h2 class="text-center statistics-value">115</h2>                
                 <p class="text-center">
                     são moradores que possuem</br>
                     alguma deficiencia.
@@ -231,6 +231,7 @@
 
 
 
+    <script src="./assets/js/anima-num.js"></script>
     <script src="./js/validacao_form.js"></script>
     <script src="https://kit.fontawesome.com/5768a690e2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -46,7 +46,7 @@ include_once('../../backend/servidor/conn.php');
 
     <div class="card text-center">
         <div class="card-body">
-            <h5 class="card-title">Seja Bem-vindo <?php echo $_SESSION['nome']; ?></h5>
+            <h5 class="card-title">Seja Bem-vindo <?php echo $_SESSION['nome']; ?>, deseja ser um voluntario?</h5>
             <p class="card-text">Veja algumas vagas para que você possa colaborar com a sua comunidade:</p>
         </div>
     </div>
@@ -76,14 +76,21 @@ include_once('../../backend/servidor/conn.php');
                     </div>
                 </div>
             </div>
-    <?php
+            <?php
         }
-    } else {
-        echo "<h4>Nenhuma vaga cadastrada</h4>";
-    }
-    ?>
-
-
+    }  else { ?>
+        
+    <div class="alert alert-primary" role="alert">
+  <h4 class="alert-heading">Oops!</h4>
+  <p>Ainda não temos nenhuma vaga de voluntariado para se cadastrar.</p>
+  <hr>
+  <p class="mb-0">Obrigado, fique atento pois futuramente poderá surgir novas vagas!</p>
+</div>
+  <?php  } ?>
+    
+    
+    
+    <script src="./assets/js/anima-num.js"></script>
     <script src="./js/validacao_form.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
