@@ -40,7 +40,7 @@ include_once('../../backend/servidor/conn.php');
         </div>
     </nav>
 
-    <main class="row m-auto container align-items-center py-5" style="height: 88vh">
+    <main class="row m-auto align-items-center py-5" style="height: 88vh">
         <div class="table-responsive card">
             <div class="card-header bg-dark d-flex align-items-center justify-content-between" style="height: 70px;">
                 <h4 class="text-white mb-0">Moradores</h4>
@@ -51,6 +51,18 @@ include_once('../../backend/servidor/conn.php');
                         <th scope="col">Id</th>
                         <th scope="col">Nome</th>
                         <th scope="col">E-mail</th>
+                        <th scope="col">Renda</th>
+                        <th scope="col">Profissão</th>
+                        <th scope="col">Colaborar</th>
+                        <th scope="col">Moradores</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">Nº</th>
+                        <th scope="col">Complemento</th>
+                        <th scope="col">Bairro</th>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">CEP</th>
+                        <th scope="col">UF</th>
 
                     </tr>
                 </thead>
