@@ -12,7 +12,7 @@ function animaNumeros() {
                 numero.innerText = `${total} +`;
                 clearInterval(timer);
             }
-        }, 20 * Math.random());
+        }, 25 * Math.random());
     });
 }
 
