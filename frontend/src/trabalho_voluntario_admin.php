@@ -79,7 +79,7 @@ include_once('../../backend/servidor/conn.php');
                 <td><?php echo $rows["nvagas"]; ?></td>
                 <td>
 
-                  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalAlterar">Alterar</button>
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalAlterar">Alterar</button>
                   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalRemover">Remover</button>
 
                 </td>
@@ -180,8 +180,8 @@ include_once('../../backend/servidor/conn.php');
         <h4>Tem certeza que deseja remover?</h4>
 
         <div class="modal-footer">
-          <a class="btn btn-success" href="../../backend/servidor/delete.php?id='<?php echo $rows['id']; ?>' ">Aceitar</a>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Recusar</button>
+          <a class="btn btn-danger" href="../../backend/servidor/delete.php?id='<?php echo $rows['id']; ?>' ">Sim</a>
+          <button type="button" class="btn btn-light" data-dismiss="modal">cancelar</button>
         </div>
         </form>
       </div>

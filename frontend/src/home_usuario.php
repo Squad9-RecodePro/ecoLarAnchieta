@@ -35,7 +35,7 @@ include_once('../../backend/servidor/conn.php');
         </div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-white" href="./complemento_cadastro.php"> Complete o seu cadastro aqui. </a>
+                <a class="nav-link text-white" href="./complemento_cadastro.php"> Completar Cadastro </a>
             </li>
 
             <li class="nav-item">
@@ -80,7 +80,7 @@ include_once('../../backend/servidor/conn.php');
         }
     } else { ?>
 
-        <div class="alert alert-primary" role="alert">
+        <div class="alert alert-secondary" role="alert">
             <h4 class="alert-heading">Oops!</h4>
             <p>Ainda não temos nenhuma vaga de voluntariado para se cadastrar.</p>
             <hr>
