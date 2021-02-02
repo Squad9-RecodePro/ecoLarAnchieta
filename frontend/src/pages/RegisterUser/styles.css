@@ -1,0 +1,100 @@
+.containerRegister {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 94vh;
+    background: linear-gradient(to right, #00ccff 0%, rgb(0, 102, 204) 105%);
+    
+  }
+  
+  .containerRegister .informationRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 34vw;
+    height: 64vh;
+    color: rgb(19, 19, 19);
+    opacity: 95%;
+    font-size: 20px;
+    padding-bottom: 32px;
+    background-color: #d8d6d6;
+    border-radius: 6px 0px 0px 6px;
+  }
+  
+  
+  .containerRegister .informationRegister a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px 0px 0px 16px;
+    width: 14vw;
+    height: 5vh;
+    border-radius: 14px 14px 14px 14px;
+    background:  #1c83f6;
+    border: solid 2px #fff;
+    color: #eee9e9;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .containerRegister .registerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48vw;
+    height: 64vh;
+    background-color: #fff;
+    border-radius: 0px 6px 6px 0px;
+  }
+  
+  .containerRegister .registerForm h2 {
+    font-size: 36px;
+    display: flex;
+    opacity: 93%;
+    color: #12B87C;
+  }
+  
+  .containerRegister .registerForm form .content {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #1c83f6;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .containerRegister .registerForm .content i {
+    display: flex;
+    padding-top: 18px;
+    margin: 0 6px;
+    color: #aaa7a7;
+  }
+  
+  .containerRegister .formInput {
+    background: none;
+    display: flex;
+    opacity: 93%;
+    font-size: 16px;
+    border-radius: 4px 4px 4px 4px;
+    border: 0;
+    padding-left: 7px;
+    margin-top: 7px;
+    width: 20vw;
+    height: 5vh;
+    outline: none;
+  }
+  
+  .containerRegister .registerForm button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px 0px 0px 42px;
+    width: 14vw;
+    height: 5vh;
+    border-radius: 14px 14px 14px 14px;
+    background: #12B87C;
+    border: solid 2px #fff;
+    color: #eee9e9;
+    outline: none;
+    cursor: pointer;
+  }
