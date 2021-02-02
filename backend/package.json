@@ -7,13 +7,19 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/config/server.js"
+    "start": "nodemon ./src/config/server.js"
   },
   "author": "Thamirez Bastos",
+  "contributors": [
+    {
+      "name": "Elnatan Souza",
+      "email": "elnatan.souzas@gmail.com"
+    }
+  ],
   "license": "ISC"
 }
