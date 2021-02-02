@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const routes = Router();
 
-const sendController = require('../controllers/testeRegister')
+const sendController = require('../controllers/register-user')
 
 // routes.get("/register", (req, res) => {
 //     res.send("OK Teste")
