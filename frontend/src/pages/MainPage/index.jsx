@@ -2,41 +2,36 @@ import React from 'react';
 
 const MainPage = () => {
     return (
+
         <header className="u-align-center-sm u-align-center-xs u-clearfix u-header u-header" id="sec-1e2e"><div className="u-clearfix u-sheet u-sheet-1">
-            <a href="https://nicepage.com" className="u-image u-logo u-image-1" data-image-width="683" data-image-height="683" >
+            <a href="https://nicepage.com" className="u-image u-logo u-image-1" data-image-width="683" data-image-height="683">
                 <img src="images/iconlogo.svg" className="u-logo-image u-logo-image-1" data-image-width="63" />
-            </a>
+        </a>
                 <nav className="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XL">
                     <div className="menu-collapse" style="font-size: 1rem;">
-                        <a className="u-button-style u-nav-link" href="#" >
-                            {/* <svg className="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xlink:href="#svg-8a8f"></use></svg>
+                        <a className="u-button-style u-nav-link" href="#">
+                            <svg className="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xlink:href="#svg-8a8f"></use></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns: <g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-                        </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg> */}
+                        </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
             </a>
           </div>
             <div className="u-custom-menu u-nav-container">
-                <ul className="u-nav u-spacing-25 u-unstyled u-nav-1">
-                    <li className="u-nav-item">
-                        <a className="u-button-style u-nav-link" href="Home.html" style="padding: 8px 0px;">Home</a>
-                    </li>
-                </ul>
+                <ul className="u-nav u-spacing-25 u-unstyled u-nav-1"><li className="u-nav-item"><a className="u-button-style u-nav-link" href="Home.html" style="padding: 8px 0px;">Home</a>
+                </li></ul>
             </div>
             <div className="u-custom-menu u-nav-container-collapse">
                 <div className="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
                     <div className="u-sidenav-overflow">
                         <div className="u-menu-close u-menu-close-1"></div>
-                        <ul className="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                            <li className="u-nav-item">
-                                <a className="u-button-style u-nav-link" href="Home.html" style="padding: 8px 0px;">Home</a>
-                            </li>
-                        </ul>
+                        <ul className="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li className="u-nav-item"><a className="u-button-style u-nav-link" href="Home.html" style="padding: 8px 0px;">Home</a>
+                        </li></ul>
                     </div>
                 </div>
                 <div className="u-black u-menu-overlay u-opacity u-opacity-70"></div>
             </div>
         </nav>
       </div>
-    </header> 
+      </header > 
     <section className="u-clearfix u-image u-shading u-section-1" id="sec-a853" data-image-width="800" data-image-height="449">
       <div className="u-align-left u-container-style u-group u-white u-group-1">
         <div className="u-container-layout u-container-layout-1">
