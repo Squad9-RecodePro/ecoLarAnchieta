@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(register);
 
 require("../controllers/auth-controller")(app);
+require("../controllers/project-controller")(app);
 
 
 
