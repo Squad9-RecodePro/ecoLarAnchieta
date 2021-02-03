@@ -7,7 +7,7 @@ import './assets/styles/global.css';
 function App() {
   return (
     <>
-      {/* <Menu /> */}
+      <Menu /> 
       <Routes />
       <Footer />
 
