@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-import Tijolo from '../../assets/images/tijolo.svg';
+//import Tijolo from '../../assets/images/tijolo.svg';
 
 const UserLogin = () => {
     return (
