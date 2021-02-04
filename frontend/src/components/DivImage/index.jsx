@@ -11,6 +11,6 @@ const DivImage = ({image, children }) => {
         </Row>
 
     )
-}
+} 
 
 export default DivImage
