@@ -1,8 +1,10 @@
 const express = require("express");
-const bcrypt = require("bcryptjs")
-const jwt = require("jsonwebtoken")
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const crypto = require('crypto');
 
-const authConfig = require("../config/auth.json")
+
+const authConfig = require("../../config/auth.json")
 const User = require("../models/repository/user");
 
 const router = express.Router();
@@ -14,7 +16,7 @@ function generateToken(params = {}) {
     });
 }
 
-router.post("/registro", async (req, res) => {
+router.post("/register", async (req, res) => {
     const { email } = req.body;
 
     try {
@@ -57,8 +59,36 @@ router.post('/authenticate', async (req, res) => {
     });
 });
 
+router.post('/forgot_password', async (req, res) => {
+    const { email } = req.body;
+
+    // token salvo em user.js
+    try {
+        const user = await User.findOne({ email });
+
+        if (!user)
+            return res.status(400).send({ error: 'User not found' });
+
+        const token = crypto.ramdomBytes(20).toString('hex');
+
+        const now = new Date();
+        now.setHours(now.getHours() + 1);
+
+        await User.findByIdAndUpdate(user.id, {
+            '$set': {
+                passwordResetToken: token,
+                passwordResetExpires: now,
+            }
+        });
+        console.log(token, now);
+    } catch (err) {
+        res.status(400).send({ error: 'Erro on forgot password, try again' });
+    }
+
+});
+
+
 module.exports = app => app.use("/auth", router);
 
 
 
-// 3:09

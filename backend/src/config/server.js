@@ -1,25 +1,15 @@
 const express = require('express');
-const cors = require('cors');
-const register = require('../controllers/register-controller')
-const app = express();
 const bodyParser = require("body-parser");
 
-
-app.use(cors());
+const app = express();
 
 app.use(express.json());
-
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(register);
+require("../app/controllers/index")(app);
 
-require("../controllers/auth-controller")(app);
-require("../controllers/project-controller")(app);
-
-
-
-app.listen(3000);
+app.listen(3001);
 
 
 
