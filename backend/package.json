@@ -19,7 +19,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node ./src/config/server.js"
+    "start": "nodemon ./src/config/server.js"
   },
   "author": "Thamirez Bastos",
   "contributors": [
