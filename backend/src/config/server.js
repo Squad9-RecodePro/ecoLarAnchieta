@@ -17,3 +17,4 @@ app.listen(3001);
 // services - logica de negocio
 // repository - todas chamadas do banco
 // controllers -> services -> repository
+// minuto 21:00

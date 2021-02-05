@@ -2,7 +2,7 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const crypto = require('crypto');
-
+const mailer = require('../../modules/mailer')
 
 const authConfig = require("../../config/auth.json");
 const User = require("../models/repository/user");
@@ -79,10 +79,23 @@ router.post('/forgot_password', async (req, res) => {
                 passwordResetToken: token,
                 passwordResetExpires: now,
             }
-        });
-        console.log(token, now); //continua ai parça! Te Amo! s2
+        }, { new: true, useFindAndModify: false }
+        );
 
+        mailer.sendMail({
+            to: email,
+            from: 'thamirez.bastoss@gmail.com',
+            template: 'auth/forgot_password',
+            context: { token },
+        }, (err) => {
+            if (err)
+                console.log(err)
+            return res.status(400).send({ error: 'Cannot send forgot password email' });
+            return res.send();
+
+        });
     } catch (err) {
+
         res.status(400).send({ error: 'Erro on forgot password, try again' });
     }
 
