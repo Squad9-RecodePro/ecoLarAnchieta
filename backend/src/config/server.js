@@ -12,7 +12,6 @@ require("../app/controllers/index")(app);
 app.listen(3001);
 
 
-
 // controllers - endpoints
 // services - logica de negocio
 // repository - todas chamadas do banco
