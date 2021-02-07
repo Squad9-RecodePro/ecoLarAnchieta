@@ -1,5 +1,5 @@
-const jwt = require("jsonwebtoken");
-const authConfig = require("../../config/auth.json");
+const jwt = require('jsonwebtoken');
+const authConfig = require('../../config/auth.json');
 
 
 module.exports = (req, res, next) => {
@@ -7,12 +7,12 @@ module.exports = (req, res, next) => {
 
 
     if (!authHeader)
-        return res.status(401).send({ error: "No token provided" });
+        return res.status(401).send({ error: 'No token provided' });
 
     const parts = authHeader.split(' ');
 
     if (!parts.length === 2)
-        return res.status(401).send({ error: "Token error" });
+        return res.status(401).send({ error: 'Token error' });
 
     const [scheme, token] = parts;
 

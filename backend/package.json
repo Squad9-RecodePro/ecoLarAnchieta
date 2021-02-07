@@ -1,7 +1,7 @@
 {
-  "name": "projnodejs",
+  "name": "Backend Ecolar Anchieta",
   "version": "1.0.0",
-  "description": "Projeto Pratico Recode",
+  "description": "Projeto Social Recode",
   "main": "server.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
