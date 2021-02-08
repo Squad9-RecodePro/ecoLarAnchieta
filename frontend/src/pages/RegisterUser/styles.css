@@ -4,7 +4,7 @@
     justify-content: center;
     width: 100vw;
     height: 94vh;
-    background: linear-gradient(to right, #00ccff 0%, rgb(0, 102, 204) 105%);
+    background:  #202A5B 105%;
     
   }
   
@@ -21,6 +21,7 @@
     padding-bottom: 32px;
     background-color: #d8d6d6;
     border-radius: 6px 0px 0px 6px;
+    text-align: center;
   }
   
   
@@ -37,6 +38,16 @@
     color: #eee9e9;
     outline: none;
     cursor: pointer;
+  }
+
+  .containerRegister .informationRegister img{
+    position: relative;
+    border-radius: 4px 4px 4px 4px;
+    border: 0;
+    padding-left: 7px;
+    margin-top: 7px;
+    width: 25vw;
+    height: 20vh;
   }
   
   .containerRegister .registerForm {
