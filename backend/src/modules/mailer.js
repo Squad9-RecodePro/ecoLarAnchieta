@@ -2,13 +2,22 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const hbs = require('nodemailer-express-handlebars');
 
-const { host, port, user, pass } = require("../config/mail.json");
+const SMTP_CONFIG = require("../config/mail.json");
+
 
 const transport = nodemailer.createTransport({
-    host,
-    port,
-    auth: { user, pass },
+  host: SMTP_CONFIG.host,
+  port: SMTP_CONFIG.port,
+  secure: false,
+  auth: {
+    user: SMTP_CONFIG.user,
+    pass: SMTP_CONFIG.pass
+  },
+  tls: {
+    rejectUnauthorized: false,
+  },
 });
+
 
 transport.use('compile', hbs({
   viewEngine: {

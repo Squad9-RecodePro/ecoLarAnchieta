@@ -81,20 +81,21 @@ router.post('/forgot_password', async (req, res) => {
             }
         }, { new: true, useFindAndModify: false }
         );
-
-        mailer.sendMail({
+        await mailer.sendMail({
             to: email,
             from: 'recodeprosquad9@gmail.com',
+            subject: "Assunto do email",
+            context: {token},
             template: 'auth/forgot_password',
-            context: { token },
         }, (err) => {
             if (err)
+            
                 return res.status(400).send({ error: 'Cannot send forgot password email' });
-
+            
             return res.send();
         });
 
-    } catch (err) {
+        } catch (err) {
         res.status(400).send({ error: 'Erro on forgot password, try again' });
     }
 
