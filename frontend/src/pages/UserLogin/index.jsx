@@ -4,6 +4,8 @@ import './styles.css';
 
 //import Tijolo from '../../assets/images/tijolo.svg';
 
+import Anchieta1 from '../../assets/images/anchieta2.jpg';
+
 const UserLogin = () => {
     return (
         <>
@@ -11,7 +13,7 @@ const UserLogin = () => {
                 <div className="content">
                     <div className="header">
                         <p>
-                            <span>Bem Vindx ao</span>
+                            <span>Bem Vindo(a) ao</span>
                             <span className="ecoLar"> EcoLar Anchieta</span>
                         </p>
                     </div>
@@ -35,12 +37,7 @@ const UserLogin = () => {
 
                 <div className="container-1">
                     <div className="aboutUs">
-                        <h3>Sobre EcoLar Anchieta</h3>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum iste nulla atque
-                            <br /> blanditiis vel esse nihil similique earum! Similique necessitatibus ad illo dignissimos
-                            <br /> iste vero adipisci non nihil in!
-                        </p>
+                    <img src={Anchieta1} ></img>
                     </div>
                 </div>
             </div>

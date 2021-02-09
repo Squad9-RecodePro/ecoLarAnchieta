@@ -87,12 +87,20 @@ router.post('/forgot_password', async (req, res) => {
             subject: "Assunto do email",
             context: {token},
             template: 'auth/forgot_password',
+<<<<<<< HEAD
+=======
+            context: { token }
+>>>>>>> 03daccc5f5d41af84b44686341a14008e17c94ce
         }, (err) => {
             if (err)
             
                 return res.status(400).send({ error: 'Cannot send forgot password email' });
+<<<<<<< HEAD
             
             return res.send();
+=======
+                return res.send();
+>>>>>>> 03daccc5f5d41af84b44686341a14008e17c94ce
         });
 
         } catch (err) {

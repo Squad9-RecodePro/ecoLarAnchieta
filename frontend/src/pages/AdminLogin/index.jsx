@@ -2,8 +2,10 @@ import React from 'react';
 
 import './styles.css';
 
-import Tijolo from '../../assets/images/tijolo.svg';
+
 import Footer from '../../components/Footer';
+
+import Anchieta from '../../assets/images/anchieta3.jpeg';
 
 
 const AdminLogin = () => {
@@ -12,15 +14,15 @@ const AdminLogin = () => {
             <div className="containerAdminLogin">
                 <div className="content">
                     <div className="header">
-                        <h1><img src={Tijolo} alt="testeImg" /> Ecolar Anchieta</h1>
+                        <h1> Ecolar Anchieta</h1>
                         <p>
-                            <span>Bem Vindx ao</span>
+                            <span>Bem Vindo(a) ao</span>
                             <span className="ecoLar"> EcoLar Anchieta</span>
                         </p>
                     </div>
 
                     <form>
-                        <h2>Administrador</h2>
+                        <h2 >Administrador</h2>
                         <div className="container">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <input className="input" type="text" name="email" placeholder="Email" />
@@ -35,14 +37,13 @@ const AdminLogin = () => {
 
                 <div className="container-1">
                     <div className="aboutUs">
-                        <h3>Sobre EcoLar Anchieta</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum iste nulla atque 
-                        <br /> blanditiis vel esse nihil similique earum! Similique necessitatibus ad illo dignissimos
-                        <br /> iste vero adipisci non nihil in!</p>
+
+                        <img src={Anchieta} ></img>
+
                     </div>
                 </div>
             </div>
-            <Footer />
+
         </>
     );
 

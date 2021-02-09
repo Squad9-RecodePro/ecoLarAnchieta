@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    background: linear-gradient(to right, #00ccff 0%, rgb(0, 102, 204) 105%);
+    background:  #202A5B 105%;
     width: 100vw;
     height: 94vh;
   }
@@ -41,6 +41,7 @@
   .containerAdminLogin .content form h2 {
     color:#12B87C;
     font-size: 36px;
+    
     display: flex;
     opacity: 93%;
   }
@@ -87,6 +88,7 @@
     padding-top: 18px;
     margin: 0 6px;
     color: #aaa7a7;
+    
   }
   
   .containerAdminLogin .container-1 {
@@ -107,5 +109,14 @@
   }
   
   .containerAdminLogin .container-1 .aboutUs img {
-    width: 400px;
+    
+    position: relative;
+    border-radius: 4px 4px 4px 4px;
+    border: 0;
+    padding-left: 7px;
+    margin-top: 7px;
+    width: 30vw;
+    height: 50vh;
+
+    
   }

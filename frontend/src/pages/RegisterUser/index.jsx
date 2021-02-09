@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../../assets/styles/global.css';
 import './styles.css';
+import Anchieta2 from '../../assets/images/anchieta4.jpeg';
 
 const RegisterUser = () => {
     return (
@@ -9,13 +10,14 @@ const RegisterUser = () => {
             <div className="containerRegister">
 
                 <div className="informationRegister">
-                    <h1>Bem Vindo de Volta!</h1>
+                    <h1>Seja Bem Vindo de Volta!</h1>
+                    <img src={Anchieta2} ></img>
                     <p>Se você já é um morador cadastrado,<br /> realize o Login aqui!</p>
                     <a href="../UserLogin">Entrar</a>
                 </div>
 
                 <div className="registerForm">
-                    
+
                     <form>
                         <h2>Cadastre-se</h2>
                         <div className="content">
