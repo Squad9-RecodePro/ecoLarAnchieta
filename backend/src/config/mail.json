@@ -1,13 +1,6 @@
 {
-<<<<<<< HEAD
     "host": "smtp.gmail.com",
     "port": 587,
     "user": "recodeprosquad9@gmail.com",
     "pass": "squad9pro"
-=======
-    "host": "smtp.mailtrap.io",
-    "port": 2525,
-    "user": "5ddec615731d9a",
-    "pass": "25fc143ae727cd"
->>>>>>> 03daccc5f5d41af84b44686341a14008e17c94ce
 }
