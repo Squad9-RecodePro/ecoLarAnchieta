@@ -7,9 +7,12 @@ import './styles.css';
 const Footer = () => {
     return (
         <>
-            <footer>
-                &copy; {new Date().getFullYear()} - EcoLar Anchieta
-            </footer>
+            <div className="text-center">
+                <footer>
+                    &copy; {new Date().getFullYear()} - EcoLar Anchieta
+                </footer>
+            </div>
+            
         </>
     );
 }
