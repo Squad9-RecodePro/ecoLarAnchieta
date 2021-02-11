@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './styles.css';
 
@@ -7,6 +7,35 @@ import './styles.css';
 import Anchieta1 from '../../assets/images/anchieta2.jpg';
 
 const UserLogin = () => {
+    const [user, setUser] = React.useState([]);
+    const [password, setPassword] = React.useState([]);
+
+    React.useEffect(() => {
+        async function fetchData() {
+            const url = "http://localhost:5000/auth/authenticate";
+            const response = await fetch(url);
+            setUser(await response.json())
+        }
+        fetchData();
+    });    
+
+    const userLogin = (event) => {
+        event.preventDefault();
+        let form = {
+            user: user,
+            password: password,
+        }
+        console.log(form)
+
+        const url = "http://localhost:5000/auth/authenticate";
+
+        fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(form)
+        }).then((response) => response.json());
+    }
+
     return (
         <>
             <div className="containerUserLogin">
@@ -18,17 +47,17 @@ const UserLogin = () => {
                         </p>
                     </div>
 
-                    <form action="http://localhost:8080/ecocasa/backend/login_usuario.php" method="post">
+                    <form action="../UserPanel" onSubmit={userLogin}>
                         <h2>Login</h2>
                         <div className="container">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <input className="input" type="text" name="email" placeholder="Email" />
+                            <i className="fa fa-envelope" aria-hidden="true"></i>
+                            <input className="input" type="text" name="email" value={user} onChange={event => setUser(event.target.value)} placeholder="Email" required />
                         </div>
                         <div className="container">
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <input className="input" type="password" name="senha" placeholder="Senha" />
+                            <i className="fa fa-lock" aria-hidden="true"></i>
+                            <input className="input" type="password" name="password" value={password} onChange={event => setPassword(event.target.value)} placeholder="Senha" required />
                         </div>
-                        <button type="submit" className="btn container">Entrar</button>
+                        <button type="submit" value="Enviar" className="btn container">Entrar</button>
                         <a href="./RegisterUser">
                             Ainda não possui uma conta? Clique em mim!
                         </a>

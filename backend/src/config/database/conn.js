@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/ecolaranchieta', {
+const url = 'mongodb://localhost/ecolaranchieta';
+
+mongoose.connect(url, {
     useUnifiedTopology: true, 
     useNewUrlParser: true, 
     useCreateIndex: true,  
