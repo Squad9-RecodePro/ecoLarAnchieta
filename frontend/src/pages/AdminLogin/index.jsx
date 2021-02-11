@@ -3,7 +3,7 @@ import React from 'react';
 import './styles.css';
 
 
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
 
 import Anchieta from '../../assets/images/anchieta3.jpeg';
 

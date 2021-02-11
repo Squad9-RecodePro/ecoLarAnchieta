@@ -20,15 +20,15 @@ router.post("/register", async (req, res) => {
     const { email } = req.body;
 
     try {
-
+       
         if (await User.findOne({ email }))
             return res.status(400).send({ error: "User Already Exists" });
 
 
         const user = await User.create(req.body);
 
-        user.password = undefined;
-
+        
+        
         return res.send({
             user,
             token: generateToken({ id: user.id }),
@@ -85,17 +85,17 @@ router.post('/forgot_password', async (req, res) => {
             to: email,
             from: 'recodeprosquad9@gmail.com',
             subject: "Assunto do email",
-            context: {token},
+            context: { token },
             template: 'auth/forgot_password',
         }, (err) => {
             if (err)
-            
+
                 return res.status(400).send({ error: 'Cannot send forgot password email' });
-            
+
             return res.send();
         });
 
-        } catch (err) {
+    } catch (err) {
         res.status(400).send({ error: 'Erro on forgot password, try again' });
     }
 

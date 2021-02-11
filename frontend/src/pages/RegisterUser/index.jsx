@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../../assets/styles/global.css';
 import './styles.css';
-import Anchieta2 from '../../assets/images/anchieta4.jpeg';
+// import Anchieta2 from '../../assets/images/anchieta4.jpeg';
 
 const RegisterUser = () => {
 
@@ -11,20 +11,16 @@ const RegisterUser = () => {
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
 
-    React.useEffect(async () => {
-        const url = " http://localhost:5000/auth/register";
-        const response = await fetch(url);
-        setName(await response.json());
-    }, [render])
-
+    const baseUrl = 'http://localhost:5000/auth/'
+ 
     function registerUser(event) {
         event.preventDefault();
         console.log(event.target)
 
-        const formData = { "nome": name, "email": email, "senha": password }
-        const url = "http://localhost:5000/auth/register";
+        const formData = { "name": name, "email": email, "password": password }
+        const url = `${baseUrl}register`;
 
-        console.log(formData)
+        
         fetch(url, {
             method: "POST",
             headers: {
@@ -34,13 +30,16 @@ const RegisterUser = () => {
             body: JSON.stringify(formData)
         })
             .then(res => res.json())
-            .then(dados => console.log(dados))
+            // .then(dados => console.log(dados))
         setRender(!render);
 
         event.preventDefault();
 
         // Lógica de cadastro
         console.log("Cadastro efetuado!")
+        setName("")
+        setEmail("");
+        setPassword("");
 
 
     }
