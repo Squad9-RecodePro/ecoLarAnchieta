@@ -1,19 +1,19 @@
 import React from 'react';
 import './styles.css';
-import MenuAdmin from '../../components/Menu/Menu AdminPanel';
+import MenuAdmin from '../../components/Menu/menuAdminPanel';
 
 function AdminPanel(){
     return(
         <>
             <MenuAdmin/>
             <div id="card1">
-                <div className="row"> 
-                    <div class="card col-lg-6 text-center border shadow">
+                <div className="row justify-content-center"> 
+                    <div class="card col-lg-5 text-center border shadow">
                         <h3>Total de Familias na Ocupação</h3>
                         <h1>1100</h1>
                     </div>
 
-                    <div class="card col-lg-6 text-center border shadow">
+                    <div class="card col-lg-5 text-center border shadow">
                         <h3>Moradores cadastrados</h3>
 
                         {/* pessoal do back, tem que dar um jeito de fazer essa logica em javascript */}

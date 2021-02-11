@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    background:  #202A5B 105%;
+    background:  #0B305E 105%;
     width: 100vw;
     height: 94vh;
   }
@@ -14,9 +14,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 48vw;
+    width: 42vw;
     height: 64vh;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 6px 0px 0px 6px;
   }
   
@@ -91,32 +91,15 @@
     
   }
   
-  .containerAdminLogin .container-1 {
-    width: 34vw;
-    height: 64vh;
-    color: rgb(19, 19, 19);
-    background-color: #d8d6d6;
-    border-radius: 0px 6px 6px 0px;
-  }
-  
-  .containerAdminLogin .container-1 .aboutUs {
-    opacity: 95%;
-    margin: 36px 7px 0px 20px;
-  }
-  
-  .containerAdminLogin .container-1 h3 {
-    font-size: 25px;
-  }
-  
-  .containerAdminLogin .container-1 .aboutUs img {
+  .containerAdminLogin .container-1 img {
     
     position: relative;
-    border-radius: 4px 4px 4px 4px;
-    border: 0;
-    padding-left: 7px;
-    margin-top: 7px;
-    width: 30vw;
-    height: 50vh;
+    border-radius: 0px 6px 6px 0px;
+    /* border: 0; */
+    /* padding-left: 7px;
+    margin-top: 7px; */
+    width: 42vw;
+    height: 64vh;
 
     
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuResidents from '../../components/Menu/Menu Residents';
+import MenuResidents from '../../components/Menu/menuResidents';
 
 function ResidentsAdmin(){
     return(

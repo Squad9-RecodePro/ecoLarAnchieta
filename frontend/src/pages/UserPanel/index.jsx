@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-import MenuUser from '../../components/Menu/Menu UserPanel';
+import MenuUser from '../../components/Menu/menuUserPanel';
 
 function UserPanel(){
     return(

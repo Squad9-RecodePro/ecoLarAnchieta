@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuVolunteer from '../../components/Menu/Menu VolunteerWorks';
+import MenuVolunteer from '../../components/Menu/menuVolunteerWorks';
 
 function VolunteerWorks(){
     return(

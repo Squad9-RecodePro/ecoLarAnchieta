@@ -29,16 +29,16 @@ const UserLogin = () => {
                             <input className="input" type="password" name="senha" placeholder="Senha" />
                         </div>
                         <button type="submit" className="btn container">Entrar</button>
-                        <a href="../RegisterUser">
+                        <a href="./RegisterUser">
                             Ainda não possui uma conta? Clique em mim!
                         </a>
                     </form>
                 </div>
 
                 <div className="container-1">
-                    <div className="aboutUs">
+                    {/* <div className="aboutUs"> */}
                     <img src={Anchieta1} ></img>
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
         </>

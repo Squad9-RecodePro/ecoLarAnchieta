@@ -4,57 +4,28 @@
     justify-content: center;
     width: 100vw;
     height: 94vh;
-    background:  #202A5B 105%;
+    background:  #0B305E 105%;
     
   }
   
-  .containerRegister .informationRegister {
-    display: flex;
+  .containerRegister .informationRegister{
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 34vw;
-    height: 64vh;
-    color: rgb(19, 19, 19);
-    opacity: 95%;
-    font-size: 20px;
-    padding-bottom: 32px;
-    background-color: #d8d6d6;
-    border-radius: 6px 0px 0px 6px;
-    text-align: center;
-  }
-  
-  
-  .containerRegister .informationRegister a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 18px 0px 0px 16px;
-    width: 14vw;
-    height: 5vh;
-    border-radius: 14px 14px 14px 14px;
-    background:  #1c83f6;
-    border: solid 2px #fff;
-    color: #eee9e9;
-    outline: none;
-    cursor: pointer;
-  }
-
-  .containerRegister .informationRegister img{
+    justify-content: center; */
+    background: url(../../assets/images/anchieta4.jpeg) no-repeat;
+    background-size: cover;
     position: relative;
-    border-radius: 4px 4px 4px 4px;
-    border: 0;
-    padding-left: 7px;
-    margin-top: 7px;
-    width: 25vw;
-    height: 20vh;
+    border-radius: 6px 0px 0px 6px;
+    width: 42vw;
+    height: 64vh;
   }
   
   .containerRegister .registerForm {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48vw;
+    width: 42vw;
     height: 64vh;
     background-color: #fff;
     border-radius: 0px 6px 6px 0px;
@@ -108,4 +79,12 @@
     color: #eee9e9;
     outline: none;
     cursor: pointer;
+  }
+
+  .containerRegister .registerForm a {
+    color: #1c83f6;
+    margin: 14px 0px 0px 36px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
   }
