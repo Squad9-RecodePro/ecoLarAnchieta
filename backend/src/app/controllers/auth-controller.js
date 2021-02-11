@@ -61,7 +61,6 @@ router.post('/authenticate', async (req, res) => {
 
 router.post('/forgot_password', async (req, res) => {
     const { email } = req.body;
-
     // token salvo em user.js
     try {
         const user = await User.findOne({ email });

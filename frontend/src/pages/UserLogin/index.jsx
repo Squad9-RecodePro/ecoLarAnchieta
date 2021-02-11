@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './styles.css';
 
@@ -7,33 +7,29 @@ import './styles.css';
 import Anchieta1 from '../../assets/images/anchieta2.jpg';
 
 const UserLogin = () => {
-    const [user, setUser] = React.useState([]);
-    const [password, setPassword] = React.useState([]);
+    const [render, setRender] = React.useState(false);
+    const [email, setEmail] = React.useState("");
+    const [password, setPassword] = React.useState("");
 
-    React.useEffect(() => {
-        async function fetchData() {
-            const url = "http://localhost:5000/auth/authenticate";
-            const response = await fetch(url);
-            setUser(await response.json())
-        }
-        fetchData();
-    });    
+    const baseUrl = 'http://localhost:5000/auth/';
 
-    const userLogin = (event) => {
+    const login = (event) => {
         event.preventDefault();
-        let form = {
-            user: user,
-            password: password,
+        
+        const formData = {
+            "email": email,
+            "password": password
         }
-        console.log(form)
-
-        const url = "http://localhost:5000/auth/authenticate";
+        const url = `${baseUrl}authenticate`;
 
         fetch(url, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(form)
-        }).then((response) => response.json());
+            body: JSON.stringify(formData)
+        }).then(res => res.json());
+        setRender(!render);
+
+        event.preventDefault();
     }
 
     return (
@@ -47,11 +43,11 @@ const UserLogin = () => {
                         </p>
                     </div>
 
-                    <form action="../UserPanel" onSubmit={userLogin}>
+                    <form onSubmit={login}>
                         <h2>Login</h2>
                         <div className="container">
                             <i className="fa fa-envelope" aria-hidden="true"></i>
-                            <input className="input" type="text" name="email" value={user} onChange={event => setUser(event.target.value)} placeholder="Email" required />
+                            <input className="input" type="text" name="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="Email" required />
                         </div>
                         <div className="container">
                             <i className="fa fa-lock" aria-hidden="true"></i>
