@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../../assets/styles/global.css';
 import './styles.css';
+
 // import Anchieta2 from '../../assets/images/anchieta4.jpeg';
 
 const RegisterUser = () => {
@@ -30,7 +31,7 @@ const RegisterUser = () => {
             body: JSON.stringify(formData)
         })
             .then(res => res.json())
-            // .then(dados => console.log(dados))
+            .then(dados => console.log(dados))
         setRender(!render);
 
         event.preventDefault();

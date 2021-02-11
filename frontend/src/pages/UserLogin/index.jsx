@@ -15,18 +15,19 @@ const UserLogin = () => {
 
     const login = (event) => {
         event.preventDefault();
-        
-        const formData = {
-            "email": email,
-            "password": password
-        }
+
+        const formData = { "email": email, "password": password }
         const url = `${baseUrl}authenticate`;
 
         fetch(url, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+                "Content-Type": "application/json"
+                
+        },
             body: JSON.stringify(formData)
-        }).then(res => res.json());
+        }).then(res => res.json())
+            .then(dados => console.log(dados))
         setRender(!render);
 
         event.preventDefault();
