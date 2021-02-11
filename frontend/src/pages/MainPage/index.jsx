@@ -1,14 +1,17 @@
 import React from 'react';
-import DivImage from '../../components/DivImage';
+import './styles.css';
+import Menu from '../../components/Menu/mainMenu';
 
-import fundo from '../../assets/images/imgcarousel3.jpg';
+
 
 const MainPage = () => {
     return (
         <>
-        <DivImage image={fundo}>
+        <Menu />
+
+        <div className="section-1">
             <h1>MainPage</h1>
-        </DivImage>
+        </div>
         
         </>
 

@@ -50,10 +50,10 @@ const RegisterUser = () => {
             <div className="containerRegister">
 
                 <div className="informationRegister">
-                    <h1>Seja Bem Vindo de Volta!</h1>
-                    <img src={Anchieta2} ></img>
-                    <p>Se você já é um morador cadastrado,<br /> realize o Login aqui!</p>
-                    <a href="../UserLogin">Entrar</a>
+                    {/* <h1>Seja Bem Vindo de Volta!</h1> */}
+                    {/* <img src={Anchieta2} ></img> */}
+                    {/* <p>Se você já é um morador cadastrado,<br /> realize o Login aqui!</p> */}
+                    {/* <a href="../UserLogin">Entrar</a> */}
                 </div>
 
                 <div className="registerForm">
@@ -84,6 +84,9 @@ const RegisterUser = () => {
                         </div>
 
                         <button type="submit">Cadastrar</button>
+                        <a href="./UserLogin">
+                            Já possui uma conta? Clique em mim!
+                        </a>
                     </form>
                 </div>
             </div>

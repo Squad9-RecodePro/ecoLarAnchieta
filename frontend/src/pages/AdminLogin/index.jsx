@@ -36,11 +36,11 @@ const AdminLogin = () => {
                 </div>
 
                 <div className="container-1">
-                    <div className="aboutUs">
+                    {/* <div className="aboutUs"> */}
 
                         <img src={Anchieta} ></img>
 
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
 

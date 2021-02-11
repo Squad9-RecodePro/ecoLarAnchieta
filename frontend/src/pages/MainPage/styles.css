@@ -1,0 +1,6 @@
+.section-1 {
+    width: 100%;
+    height: 64vh;
+    background: url(../../assets/images/imgcarousel3.jpg) no-repeat;
+    background-size: cover;
+}
