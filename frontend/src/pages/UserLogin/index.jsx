@@ -14,7 +14,7 @@ const UserLogin = () => {
     const baseUrl = 'http://localhost:5000/auth/';
     let history = useHistory();
     const login = (event) => {
-        
+
         event.preventDefault();
 
         const formData = { "email": email, "password": password }
@@ -24,22 +24,22 @@ const UserLogin = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
-
             },
             body: JSON.stringify(formData)
         }).then(res => res.json())
             .then((dados) => {
-                if(dados.token){
+                if (dados.token) {
                     history.push("/UserPanel");
-                }else{
-                    console.log('Não funcionou');
+                } else {
+                    alert('Email ou senha invalido!');
                 }
             })
 
+        setEmail("");
+        setPassword("");
         event.preventDefault();
 
     }
-
 
     return (
         <>
@@ -78,7 +78,6 @@ const UserLogin = () => {
             </div>
         </>
     );
-
 }
 
 export default UserLogin;
