@@ -14,7 +14,7 @@ const UserLogin = () => {
     const baseUrl = 'http://localhost:5000/auth/';
     let history = useHistory();
     const login = (event) => {
-
+        
         event.preventDefault();
 
         const formData = { "email": email, "password": password }
@@ -29,9 +29,9 @@ const UserLogin = () => {
             body: JSON.stringify(formData)
         }).then(res => res.json())
             .then((dados) => {
-                if (dados.token) {
+                if(dados.token){
                     history.push("/UserPanel");
-                } else {
+                }else{
                     console.log('Não funcionou');
                 }
             })
@@ -64,13 +64,13 @@ const UserLogin = () => {
                             <input className="input" type="password" name="password" value={password} onChange={event => setPassword(event.target.value)} placeholder="Senha" required />
                         </div>
                         <button type="submit" value="Enviar" className="btn container"  >Entrar</button>
-
+                        
                     </form>
                     <a href="../ForgotPassword">
-                        Esqueceu a senha ? Clique aqui!
+                            Esqueceu a senha ? Clique aqui!
                         </a>
-                    <a href="./RegisterUser">
-                        Ainda não possui uma conta? Clique aqui!
+                        <a href="./RegisterUser">
+                            Ainda não possui uma conta? Clique aqui!
                         </a>
                 </div>
 

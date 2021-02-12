@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 
 import '../../assets/styles/global.css';
 import './styles.css';
@@ -11,9 +12,10 @@ const RegisterUser = () => {
     const [render, setRender] = React.useState(false);
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
+    const [secondpassword, setSecondPassword] = React.useState("");
 
     const baseUrl = 'http://localhost:5000/auth/'
- 
+    let history = useHistory();
     function registerUser(event) {
         event.preventDefault();
         console.log(event.target)
@@ -21,17 +23,22 @@ const RegisterUser = () => {
         const formData = { "name": name, "email": email, "password": password }
         const url = `${baseUrl}register`;
 
-        
+
         fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                
+
             },
             body: JSON.stringify(formData)
         })
             .then(res => res.json())
-            .then(dados => console.log(dados))
+            .then((dados) => {
+                if (true) {
+                    history.push("/UserLogin");
+                }
+            })
+
         setRender(!render);
 
         event.preventDefault();
@@ -41,6 +48,7 @@ const RegisterUser = () => {
         setName("")
         setEmail("");
         setPassword("");
+        setSecondPassword("");
 
 
     }
@@ -80,11 +88,12 @@ const RegisterUser = () => {
 
                         <div className="content">
                             <i className="fa fa-lock" aria-hidden="true"></i>
-                            <input className="formInput" type="password" name="conf_senha" placeholder="Confirmar senha" required />
+                            <input className="formInput" type="password" name="conf_senha" placeholder="Confirmar senha" required value={secondpassword}
+                                onChange={(event) => setSecondPassword(event.target.value)} />
                         </div>
 
                         <button type="submit">Cadastrar</button>
-                        
+
                         <a href="./UserLogin">
                             Já possui uma conta? Clique em mim!
                         </a>
