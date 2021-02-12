@@ -1,7 +1,6 @@
 import React from 'react';
-
 import './styles.css';
-
+import { useHistory } from "react-router-dom";
 //import Tijolo from '../../assets/images/tijolo.svg';
 
 import Anchieta1 from '../../assets/images/anchieta2.jpg';
@@ -11,9 +10,11 @@ const UserLogin = () => {
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
 
-    const baseUrl = 'http://localhost:5000/auth/';
 
+    const baseUrl = 'http://localhost:5000/auth/';
+    let history = useHistory();
     const login = (event) => {
+        
         event.preventDefault();
 
         const formData = { "email": email, "password": password }
@@ -23,15 +24,22 @@ const UserLogin = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
-                
-        },
+
+            },
             body: JSON.stringify(formData)
         }).then(res => res.json())
-            .then(dados => console.log(dados))
-        setRender(!render);
+            .then((dados) => {
+                if(dados.token){
+                    history.push("/UserPanel");
+                }else{
+                    console.log('Não funcionou');
+                }
+            })
 
         event.preventDefault();
+
     }
+
 
     return (
         <>
@@ -46,6 +54,7 @@ const UserLogin = () => {
 
                     <form onSubmit={login}>
                         <h2>Login</h2>
+
                         <div className="container">
                             <i className="fa fa-envelope" aria-hidden="true"></i>
                             <input className="input" type="text" name="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="Email" required />
@@ -54,7 +63,7 @@ const UserLogin = () => {
                             <i className="fa fa-lock" aria-hidden="true"></i>
                             <input className="input" type="password" name="password" value={password} onChange={event => setPassword(event.target.value)} placeholder="Senha" required />
                         </div>
-                        <button type="submit" value="Enviar" className="btn container">Entrar</button>
+                        <button type="submit" value="Enviar" className="btn container"  >Entrar</button>
                         <a href="./RegisterUser">
                             Ainda não possui uma conta? Clique em mim!
                         </a>
