@@ -1,0 +1,77 @@
+.sectionPassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: #0B305E 105%;
+    width: 100vw;
+    height: 94vh;
+}
+
+.sectionPassword .content {
+    /* padding: 48px 0px 0px 128px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 42vw;
+    height: 64vh;
+    background-color: #fff;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.sectionPassword .content form .container {
+    display: flex;
+    border-bottom: 2px solid #1c83f6;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.sectionPassword .content form h2 {
+    color: #12B87C;
+    font-size: 36px;
+    display: flex;
+    opacity: 93%;
+}
+
+.containerUserLogin .content form h2 {
+    color: #12B87C;
+    font-size: 36px;
+    display: flex;
+    opacity: 93%;
+}
+
+.sectionPassword .content form .container .input {
+    background: none;
+    display: flex;
+    opacity: 93%;
+    font-size: 16px;
+    border-radius: 4px 4px 4px 4px;
+    border: 0;
+    padding-left: 7px;
+    margin-top: 7px;
+    width: 20vw;
+    height: 5vh;
+    outline: none;
+}
+
+.sectionPassword .content form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px 0px 0px 42px;
+    width: 14vw;
+    height: 5vh;
+    border-radius: 14px 14px 14px 14px;
+    background-color: #12B87C;
+    border: solid 2px #fff;
+    color: #eee9e9;
+    outline: none;
+    cursor: pointer;
+}
+
+.sectionPassword .content .container i {
+    display: flex;
+    padding-top: 18px;
+    margin: 0 6px;
+    color: #aaa7a7;
+}

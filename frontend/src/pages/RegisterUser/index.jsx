@@ -84,6 +84,7 @@ const RegisterUser = () => {
                         </div>
 
                         <button type="submit">Cadastrar</button>
+                        
                         <a href="./UserLogin">
                             Já possui uma conta? Clique em mim!
                         </a>

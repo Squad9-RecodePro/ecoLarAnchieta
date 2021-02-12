@@ -10,6 +10,7 @@ import AdminPanel from './pages/AdminPanel';
 import UserPanel from './pages/UserPanel';
 import ResidentsAdmin from './pages/ResidentsAdmin';
 import VolunteerWorks from './pages/VolunteerWorks';
+import ForgotPassword from './pages/ForgotPassword';
 
 
 const Routes = () => (
@@ -24,6 +25,7 @@ const Routes = () => (
             <Route path="/UserPanel" component={UserPanel} />
             <Route path="/ResidentsAdmin" component={ResidentsAdmin} /> 
             <Route path="/VolunteerWorks" component={VolunteerWorks} />  
+            <Route path="/ForgotPassword" component={ForgotPassword} /> 
         </Switch>
     </BrowserRouter>
 );
