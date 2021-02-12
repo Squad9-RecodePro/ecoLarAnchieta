@@ -64,10 +64,14 @@ const UserLogin = () => {
                             <input className="input" type="password" name="password" value={password} onChange={event => setPassword(event.target.value)} placeholder="Senha" required />
                         </div>
                         <button type="submit" value="Enviar" className="btn container"  >Entrar</button>
-                        <a href="./RegisterUser">
-                            Ainda não possui uma conta? Clique em mim!
-                        </a>
+                        
                     </form>
+                    <a href="../ForgotPassword">
+                            Esqueceu a senha ? Clique aqui!
+                        </a>
+                        <a href="./RegisterUser">
+                            Ainda não possui uma conta? Clique aqui!
+                        </a>
                 </div>
 
                 <div className="container-1">
