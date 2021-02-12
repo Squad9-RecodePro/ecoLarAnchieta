@@ -16,7 +16,7 @@ const MenuUser = () => {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
                                 <Nav.Link href="/RegisterUser">Completar Cadastro</Nav.Link>
-                                <Nav.Link href="/AdminLogin">Sair</Nav.Link>
+                                <Nav.Link href="/UserLogin">Sair</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                 </Navbar>

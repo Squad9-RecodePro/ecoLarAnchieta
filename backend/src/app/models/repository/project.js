@@ -11,6 +11,10 @@ const ProjectSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
+    nvagas: {
+        type: Number,
+        require:true,
+    },
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
