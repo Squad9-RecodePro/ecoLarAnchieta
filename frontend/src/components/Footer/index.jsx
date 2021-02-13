@@ -8,12 +8,11 @@ import './styles.css';
 const Footer = () => {
     return (
         <>
-            {/* <Container className="navbar navbar-inverse navbar-fixed-bottom"> */}
-                <footer className="footer">
+            <div className="rodape">
+                <footer className="footer-copyright text-center py-3 border shadow">
                     &copy; {new Date().getFullYear()} - EcoLar Anchieta
                 </footer>
-            {/* </Container> */}
-            
+            </div>          
         </>
     );
 }

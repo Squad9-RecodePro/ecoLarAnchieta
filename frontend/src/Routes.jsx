@@ -12,6 +12,7 @@ import ResidentsAdmin from './pages/ResidentsAdmin';
 import VolunteerWorks from './pages/VolunteerWorks';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
+import RegisterComplete from './pages/RegisterComplete';
 
 
 const Routes = () => (
@@ -28,6 +29,7 @@ const Routes = () => (
             <Route path="/VolunteerWorks" component={VolunteerWorks} />
             <Route path="/ForgotPassword" component={ForgotPassword} />
             <Route path="/ResetPassword" component={ResetPassword} />
+            <Route path="/RegisterComplete" component={RegisterComplete} />            
         </Switch>
     </BrowserRouter>
 );

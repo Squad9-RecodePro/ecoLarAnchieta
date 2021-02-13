@@ -4,7 +4,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../../../assets/icons/icon.svg';
 
-const Menu = () => {
+const Menu = (props) => {
     return ( 
     <div>
         <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
@@ -20,10 +20,10 @@ const Menu = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="/UserLogin">Login</Nav.Link>
-                    <Nav.Link href="/RegisterUser">Inscreva-se</Nav.Link>
-                    <Nav.Link href="/AdminLogin">Login Administrador</Nav.Link>
+                <Nav className="navbar-nav mr-auto">
+                    <Nav.Link href={props.page1}>{props.title1}</Nav.Link>
+                    <Nav.Link href={props.page2}>{props.title2}</Nav.Link>
+                    <Nav.Link href={props.page3}>{props.title3}</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
