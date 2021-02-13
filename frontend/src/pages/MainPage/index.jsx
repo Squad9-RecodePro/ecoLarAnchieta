@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 import './styles.css';
 import Menu from '../../components/Menu/mainMenu';
 
@@ -12,7 +13,9 @@ import slide3 from '../../assets/images/anchieta3.jpeg';
 const MainPage = () => {
     return (
         <>
-            <Menu />
+            <Menu page1={"UserLogin"} title1={"Login"} page2={"RegisterUser"} title2={"Inscreva-se"}>
+                  
+            </Menu>
 
             <section className="section-1">
                 <hr />

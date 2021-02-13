@@ -40,28 +40,26 @@ const ResetPassword = () => {
 
     return (
         <>
-
-
             <div className="sectionPassword">
                 <div className="content">
-                    <form onSubmit={newPassword}>
-                        <h2>Nova senha</h2>
+                        <form onSubmit={newPassword}>
+                            <h2>Nova senha</h2>
 
-                        <div className="container">
-                            <i className="fa fa-envelope" aria-hidden="true"></i>
-                            <input className="input" type="text" name="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="Email" required />
-                        </div>
-                        <div className="container">
-                            <i className="fa fa-envelope" aria-hidden="true"></i>
-                            <input className="input" type="text" name="password" value={password} onChange={event => setPassword(event.target.value)} placeholder="Senha" required />
-                        </div>
-                        <div className="container">
-                            <i className="fa fa-envelope" aria-hidden="true"></i>
-                            <input className="input" type="text" name="password" placeholder="Confirmar Senha" required />
-                        </div>
-                        <button type="submit" value="Enviar" className="btn container" >Entrar</button>
-                    </form>
-                </div>
+                            <div className="container">
+                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <input className="input" type="text" name="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="Email" required />
+                            </div>
+                            <div className="container">
+                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <input className="input" type="text" name="password" value={password} onChange={event => setPassword(event.target.value)} placeholder="Senha" required />
+                            </div>
+                            <div className="container">
+                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <input className="input" type="text" name="password" placeholder="Confirmar Senha" required />
+                            </div>
+                            <button type="submit" value="Enviar" className="btn container" >Entrar</button>
+                        </form>
+                    </div>
             </div>
 
         </>

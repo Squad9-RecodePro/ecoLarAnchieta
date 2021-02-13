@@ -1,12 +1,16 @@
 import React from 'react';
 import './styles.css';
-import MenuAdmin from '../../components/Menu/menuAdminPanel';
+import Menu from '../../components/Menu/mainMenu';
+
 
 function AdminPanel(){
     return(
         <>
-            <MenuAdmin/>
-            <div id="card1">
+            <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={"VolunteerWorks"} title2={"Trabalhos Voluntarios"} page3={""} title3={"Sair"}>
+    
+            </Menu>
+            
+            <div className="container" id="container">
                 <div className="row justify-content-center"> 
                     <div class="card col-lg-5 text-center border shadow">
                         <h3>Total de Familias na Ocupação</h3>

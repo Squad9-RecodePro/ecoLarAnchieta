@@ -49,7 +49,7 @@ const ForgotPassword = () => {
                             <i className="fa fa-envelope" aria-hidden="true"></i>
                             <input className="input" type="text" name="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="Email" required />
                         </div>
-                        <button type="submit" value="Enviar" className="btn container" >Entrar</button>
+                        <button type="submit" value="Enviar" className="btn container" >Recuperar</button>
                     </form>
                 </div>
             </div>
