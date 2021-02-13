@@ -1,10 +1,10 @@
 import React from 'react';
-import MenuVolunteer from '../../components/Menu/menuVolunteerWorks';
+import Menu from '../../components/Menu/mainMenu';
 
 function VolunteerWorks(){
     return(
         <>
-            <MenuVolunteer/>
+            <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={""} title2={"Sair"}> </Menu>
             <div class="container" id="container">
                 <main class="row m-auto container align-items-center py-5" styles="height: 88vh">
                     <div class="table-responsive card">

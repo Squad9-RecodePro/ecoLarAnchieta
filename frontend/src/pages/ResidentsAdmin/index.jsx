@@ -1,10 +1,10 @@
 import React from 'react';
-import MenuResidents from '../../components/Menu/menuResidents';
+import Menu from '../../components/Menu/mainMenu';
 
 function ResidentsAdmin(){
     return(
         <>
-            <MenuResidents/>
+            <Menu page1={"VolunteerWorks"} title1={"Trabalhos Voluntários"} page2={""} title2={"Sair"}></Menu>
             <div className="container row" id="container">
                 <main class="col-12 m-auto align-items-center py-5" styles="height: 88vh">
                     <div class="col-12">
