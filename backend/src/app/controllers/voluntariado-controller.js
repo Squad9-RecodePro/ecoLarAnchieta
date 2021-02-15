@@ -30,6 +30,20 @@ router.post('/', async (req, res) => {
 
 });
 
+router.put('/:voluntariadoId', async (req, res) => {
+    try {
+        Voluntariado.findByIdAndUpdate({ _id: req.params.voluntariadoId }, req.body)
+            .then(() => {
+                Voluntariado.findOne({ _id: req.params.voluntariadoId })
+                    .then((voluntariado) => {
+                        res.send(voluntariado);
+                    });
+            });
+    } catch (err) {
+        return res.status(400).send({ error: 'Error updating one' });
+    }
+});
+
 router.delete('/:voluntariadoId', async (req, res) => {
     try {
         const voluntariado = await Voluntariado.findByIdAndRemove(req.params.voluntariadoId);
@@ -37,7 +51,7 @@ router.delete('/:voluntariadoId', async (req, res) => {
         return res.send("Deletado com sucesso!");
 
     } catch (err) {
-        return res.status(400).send({ error: 'Error deleting project' });
+        return res.status(400).send({ error: 'Error deleting one' });
     }
 });
 
