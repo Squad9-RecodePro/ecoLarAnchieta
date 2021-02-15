@@ -10,7 +10,6 @@ const UserLogin = () => {
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
 
-
     const baseUrl = 'http://localhost:5000/auth/';
     let history = useHistory();
     const login = (event) => {

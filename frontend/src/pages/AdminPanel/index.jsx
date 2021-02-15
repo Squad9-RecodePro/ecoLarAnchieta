@@ -4,6 +4,7 @@ import Menu from '../../components/Menu/mainMenu';
 
 
 function AdminPanel(){
+
     return(
         <>
             <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={"VolunteerWorks"} title2={"Trabalhos Voluntarios"} page3={""} title3={"Sair"}>
@@ -12,12 +13,12 @@ function AdminPanel(){
             
             <div className="container" id="container">
                 <div className="row justify-content-center"> 
-                    <div class="card col-lg-5 text-center border shadow">
+                    <div className="card col-lg-5 text-center border shadow">
                         <h3>Total de Familias na Ocupação</h3>
                         <h1>1100</h1>
                     </div>
 
-                    <div class="card col-lg-5 text-center border shadow">
+                    <div className="card col-lg-5 text-center border shadow">
                         <h3>Moradores cadastrados</h3>
 
                         {/* pessoal do back, tem que dar um jeito de fazer essa logica em javascript */}

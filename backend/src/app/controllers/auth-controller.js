@@ -6,6 +6,7 @@ const mailer = require('../../modules/mailer');
 
 const authConfig = require("../../config/auth.json");
 const User = require("../models/repository/user");
+const Admin = require("../models/repository/admin");
 
 const router = express.Router();
 
@@ -130,6 +131,45 @@ router.post('/reset_password', async (req, res) => {
         res.status(400).send({ error: 'Cannot reset password, try again!' });
     }
 
+});
+
+router.post("/registerAdmin", async (req, res) => {
+    const { email } = req.body;
+
+    try {
+        if (await Admin.findOne({ email }))
+            return res.status(400).send({ error: "Admin Already Exists" });
+
+        const admin = await Admin.create(req.body);
+
+        return res.send({
+            admin,
+            token: generateToken({ id: admin.id }),
+        });
+
+    } catch (err) {
+        return res.status(400).send({ error: "Registration failed" });
+    }
+});
+
+router.post('/admin', async (req, res) => {
+    const { email, password } = req.body
+   
+    const admin = await Admin.findOne({ email }).select('+password');
+
+    if (!admin)
+        return res.status(400).send({ error: "Admin not found" });
+
+    if (!await bcrypt.compare(password, admin.password))
+        return res.status(400).send({ error: 'Invalid password' });
+
+    admin.password = undefined;
+
+    res.send({
+        admin,
+        token: generateToken({ id: admin.id }),        
+    });
+    
 });
 
 module.exports = app => app.use("/auth", router);
