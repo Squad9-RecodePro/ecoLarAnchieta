@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../../../assets/icons/icon.svg';
 
 const Menu = (props) => {
     return ( 
-    <div>
+    <>
         <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
             <Navbar.Brand href="/">
                 <img
@@ -26,7 +25,7 @@ const Menu = (props) => {
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-    </div>
+    </>
     );
 }
 

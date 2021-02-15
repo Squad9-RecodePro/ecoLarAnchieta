@@ -8,13 +8,13 @@ const ForgotPassword = () => {
 
     let history = useHistory();
 
-    const resetPassword = (event) => {
+    const resetPassword = async(event) => {
         event.preventDefault();
 
         const formData = { "email": email }
         const url = `${baseUrl}forgot_password`;
 
-        fetch(url, {
+        const response = await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -22,14 +22,13 @@ const ForgotPassword = () => {
 
             },
             body: JSON.stringify(formData)
-        }).then(res => res.json())
-            .then((dados) => {
-                if (dados.token) {
-                    history.push("/ResetPassword");
-                } else {
-                    console.log('Não funcionou');
-                }
-            })
+        })
+        let responseStatus = response.status;
+        if(responseStatus === 200){
+           history.push('ResetPassword')
+        }else{
+            alert('Email invalido!');
+        }
 
         event.preventDefault();
     }

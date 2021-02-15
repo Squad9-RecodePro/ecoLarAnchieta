@@ -5,7 +5,7 @@ function ResidentsAdmin(){
     return(
         <>
             <Menu page1={"VolunteerWorks"} title1={"Trabalhos Voluntários"} page2={""} title2={"Sair"}></Menu>
-            <div className="container row" id="container">
+            <div className="container-fluid row" id="container">
                 <main class="col-12 m-auto align-items-center py-5" styles="height: 88vh">
                     <div class="col-12">
                         <div class="card-header bg-dark d-flex align-items-center justify-content-between" styles="height: 70px; weight: 100px;">

@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import Anchieta1 from '../../assets/images/anchieta2.jpg';
 
 const UserLogin = () => {
-    const [render, setRender] = React.useState(false);
+    //const [render, setRender] = React.useState(false);
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
 
