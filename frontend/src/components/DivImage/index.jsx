@@ -1,20 +1,32 @@
-import React from 'react';
-import Menu from '../Menu/mainMenu/index.jsx'
+//import React from 'react';
+//import Menu from '../Menu/mainMenu/index.jsx'
+import styled from 'styled-components'
 
-import {Row,Container} from 'react-bootstrap';
+
+const Image = styled.div`
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(${props =>  props.image});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 520px;
+    width: 100%;
+    padding-top: 50px;
+
+    background-attachment: fixed;
+`;
+
+
 
 const DivImage = ({image, children }) => {
     return (
         <>
-            <Menu />
-            <Row style={{ backgroundImage: `url(${image})`, height: 449}}>
-                <Container>
+            <Image image={image}>
                 {children}
-                </Container>
-            </Row>
+            </Image>
         </>
 
     )
 } 
 
-export default DivImage
+export default DivImage;
