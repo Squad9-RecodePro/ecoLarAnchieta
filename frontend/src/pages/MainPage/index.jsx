@@ -1,11 +1,11 @@
 import React from 'react';
 import {Container, Row, Col, Card, CardDeck, Carousel} from 'react-bootstrap';
 
-import Menu from '../../components/Menu/mainMenu';
 import DivImage from '../../components/DivImage';
 import RoundedButton from '../../components/RoundedButton';
 import ControlledCarousel from '../../components/ControlledCarousel';
 import AvatarList from '../../components/Avatar';
+import Footer from '../../components/Footer';
 
 import image from '../../assets/images/anchieta1.jpg';
 import image2 from '../../assets/images/anchieta2.jpg';
@@ -41,7 +41,6 @@ const MainPage = () => {
 
     return (
         <div style={{overflowX: "hidden"}}>
-            <Menu page1={"UserLogin"} title1={"Login"} page2={"RegisterUser"} title2={"Inscreva-se"}/>
 
             <DivImage image={image}>
                 <Container className="p-4">
@@ -118,7 +117,7 @@ const MainPage = () => {
                 <Container className="p-5">
                     <Row className="d-flex justify-content-center">
                         <iframe width="640" height="360" frameBorder="0"
-                            src="https://www.youtube.com/embed/1TTPK0fi8k4">
+                            src="https://www.youtube.com/embed/wSJt3k06nS8">
                         </iframe>
                     </Row>
                     <Row className="p-3 d-flex justify-content-center text-center text-light">
@@ -176,6 +175,7 @@ const MainPage = () => {
                     </Row>
                 </Container>
             </section>
+            <Footer/>
         </div>
 
     );
