@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Row, Col, Card, CardDeck, Carousel} from 'react-bootstrap';
 
+import Menu from '../../components/Menu/mainMenu';
 import DivImage from '../../components/DivImage';
 import RoundedButton from '../../components/RoundedButton';
 import ControlledCarousel from '../../components/ControlledCarousel';
@@ -41,7 +42,7 @@ const MainPage = () => {
 
     return (
         <div style={{overflowX: "hidden"}}>
-
+            <Menu />
             <DivImage image={image}>
                 <Container className="p-4">
                     <Row>
@@ -54,12 +55,12 @@ const MainPage = () => {
                             </Row>
                             <Row className="p-0">
                                 <Col lg="3" className="justify-content-center">
-                                    <RoundedButton size="lg" href="/UserLogin"><span>Inscreva-se</span></RoundedButton>
+                                    <RoundedButton size="lg" href="/RegisterUser"><span>Inscreva-se</span></RoundedButton>
                                 </Col>
                                 <Col lg="2">
-                                    <RoundedButton size="lg" href="/RegisterUser"><span>Login</span></RoundedButton>
+                                    <RoundedButton size="lg" href="/UserLogin"><span>Login</span></RoundedButton>
                                 </Col>
-                                <Col></Col>
+
                             </Row>
                         </Col>
                     </Row>
