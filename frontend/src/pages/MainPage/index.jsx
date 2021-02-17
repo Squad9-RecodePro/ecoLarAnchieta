@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col, Card, CardDeck, Carousel} from 'react-bootstrap';
+import { Container, Row, Col, Card, CardDeck, Carousel } from 'react-bootstrap';
 
 import Menu from '../../components/Menu/mainMenu';
 import DivImage from '../../components/DivImage';
@@ -55,7 +55,7 @@ const MainPage = () => {
     ]
 
     return (
-        <div style={{overflowX: "hidden"}}>
+        <div style={{ overflowX: "hidden" }}>
             <Menu />
             <DivImage image={image1}>
                 <Container className="p-4">
@@ -65,7 +65,7 @@ const MainPage = () => {
                                 <Titulo>ECO LAR ANCHIETA</Titulo>
                             </Row>
                             <Row className="d-flex justify-content-center">
-                                <p className="h2" width="640" height="360">Projeto desenvolvido para os moradores Ocupação Anchieta, localizada no Grajaú, ocupação que já é resistência a sete anos.</p>
+                                <p className="h2" width="640" height="360">Projeto desenvolvido para os moradores da Ocupação Anchieta, localizada no bairro do Grajaú São Paulo, ocupação que já é resistência a sete anos.</p>
                             </Row>
                             <Row className="p-0">
                                 <Col lg="3" className="justify-content-center">
@@ -81,22 +81,26 @@ const MainPage = () => {
                 </Container>
             </DivImage>
             <section>
-                <Row  className="p-5 d-flex justify-content-center" style={{backgroundColor: '#0B305E'}} fluid>
+                <Row className="p-5 d-flex justify-content-center" style={{ backgroundColor: '#0B305E' }} fluid>
                     <Row>
                         <Container fluid className="p-1 text-light">
-                            <h3>SOBRE A OCUPAÇÃO</h3>
+                            <h3>SOBRE A OCUPAÇÃO ANCHIETA</h3>
                             <div className="dropdown-divider"></div>
                             <p className="lead">
-                            Segundo o vice-presidente da associação de moradores da ocupação Anchieta, 
-                            Anderson (Pé), estima-se que há por volta de 1.100 famílias.
+                                A ocupação Anchieta, fica na região do Grajau, Zona Sul de São Paulo e abriga mais 1.100 famílias. <br></br>
+                                Os lotes ficam em um terreno particular e a negociação com o Instituto Anchieta do Grajaú, proprietário da área, incluem um projeto de urbanização.
+                                Uma nascente que fica na área já foi isolada, as ruas têm nome e a Sabesp e a Enel já iniciaram estudos para colocar redes de água, esgoto e energia elétrica. <br></br>
+                                A população já é assistida por escolas e postos de saúde do entorno.
+                                <br></br>
+                                “Somos um bairro”, diz moradora.
                             </p>
                         </Container>
                     </Row>
                     <Row className="p-5 d-flex justify-content-center" fluid>
                         <Container className="p-5 d-flex justify-content-center" fluid >
                             <blockquote className="blockquote text-right">
-                            <ControlledCarousel images={imagensCarrousel}/>
-                            <footer class="blockquote-footer text-light">Ocupação Anchieta , Grajaú - São Paulo</footer>
+                                <ControlledCarousel images={imagensCarrousel} />
+                                <footer class="blockquote-footer text-light">Ocupação Anchieta , Grajaú - São Paulo</footer>
                             </blockquote>
                         </Container>
                     </Row>
@@ -111,7 +115,9 @@ const MainPage = () => {
                                 <Card.Body>
                                     <Card.Title>Quem somos</Card.Title>
                                     <Card.Text>
-                                    Edson Oliveira, Frederico Reid, Elnatan Souza, Gustavo Cavalcante, Taina Ferreira e Thamirez Bastos.
+                                        O Eco Lar Anchieta, é um projeto social do curso Full Stack da ONG RECODE PRO. <br></br>
+                                         Fundado em 2020 por jovens estudantes que moram em várias localidades de São Paulo <br></br> 
+                                         (Edson Oliveira, Elnatan Souza, Frederico Reid, Gustavo Cavalcante, Tainá Ferreira e Thamirez Bastos).
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -121,7 +127,8 @@ const MainPage = () => {
                                 <Card.Body>
                                     <Card.Title>O projeto</Card.Title>
                                     <Card.Text>
-                                    O projeto foi desenvolvido durante o curso de full stack eletro como meio de...
+                                        Essa é uma plataforma para cadastrar os moradores, uma plataforma interna, <br></br> 
+                                        que seja possível emitir comunicados e possíveis mutirões para ajudar uns aos outros, promovendo ainda mais a união da comunidade, entre outras facilidades.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -129,7 +136,7 @@ const MainPage = () => {
                     </Container>
                 </Row>
             </section>
-            <section style={{backgroundColor: '#0B305E'}}>
+            <section style={{ backgroundColor: '#0B305E' }}>
                 <Container className="p-5">
                     <Row className="d-flex justify-content-center">
                         <iframe width="640" height="360" frameBorder="0"
@@ -137,7 +144,8 @@ const MainPage = () => {
                         </iframe>
                     </Row>
                     <Row className="p-3 d-flex justify-content-center text-center text-light">
-                            <h2 class="lead">Depoimentos de moradores da comunidade</h2>
+                        <h2 class="lead">“Enquanto o governo maior se organiza lá em cima, nós não temos que nos dar por mortos. A gente tem que se organizar”.
+                            Anderson Pé, vice-presidente da Associação de Moradores do Anchieta.</h2>
                     </Row>
                 </Container>
             </section>
@@ -150,7 +158,7 @@ const MainPage = () => {
                             </Row>
                             <Row className="p-3 d-flex justify-content-center text-center">
                                 <h3>Missão</h3>
-                                <p className="lead">Promover o que estiver ao nosso alcance para que aja o direito á uma moradia digna com segurança</p>
+                                <p className="lead">Fazer por meio desse projeto sobre a ocupação Anchieta, garantir o acesso a direitos e ajudar a fazer a diferença de pelo menos uma família.</p>
                             </Row>
                         </Col>
                         <Col sm={12} lg={4}>
@@ -159,7 +167,7 @@ const MainPage = () => {
                             </Row>
                             <Row className="p-3 d-flex justify-content-center text-center">
                                 <h3>Visão</h3>
-                                <p className="lead">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                                <p className="lead">Almejamos que nossos familiares, amigos e colegas se reconheçam em nosso projeto e se percebam pertencentes, para que assim possamos construir um projeto que traga mais esperança.</p>
                             </Row>
                         </Col>
                         <Col sm={12} lg={4}>
@@ -168,27 +176,27 @@ const MainPage = () => {
                             </Row>
                             <Row className="p-3 d-flex justify-content-center text-center">
                                 <h3>Valores</h3>
-                                <p className="lead">Promover a dignidade, solidariedade, esperança, otimismo, solidariedade e união entre os moradores.</p>
+                                <p className="lead">Nossos valores circulam em caminhar ao lado da ocupação Anchieta com representatividade, esperança e empatia. Promover a dignidade,  otimismo, solidariedade e união entre os moradores.</p>
                             </Row>
                         </Col>
                     </Row>
                 </Container>
             </section>
 
-            <section style={{backgroundColor: 'white'}}>
-                <hr/>
+            <section style={{ backgroundColor: 'white' }}>
+                <hr />
                 <Container className="p-3 justify-content-center">
                     <Row>
                         <Container className="text-center">
                             <h1>Desenvolvedores</h1>
                         </Container>
                         <Container>
-                            <AvatarList/>
+                            <AvatarList />
                         </Container>
                     </Row>
                 </Container>
             </section>
-            <Footer/>
+            <Footer />
         </div>
 
     );
