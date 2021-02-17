@@ -66,17 +66,17 @@ const UserLogin = () => {
                         
                     </form>
                     <a href="../ForgotPassword">
-                            Esqueceu a senha ? Clique aqui!
+                            Esqueceu a senha ?
                         </a>
                         <a href="./RegisterUser">
-                            Ainda não possui uma conta? Clique aqui!
+                            Ainda não possui uma conta?
                         </a>
                 </div>
 
                 <div className="container-1">
-                    {/* <div className="aboutUs"> */}
-                    <img src={Anchieta1} ></img>
-                    {/* </div> */}
+
+                    <img src={Anchieta1} alt=""/>
+                    
                 </div>
             </div>
         </>

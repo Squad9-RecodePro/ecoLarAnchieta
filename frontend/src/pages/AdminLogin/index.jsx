@@ -51,10 +51,9 @@ const AdminLogin = () => {
             <div className="containerAdminLogin">
                 <div className="content">
                     <div className="header">
-                        <h1> Ecolar Anchieta</h1>
                         <p>
-                            <span>Bem Vindo(a) ao</span>
-                            <span className="ecoLar"> EcoLar Anchieta</span>
+                            <span>Acesso exclusivo dos administradores</span>
+                            <span className="ecoLar"> </span>
                         </p>
                     </div>
 
@@ -73,11 +72,9 @@ const AdminLogin = () => {
                 </div>
 
                 <div className="container-1">
-                    {/* <div className="aboutUs"> */}
 
-                    <img src={Anchieta} ></img>
+                    <img src={Anchieta} />
 
-                    {/* </div> */}
                 </div>
             </div>
 

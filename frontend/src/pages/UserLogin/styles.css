@@ -3,13 +3,12 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    background:  #0B305E 105%;
+    background:  #0B305E;
     width: 100vw;
-    height: 94vh;
+    height: 100vh;
   }
   
   .containerUserLogin .content {
-    /* padding: 48px 0px 0px 128px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +41,6 @@
     color:#12B87C;
     font-size: 36px;
     display: flex;
-    opacity: 93%;
   }
   
   .containerUserLogin .content form .container .input {
@@ -90,11 +88,57 @@
   }
   
   .containerUserLogin .container-1 img {
-    position: relative;
     border-radius: 0px 6px 6px 0px;
-    /* border: 0; */
-    /* padding-left: 7px;
-    margin-top: 7px; */
     width: 42vw;
     height: 64vh;
+  }
+
+  @media (max-width: 970px) {
+    .containerUserLogin .container-1 {
+      display: none;
+    }
+    .containerUserLogin .content {
+      border-radius: 6px;
+      width: 64vw;
+      height: 80vh;
+    }
+    .containerUserLogin .content form h2 {
+      /* font-size: 300px; */
+      display: flex;
+      justify-content: center;
+    }
+    .containerUserLogin .content form .container .input {
+      width: 40vw;
+    }
+    .containerUserLogin .content form .btn {
+      width: 40vw;
+      height: 6vh;
+      margin-bottom: 12px auto;
+    }
+  }
+
+  @media (max-width: 530px) {
+    .containerUserLogin .content {
+      width: 100%;
+      height: 100%;
+      background-color: #0B305E;
+    }
+    .containerUserLogin .content p {
+      color: #aaa7a7;
+      margin-bottom: 8vh;
+    }
+    .containerUserLogin .content form {
+      width: 80vw;
+    }
+    .containerUserLogin .content form h2 {
+      margin-bottom: 4vh;
+    }
+    .containerUserLogin .content form .btn {
+      margin: 4vh auto;
+      width: 60vw;
+      border: 0;
+    }
+    .containerUserLogin .content a {
+      color: #aaa7a7;
+    }
   }
