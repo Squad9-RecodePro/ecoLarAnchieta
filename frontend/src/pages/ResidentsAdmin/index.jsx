@@ -4,7 +4,7 @@ import Menu from '../../components/Menu/mainMenu';
 function ResidentsAdmin(){
     return(
         <>
-            <Menu page1={"VolunteerWorks"} title1={"Trabalhos Voluntários"} page2={"AdminPanel"} title2={"Home Admin"} page3={""} title3={"Sair"} ></Menu>
+            <Menu page1={"VolunteerWorks"} title1={"Trabalhos Voluntários"} page2={""} title2={"Sair"} home={"AdminPanel"}></Menu>
             <div className="container-fluid row" id="container">
                 <main class="col-12 m-auto align-items-center py-5" styles="height: 88vh">
                     <div class="col-12">

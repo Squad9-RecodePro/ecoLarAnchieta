@@ -17,11 +17,9 @@ const RegisterUser = () => {
     let history = useHistory();
     function registerUser(event) {
         event.preventDefault();
-        console.log(event.target)
 
         const formData = { "name": name, "email": email, "password": password }
         const url = `${baseUrl}register`;
-
 
         fetch(url, {
             method: "POST",
@@ -33,7 +31,8 @@ const RegisterUser = () => {
         })
             .then(res => res.json())
             .then((dados) => {
-                if (true) {
+                if (dados) {
+                    alert("Cadastro efetuado!")
                     history.push("/UserLogin");
                 }
             })
@@ -43,12 +42,10 @@ const RegisterUser = () => {
         event.preventDefault();
 
         // Lógica de cadastro
-        console.log("Cadastro efetuado!")
         setName("")
         setEmail("");
         setPassword("");
         setSecondPassword("");
-
 
     }
 

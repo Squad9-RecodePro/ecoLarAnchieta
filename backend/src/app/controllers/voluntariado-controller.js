@@ -8,9 +8,9 @@ router.get('/', async (req, res) => {
     try {                   // Usando o comando find() do mongoDB
         const voluntariado = await Voluntariado.find();
 
-        return res.send(voluntariado);
+        return res.json(voluntariado);
     } catch (err) {
-        return res.status(400).send({ error: 'Error loading voluntariado' });
+        return res.status(400).json({ error: 'Error loading voluntariado' });
     }
 });
 
@@ -22,10 +22,10 @@ router.post('/', async (req, res) => {
 
         await voluntariado.save();
 
-        return res.send(voluntariado);
+        return res.json(voluntariado);
 
     } catch (err) {
-        return res.status(400).send({ error: 'Error creating new project' });
+        return res.status(400).json({ error: 'Error creating new project' });
     }
 
 });
@@ -36,11 +36,12 @@ router.put('/:voluntariadoId', async (req, res) => {
             .then(() => {
                 Voluntariado.findOne({ _id: req.params.voluntariadoId })
                     .then((voluntariado) => {
-                        res.send(voluntariado);
+                        res.json(voluntariado);
                     });
             });
+            
     } catch (err) {
-        return res.status(400).send({ error: 'Error updating one' });
+        return res.status(400).json({ error: 'Error updating one' });
     }
 });
 
@@ -48,10 +49,10 @@ router.delete('/:voluntariadoId', async (req, res) => {
     try {
         const voluntariado = await Voluntariado.findByIdAndRemove(req.params.voluntariadoId);
 
-        return res.send("Deletado com sucesso!");
+        return res.json("Deletado com sucesso!");
 
     } catch (err) {
-        return res.status(400).send({ error: 'Error deleting one' });
+        return res.status(400).json({ error: 'Error deleting one' });
     }
 });
 

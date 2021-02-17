@@ -2,9 +2,100 @@ import React from 'react';
 import Menu from '../../components/Menu/mainMenu';
 
 function VolunteerWorks() {
+    const [voluntariado, setVoluntariado] = React.useState([]);
+    const [render, setRender] = React.useState(false);
+    const [titulo, setTitulo] = React.useState('');
+    const [descricao, setDescricao] = React.useState('');
+    const [nvagas, setNvagas] = React.useState('');
+    const [id, setId] = React.useState('');
+    const [msg, setMsg] = React.useState(false);
+
+    const baseUrl = 'http://localhost:5000/voluntariado/';
+
+
+    React.useEffect(() => {
+        async function fetchData() {
+            const url = baseUrl;
+            const response = await fetch(url);
+            setVoluntariado(await response.json())
+        }
+        fetchData();
+    }, [render])
+
+    function cadastrarVaga(event) {
+        event.preventDefault()
+        let form = {
+            title: titulo,
+            description: descricao,
+            nvagas: nvagas,
+        }
+
+        fetch(baseUrl, {
+            method: "post",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(form)
+        }).then((response) => response.json())
+            .then((dados) => {
+                setRender(!render)
+                setMsg(dados)
+                setTimeout(() => {
+                    setMsg(false)
+                }, 5000)
+            })
+
+        setTitulo('');
+        setDescricao('');
+        setNvagas('');
+    }
+
+    function excluir(event) {
+        event.preventDefault()
+
+        fetch(baseUrl + voluntariado[id]._id, {
+            method: "delete",
+        }).then((response) => response.json())
+            .then((dados) => {
+                setRender(!render)
+                setMsg(dados)
+                setTimeout(() => {
+                    setMsg(false)
+                }, 5000)
+            })
+
+        setTitulo('');
+        setDescricao('');
+        setNvagas('');
+    }
+
+    function atualizar(event) {
+        event.preventDefault()
+        let form = {
+            title: titulo,
+            description: descricao,
+            nvagas: nvagas,
+        }
+
+        fetch(baseUrl + voluntariado[id]._id, {
+            method: "put",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(form),
+        }).then((response) => response.json())
+            .then((dados) => {
+                setRender(!render)
+                setMsg(dados)
+                setTimeout(() => {
+                    setMsg(false)
+                }, 5000)
+            })
+
+        setTitulo('');
+        setDescricao('');
+        setNvagas('');
+    }
+
     return (
         <>
-            <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={"AdminPanel"} title2={"Home Admin"} page3={""} title3={"Sair"} >  </Menu>
+            <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={""} title2={"Sair"} home={"AdminPanel"}>  </Menu>
             <div className="container" id="container">
                 <main className="row m-auto container align-items-center py-5" styles="height: 88vh">
                     <div className="table-responsive card">
@@ -14,7 +105,7 @@ function VolunteerWorks() {
                                 Cadastrar
                             </button>
                         </div>
-                        <table className="table table-hover text-center my-0">
+                        <table className="table table-hover text-center">
                             <thead>
                                 <tr>
                                     <th scope="col">Título</th>
@@ -22,24 +113,26 @@ function VolunteerWorks() {
                                     <th scope="col">Número de vagas</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th name="<?php echo $rows['id']; ?>" scope="row"></th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        <button type="button" className="btn btn-secondary" data-toggle="modal" data-target="#modalAlterar">Alterar</button>
-                                        <button type="button" className="btn btn-danger" data-toggle="modal" data-target="#modalRemover">Remover</button>
-                                    </td>
-                                </tr>
+                            {voluntariado.map((element, index) => {
+                                return (
+                                    <tbody key={index}>
+                                        <tr>
+                                            <td>{element.title}</td>
+                                            <td>{element.description}</td>
+                                            <td>{element.nvagas}</td>
+                                            <td>
+                                                <button type="button" className="btn btn-secondary" data-toggle="modal" data-target="#modalAlterar" onClick={event => setId(event.target.value)} value={index}>Alterar</button>
+                                                <button type="button" className="btn btn-danger" data-toggle="modal" data-target="#modalRemover" onClick={event => setId(event.target.value)} value={index} >Remover</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
 
-                            </tbody>
+                                )
+                            })}
                         </table>
                     </div>
                 </main>
             </div>
-
 
             {/* Modal Cadastrar */}
             <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -48,22 +141,28 @@ function VolunteerWorks() {
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="../../backend/servidor/voluntariado_cadastro.php" method="POST">
+                            <form onSubmit={cadastrarVaga}>
 
-                            <input type="text" name="titulo" class="form-control mt-3" placeholder="Título" />
-                            <input type="file" name="imagem" class="form-control mt-3" placeholder="Imagem" />
-                            <textarea name="descricao" class="form-control mt-3" cols="30" rows="5" placeholder="Descrição"></textarea>
-                            <input name="nvagas" type="number" class="form-control mt-3" placeholder="Número de vagas" />
+                                <input type="text" name="titulo" class="form-control mt-3" placeholder="Título" value={titulo} onChange={event => setTitulo(event.target.value)} />
 
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-info">Salvar mudanças</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                            </div>
+                                <textarea name="descricao" class="form-control mt-3" cols="30" rows="5" placeholder="Descrição" value={descricao} onChange={event => setDescricao(event.target.value)}></textarea>
+
+                                <input name="nvagas" type="number" class="form-control mt-3" placeholder="Número de vagas" value={nvagas} onChange={event => setNvagas(event.target.value)} />
+
+                                <div class="modal-footer">
+                                    <button type="submit" name="Enviar" class="btn btn-info">Salvar Mudanças</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                </div>
                             </form>
+                            {msg &&
+                                <div className="alert alert-success mx-auto mt-4 w-75" role="alert">
+                                    Cadastro de vaga efetuado com sucesso!
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
@@ -77,22 +176,28 @@ function VolunteerWorks() {
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Altere os dados</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="../../backend/servidor/alterar_voluntario.php?id='<?php echo $rows['id']; ?>'" method="POST">
+                            <form onSubmit={atualizar}>
 
-                            <input type="text" name="titulo" class="form-control mt-3" placeholder="Título" />
-                            <input type="file" name="imagem" class="form-control mt-3" placeholder="Imagem" />
-                            <textarea name="descricao" class="form-control mt-3" cols="30" rows="5" placeholder="Descrição"></textarea>
-                            <input name="nvagas" type="number" class="form-control mt-3" placeholder="Número de vagas" />
+                                <input type="text" name="titulo" value={titulo} onChange={event => setTitulo(event.target.value)} class="form-control mt-3" placeholder="Título" />
 
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">Alterar</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                            </div>
+                                <textarea name="descricao" value={descricao} onChange={event => setDescricao(event.target.value)} class="form-control mt-3" cols="30" rows="5" placeholder="Descrição"></textarea>
+
+                                <input name="nvagas" type="number" value={nvagas} onChange={event => setNvagas(event.target.value)} class="form-control mt-3" placeholder="Número de vagas" />
+
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Alterar</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                </div>
                             </form>
+                            {msg &&
+                                <div className="alert alert-success mx-auto mt-4 w-75" role="alert">
+                                    Alteração feita com sucesso!
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
@@ -105,18 +210,24 @@ function VolunteerWorks() {
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form>
+
+                            <form onSubmit={excluir}>
                                 <h4>Tem certeza que deseja remover?</h4>
 
                                 <div class="modal-footer">
-                                <a class="btn btn-danger" href="../../backend/servidor/delete.php?id='<?php echo $rows['id']; ?>' ">Sim</a>
-                                <button type="button" class="btn btn-light" data-dismiss="modal">cancelar</button>
+                                    <button type="submit" value={id} onChange={event => setId(event.target.value)} class="btn btn-danger" >Sim</button>
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
                                 </div>
                             </form>
+                            {msg &&
+                                <div className="alert alert-success mx-auto mt-4 w-75" role="alert">
+                                    Vaga excluida com sucesso!
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
