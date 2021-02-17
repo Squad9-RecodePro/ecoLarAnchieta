@@ -66,3 +66,7 @@
     display: flex;
     justify-content: center;
 }
+.p-4 {
+    display: flex !important;
+    justify-content: center !important;
+}

@@ -21,7 +21,7 @@ const Avatar = ({ data }) => {
                 <Image src={data.image} roundedCircle width="200" className="mx-auto d-block" />
             </Row>
             <Row className="p-3 mx-auto d-block text-center" >
-                <h3>{data.nome}</h3>
+                <h3 className="text-#0B305E">{data.nome}</h3>
             </Row>
             <Row>
                 <Col className="p-3">

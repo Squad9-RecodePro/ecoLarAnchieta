@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../../../assets/icons/icon.svg';
+import Titulo from '../../Titulo';
 
 const Menu = (props) => {
     return ( 
@@ -14,7 +15,9 @@ const Menu = (props) => {
                     height="70"
                     className="d-inline-block align-center"
                 />{' '}
-                Eco Lar Anchieta
+                
+                <Titulo style={{color: '#0B305E'}}>ECO LAR ANCHIETA</Titulo>
+                
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

@@ -7,11 +7,16 @@ import RoundedButton from '../../components/RoundedButton';
 import ControlledCarousel from '../../components/ControlledCarousel';
 import AvatarList from '../../components/Avatar';
 import Footer from '../../components/Footer';
+import './styles.css';
 
-import image from '../../assets/images/anchieta1.jpg';
-import image2 from '../../assets/images/anchieta2.jpg';
-import image3 from '../../assets/images/anchieta3.jpeg';
-import image4 from '../../assets/images/anchieta4.jpeg';
+import Titulo from '../../components/Titulo';
+
+import image1 from '../../assets/images/fred1.jpg';
+import image2 from '../../assets/images/fred2.jpg';
+import image3 from '../../assets/images/fred3.jpg';
+import image4 from '../../assets/images/fred4.jpg';
+import image5 from '../../assets/images/fred5.jpg';
+import image6 from '../../assets/images/fred6.jpg';
 
 import missao from '../../assets/icons/missao.svg';
 import valores from '../../assets/icons/valores.svg';
@@ -23,11 +28,7 @@ const MainPage = () => {
 
     const imagensCarrousel = [
         {
-            src: image4,
-            alt: "...."
-        },
-        {
-            src: image3,
+            src: image1,
             alt: "...."
         },
         {
@@ -35,7 +36,20 @@ const MainPage = () => {
             alt: "...."
         },
         {
-            src: image,
+            src: image3,
+            alt: "...."
+        },
+
+        {
+            src: image4,
+            alt: "...."
+        },
+        {
+            src: image5,
+            alt: "...."
+        },
+        {
+            src: image6,
             alt: "...."
         }
     ]
@@ -43,15 +57,15 @@ const MainPage = () => {
     return (
         <div style={{overflowX: "hidden"}}>
             <Menu />
-            <DivImage image={image}>
+            <DivImage image={image1}>
                 <Container className="p-4">
                     <Row>
-                        <Col lg={8} md={10} sm={3}>
+                        <Col className="section1" lg={8} md={10} sm={3} >
                             <Row>
-                                <h1 className="h4">ECO LAR ANCHIETA</h1>
+                                <Titulo>ECO LAR ANCHIETA</Titulo>
                             </Row>
-                            <Row>
-                                <p className="h2">Projeto desenvolvido pra Ocupação Anchieta, localizada no Grajaú,ocupação que já é resistência a 7 anos.</p>
+                            <Row className="d-flex justify-content-center">
+                                <p className="h2" width="640" height="360">Projeto desenvolvido para os moradores Ocupação Anchieta, localizada no Grajaú, ocupação que já é resistência a sete anos.</p>
                             </Row>
                             <Row className="p-0">
                                 <Col lg="3" className="justify-content-center">
@@ -67,46 +81,47 @@ const MainPage = () => {
                 </Container>
             </DivImage>
             <section>
-                <Row fluid>
-                    <Col style={{backgroundColor: '#0B305E'}}>
-                        <Container fluid className="p-5 text-light">
-                            <h3>O QUE VOCÊ SABE SOBRE OCUPAÇÃO?</h3>
+                <Row  className="p-5 d-flex justify-content-center" style={{backgroundColor: '#0B305E'}} fluid>
+                    <Row>
+                        <Container fluid className="p-1 text-light">
+                            <h3>SOBRE A OCUPAÇÃO</h3>
                             <div className="dropdown-divider"></div>
                             <p className="lead">
-                                The number of applicants placed is down 2% on the same time last year, but overall there has been a steady rise in the numbers going to university over the past 10 years - from 375,320 in 2009.
+                            Segundo o vice-presidente da associação de moradores da ocupação Anchieta, 
+                            Anderson (Pé), estima-se que há por volta de 1.100 famílias.
                             </p>
                         </Container>
-                    </Col>
-                    <Col>
+                    </Row>
+                    <Row className="p-5 d-flex justify-content-center" fluid>
                         <Container className="p-5 d-flex justify-content-center" fluid >
                             <blockquote className="blockquote text-right">
-                            <img src={image2} style={{maxWidth: "100%"}}/>
-                            <footer class="blockquote-footer">Ocupação Anchieta , Grajaú - São Paulo</footer>
+                            <ControlledCarousel images={imagensCarrousel}/>
+                            <footer class="blockquote-footer text-light">Ocupação Anchieta , Grajaú - São Paulo</footer>
                             </blockquote>
                         </Container>
-                    </Col>
+                    </Row>
                 </Row>
             </section>
             <section>
                 <Row fluid>
                     <Container className="p-5">
                         <CardDeck>
-                            <Card>
+                            <Card className="shadow p-3 mb-5 bg-white rounded">
                                 <Card.Img variant="top" src={image3} />
                                 <Card.Body>
-                                    <Card.Title>Sobre a ocupação</Card.Title>
+                                    <Card.Title>Quem somos</Card.Title>
                                     <Card.Text>
-                                    Schools in the National Universities category, such as the University of Chicago and Johns Hopkins University, offer a full range of undergraduate majors, plus master's and doctoral programs. These colleges also are committed to producing groundbreaking research.
+                                    Edson Oliveira, Frederico Reid, Elnatan Souza, Gustavo Cavalcante, Taina Ferreira e Thamirez Bastos.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
 
-                            <Card>
+                            <Card className="shadow p-3 mb-5 bg-white rounded">
                                 <Card.Img variant="top" src={image4} />
                                 <Card.Body>
                                     <Card.Title>O projeto</Card.Title>
                                     <Card.Text>
-                                    The Curious Case of Benjamin Button ends with Button forgetting all he had achieved throughout his life and him finally blinking out of existence. Is this an appropriate metaphor to describe what has happened to the internationalisation of the curriculum (IoC) agenda in Australia’s higher education sector?
+                                    O projeto foi desenvolvido durante o curso de full stack eletro como meio de...
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -122,8 +137,7 @@ const MainPage = () => {
                         </iframe>
                     </Row>
                     <Row className="p-3 d-flex justify-content-center text-center text-light">
-                            <h2 class="display-4">Ocupação Anchieta</h2>
-                            <p class="lead">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam <br/> nunc justo sagittis suscipit ultrices. asodaksod aoskdasokd aoskdosak</p>
+                            <h2 class="lead">Depoimentos de moradores da comunidade</h2>
                     </Row>
                 </Container>
             </section>
@@ -160,10 +174,8 @@ const MainPage = () => {
                     </Row>
                 </Container>
             </section>
-            <section className="p-3 d-flex justify-content-center">
-                <ControlledCarousel images={imagensCarrousel}/>
-            </section>
-            <section>
+
+            <section style={{backgroundColor: 'white'}}>
                 <hr/>
                 <Container className="p-3 justify-content-center">
                     <Row>

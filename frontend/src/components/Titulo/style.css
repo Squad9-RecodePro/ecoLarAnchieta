@@ -1,0 +1,9 @@
+@font-face {
+    font-family: League Spartan;
+    src: local(League Spartan), url('../../assets/font/league-spartan.bold.ttf') format('truetype');
+}
+
+.title {
+    font-family: League Spartan;
+    font-weight: 200;
+}

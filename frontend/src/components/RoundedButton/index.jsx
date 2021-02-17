@@ -4,7 +4,8 @@ import React from 'react';
 
 const RoundedButton = ({ href, size ,children }) => {
     const Btn = styled(Button)`
-        border-radius: 30px;
+    background-color: rgba(89, 254, 155, 0.7); 
+    border: none;
     `;
     return (
         <Btn href={href} size={size}>
