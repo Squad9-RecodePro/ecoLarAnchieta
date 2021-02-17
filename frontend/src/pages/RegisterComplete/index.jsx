@@ -6,7 +6,7 @@ import Menu from '../../components/Menu/mainMenu';
 function RegisterComplete(){
     return(
         <>
-            <Menu page1={"UserPanel"} title1={"Painel Usuário"} page2={""} title2={"Sair"}> </Menu>
+            <Menu page1={"UserPanel"} title1={"Painel Usuário"} page2={""} title2={"Sair"} home={"UserPanel"}> </Menu>
             <div className="container" id="container">
                 <h1 class="form-row justify-content-center mt-5">Finalizar Cadastro</h1>
                 <form class="mt-5" onsubmit="return validateForm(event)" action="../../backend/servidor/acesso_complemento_cadastro.php" method="post">

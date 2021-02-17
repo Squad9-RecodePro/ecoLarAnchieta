@@ -18,7 +18,7 @@ function AdminPanel() {
 
     return (
         <>
-            <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={"VolunteerWorks"} title2={"Trabalhos Voluntarios"} page3={"AdminLogin"} title3={"Sair"}>
+            <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={"VolunteerWorks"} title2={"Trabalhos Voluntarios"} page3={"AdminLogin"} title3={"Sair"} home={"AdminPanel"}>
 
             </Menu>
 

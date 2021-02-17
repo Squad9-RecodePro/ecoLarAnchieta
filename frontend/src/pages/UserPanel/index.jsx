@@ -17,7 +17,7 @@ function UserPanel() {
 
     return (
         <>
-            <Menu page1={"RegisterComplete"} title1={"Complete seu Cadastro"} page2="/UserLogin" title2={"Sair"}></Menu>
+            <Menu page1={"RegisterComplete"} title1={"Complete seu Cadastro"} page2={"/UserLogin"} title2={"Sair"} home={"UserPanel"}></Menu>
             <div className="container" id="container">
                 <div className="card text-center">
                     <div className="card-body">

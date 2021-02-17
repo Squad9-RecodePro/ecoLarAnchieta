@@ -6,7 +6,7 @@ const Menu = (props) => {
     return ( 
     <>
         <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
-            <Navbar.Brand href="/">
+            <Navbar.Brand href={props.home}>
                 <img
                     alt="Eco Lar Anchieta"
                     src={logo}
