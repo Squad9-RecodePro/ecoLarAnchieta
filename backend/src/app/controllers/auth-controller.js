@@ -17,49 +17,59 @@ function generateToken(params = {}) {
     });
 }
 
+router.get("/moradores", async (req, res) => {
+    try {                   // Usando o comando find() do mongoDB
+        const moradores = await User.find();
+
+        return res.send(moradores);
+    } catch (err) {
+        return res.status(400).json({ error: 'Error loading Moradores' });
+    }
+})
+
 router.post("/register", async (req, res) => {
     const { email } = req.body;
 
     try {
 
         if (await User.findOne({ email }))
-            return res.status(400).send({ error: "User Already Exists" });
+            return res.status(400).json({ error: "User Already Exists" });
 
 
         const user = await User.create(req.body);
 
 
 
-        return res.send({
+        return res.json({
             user,
             token: generateToken({ id: user.id }),
         });
 
     } catch (err) {
         console.log(err)
-        return res.status(400).send({ error: "Registration failed" });
+        return res.status(400).json({ error: "Registration failed" });
     }
 });
 
 router.post('/authenticate', async (req, res) => {
     const { email, password } = req.body
-   
+
     const user = await User.findOne({ email }).select('+password');
 
     if (!user)
-        return res.status(400).send({ error: "User not found" });
+        return res.status(400).json({ error: "User not found" });
 
     if (!await bcrypt.compare(password, user.password))
-        return res.status(400).send({ error: 'Invalid password' });
+        return res.status(400).json({ error: 'Invalid password' });
 
     user.password = undefined;
 
-    res.send({
+    res.json({
         user,
         token: generateToken({ id: user.id }),
-        
+
     });
-    
+
 });
 
 router.post('/forgot_password', async (req, res) => {
@@ -69,7 +79,7 @@ router.post('/forgot_password', async (req, res) => {
         const user = await User.findOne({ email });
 
         if (!user)
-            return res.status(400).send({ error: 'User not found' });
+            return res.status(400).json({ error: 'User not found' });
 
         const token = crypto.randomBytes(20).toString('hex');
 
@@ -92,13 +102,13 @@ router.post('/forgot_password', async (req, res) => {
         }, (err) => {
             if (err)
 
-                return res.status(400).send({ error: 'Cannot send forgot password email' });
+                return res.status(400).json({ error: 'Cannot send forgot password email' });
 
-            return res.send();
+            return res.json();
         });
 
     } catch (err) {
-        res.status(400).send({ error: 'Erro on forgot password, try again' });
+        res.status(400).json({ error: 'Erro on forgot password, try again' });
     }
 
 });
@@ -111,24 +121,24 @@ router.post('/reset_password', async (req, res) => {
             .select('+passwordResetToken passwordResetExpires');
 
         if (!user)
-            return res.status(400).send({ error: 'User not found' });
+            return res.status(400).json({ error: 'User not found' });
 
         if (token !== user.passwordResetToken)
-            return res.status(400).send({ error: 'Token invalid' });
+            return res.status(400).json({ error: 'Token invalid' });
 
         const now = new Date();
 
         if (now > user.passwordResetExpires)
-            return res.status(400).send({ error: 'Token expired, generate a new one!' });
+            return res.status(400).json({ error: 'Token expired, generate a new one!' });
 
         user.password = password;
 
         await user.save();
 
-        res.send();
+        res.json();
 
     } catch (err) {
-        res.status(400).send({ error: 'Cannot reset password, try again!' });
+        res.status(400).json({ error: 'Cannot reset password, try again!' });
     }
 
 });
@@ -138,38 +148,38 @@ router.post("/registerAdmin", async (req, res) => {
 
     try {
         if (await Admin.findOne({ email }))
-            return res.status(400).send({ error: "Admin Already Exists" });
+            return res.status(400).json({ error: "Admin Already Exists" });
 
         const admin = await Admin.create(req.body);
 
-        return res.send({
+        return res.json({
             admin,
             token: generateToken({ id: admin.id }),
         });
 
     } catch (err) {
-        return res.status(400).send({ error: "Registration failed" });
+        return res.status(400).json({ error: "Registration failed" });
     }
 });
 
 router.post('/admin', async (req, res) => {
     const { email, password } = req.body
-   
+
     const admin = await Admin.findOne({ email }).select('+password');
 
     if (!admin)
-        return res.status(400).send({ error: "Admin not found" });
+        return res.status(400).json({ error: "Admin not found" });
 
     if (!await bcrypt.compare(password, admin.password))
-        return res.status(400).send({ error: 'Invalid password' });
+        return res.status(400).json({ error: 'Invalid password' });
 
     admin.password = undefined;
 
-    res.send({
+    res.json({
         admin,
-        token: generateToken({ id: admin.id }),        
+        token: generateToken({ id: admin.id }),
     });
-    
+
 });
 
 module.exports = app => app.use("/auth", router);

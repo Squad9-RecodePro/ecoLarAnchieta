@@ -17,11 +17,11 @@ function UserPanel() {
 
     return (
         <>
-            <Menu page1={"RegisterComplete"} title1={"Complete seu Cadastro"} page2={""} title2={"Sair"}></Menu>
+            <Menu page1={"RegisterComplete"} title1={"Complete seu Cadastro"} page2="/UserLogin" title2={"Sair"}></Menu>
             <div className="container" id="container">
                 <div className="card text-center">
                     <div className="card-body">
-                        <h5 className="card-title">Seja Bem-vindo , deseja ser um voluntario?</h5>
+                        <h5 className="card-title">Seja Bem-vindo, deseja ser um voluntario?</h5>
                         <p className="card-text">Veja algumas vagas para que você possa colaborar com a sua comunidade:</p>
                     </div>
                 </div>
