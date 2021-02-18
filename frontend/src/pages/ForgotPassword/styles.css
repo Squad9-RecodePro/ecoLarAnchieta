@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    background: #0B305E 105%;
+    background: #0B305E;
     width: 100vw;
-    height: 94vh;
+    height: 100vh;
 }
 
 .sectionPassword .content {
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 18px 0px 0px 42px;
+    margin: 18px auto;
     width: 14vw;
     height: 5vh;
     border-radius: 14px 14px 14px 14px;
@@ -75,3 +75,40 @@
     margin: 0 6px;
     color: #aaa7a7;
 }
+
+@media (max-width: 890px){
+    .sectionPassword .content {
+        width: 64vw;
+        height: 80vh;
+    }
+    .sectionPassword .content form h2 {
+        margin-bottom: 24px;
+    }
+    .sectionPassword .content form .btn {
+        width: 40vw;
+        height: 6vh;
+        margin: 12px auto;
+      }
+}
+@media (max-width: 600px) {
+    .sectionPassword .content {
+      width: 100%;
+      height: 100%;
+      background-color: #0B305E;
+    }
+    .sectionPassword .content p {
+      color: #aaa7a7;
+      margin-bottom: 8vh;
+    }
+    .sectionPassword .content form {
+      width: 80vw;
+    }
+    .sectionPassword .content form h2 {
+      margin-bottom: 4vh;
+    }
+    .sectionPassword .content form .btn {
+      margin: 4vh auto;
+      width: 60vw;
+      border: 0;
+    }
+  } 

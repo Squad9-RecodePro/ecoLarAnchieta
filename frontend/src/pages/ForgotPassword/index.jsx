@@ -41,15 +41,19 @@ const ForgotPassword = () => {
 
             <div className="sectionPassword">
                 <div className="content">
+                    
                     <form onSubmit={resetPassword}>
                         <h2>Recuperar senha</h2>
-
+                        
                         <div className="container">
                             <i className="fa fa-envelope" aria-hidden="true"></i>
                             <input className="input" type="text" name="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="Email" required />
                         </div>
+                        <p>Insira seu e-mail cadastrado para recuperar a senha</p>
                         <button type="submit" value="Enviar" className="btn container" >Recuperar</button>
+                        
                     </form>
+                    <a href="./UserLogin"> Voltar para página de login </a>
                 </div>
             </div>
 

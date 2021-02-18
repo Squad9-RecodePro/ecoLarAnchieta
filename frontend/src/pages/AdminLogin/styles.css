@@ -9,14 +9,13 @@
   }
   
   .containerAdminLogin .content {
-    /* padding: 48px 0px 0px 128px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 42vw;
     height: 64vh;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #fff;
     border-radius: 6px 0px 0px 6px;
   }
   
@@ -62,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 18px 0px 0px 42px;
+    margin: 18px auto;
     width: 14vw;
     height: 5vh;
     border-radius: 14px 14px 14px 14px;
@@ -73,13 +72,6 @@
     cursor: pointer;
   }
   
-  .containerAdminLogin .content form a {
-    color: #0496eb;
-    margin: 14px 0px 0px 36px;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-  }
   
   .containerAdminLogin .content .container i {
     display: flex;

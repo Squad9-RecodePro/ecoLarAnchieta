@@ -65,7 +65,7 @@ const UserLogin = () => {
                         <button type="submit" value="Enviar" className="btn container"  >Entrar</button>
                         
                     </form>
-                    <a href="../ForgotPassword">
+                    <a href="./ForgotPassword">
                             Esqueceu a senha ?
                         </a>
                         <a href="./RegisterUser">

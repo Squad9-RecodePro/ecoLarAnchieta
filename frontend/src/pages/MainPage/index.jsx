@@ -58,14 +58,14 @@ const MainPage = () => {
         <div style={{ overflowX: "hidden" }}>
             <Menu />
             <DivImage image={image1}>
-                <Container className="p-4">
+                <Container className="section-1">
                     <Row>
-                        <Col className="section1" lg={8} md={10} sm={3} >
+                        <Col lg={8} md={10} sm={3} >
                             <Row>
                                 <Titulo>ECO LAR ANCHIETA</Titulo>
                             </Row>
                             <Row className="d-flex justify-content-center">
-                                <p className="h2" width="640" height="360">Projeto desenvolvido para os moradores da Ocupação Anchieta, localizada no bairro do Grajaú São Paulo, ocupação que já é resistência a sete anos.</p>
+                                <p className="h2">Projeto desenvolvido para os moradores da Ocupação Anchieta, localizada no bairro do Grajaú São Paulo, ocupação que já é resistência a sete anos.</p>
                             </Row>
                             <Row className="p-0">
                                 <Col lg="3" className="justify-content-center">
