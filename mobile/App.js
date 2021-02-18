@@ -1,21 +1,12 @@
 import React from 'react';
-import {
-  View,
-  StatusBar,
-} from 'react-native';
+import { View } from 'react-native';
 
-import Register from './src/screens/Register';
-import Login from './src/screens/Login';
-
+import Routes from './src/Routes';
 
 function App() {
   return (
     <View>
-      <StatusBar />
-
-
-      {/* <Login /> */}
-      <Register />
+      <Routes />
     </View>
   )
 }

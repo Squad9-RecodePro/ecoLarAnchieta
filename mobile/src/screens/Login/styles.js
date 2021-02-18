@@ -52,10 +52,12 @@ const styles = StyleSheet.create({
     },
     texto: {
         fontSize: 18,
-        color: "white",
+        color: '#fff',
         textAlign: 'center'
     },
     link: {
+        fontSize: 16,
+        marginTop: 10,
         color: "#1c83f6",
         justifyContent: 'center',
         alignItems: 'center',

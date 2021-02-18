@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 2,
         borderBottomColor: "#1c83f6",
         borderRadius: 4
-       
+
     },
     btn: {
         backgroundColor: "#12B87C",
@@ -51,6 +51,8 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     link: {
+        fontSize: 16,
+        marginTop: 10,
         color: "#1c83f6",
         justifyContent: 'center',
         alignItems: 'center',

@@ -1,10 +1,19 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity,Linking } from 'react-native';
-
+import {
+    View,
+    Text,
+    TextInput,
+    TouchableOpacity,
+} from 'react-native';
 
 import styles from './styles';
 
-function Register() {
+function Register({ navigation }) {
+
+    const login = () => {
+        navigation.navigate('Login');
+    }
+
     return (
         <View style={styles.caixa}>
             <View style={styles.fundo}>
@@ -25,7 +34,7 @@ function Register() {
                             <Text style={styles.texto}>Entrar</Text>
                         </TouchableOpacity>
                         <Text style={styles.link}
-                            onPress={() => Linking.openURL('http://google.com')}>
+                            onPress={login}>
                             Já possui uma conta? Clique aqui</Text>
 
                     </View>

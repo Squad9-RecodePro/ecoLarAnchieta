@@ -1,9 +1,39 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, Linking } from 'react-native';
+import {
+    View,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    Linking,
+    Alert,
+} from 'react-native';
 
 import styles from './styles';
 
-function Login() {
+const userApi = {
+    id: 1,
+    email: 'Recode@recode.org',
+    password: 'recodepro',
+}
+
+function Login({ navigation }) {
+    const [user, setUser] = React.useState('');
+    const [password, setPassword] = React.useState('');
+
+    const autentication = () => {
+        if (userApi.email === user && userApi.password === password) {
+            navigation.navigate('PainelUser')
+        } else {
+            Alert.alert("Algo errado!", "Tente novamente. . .")
+        }
+
+        setPassword('')
+    }
+
+    const register = () => {
+        navigation.navigate('Register');
+    }
+
     return (
         <View style={styles.caixa}>
             <View style={styles.fundo}>
@@ -15,17 +45,17 @@ function Login() {
 
                     <View style={styles.inputs}>
 
-                        <TextInput placeholder="Email" style={styles.input} />
-                        <TextInput placeholder="Senha" style={styles.input} secureTextEntry={true} />
+                        <TextInput placeholder="Email" value={user} style={styles.input} onChangeText={(text) => setUser(text)} />
+                        <TextInput placeholder="Senha" value={password} style={styles.input} onChangeText={(text) => setPassword(text)} secureTextEntry={true} />
 
                         <TouchableOpacity style={styles.btn}>
-                            <Text style={styles.texto}>Entrar</Text>
+                            <Text onPress={autentication} style={styles.texto}>Entrar</Text>
                         </TouchableOpacity>
                         <Text style={styles.link}
                             onPress={() => Linking.openURL('http://google.com')}>
                             Esqueceu a senha ? Clique aqui</Text>
                         <Text style={styles.link}
-                            onPress={() => Linking.openURL('http://google.com')}>
+                            onPress={register}>
                             Ainda não tem uma conta?</Text>
                     </View>
                 </View>

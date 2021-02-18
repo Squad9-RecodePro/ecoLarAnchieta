@@ -7,7 +7,7 @@ import styles from './styles';
 function PainelUser() {
     return (
         <View style={styles.container}>
-            
+            <Text>Olá, Mundo!</Text>
         </View>
     )
 }
