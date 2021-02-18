@@ -95,7 +95,7 @@ function VolunteerWorks() {
 
     return (
         <>
-            <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={""} title2={"Sair"} home={"AdminPanel"}>  </Menu>
+            <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={"/AdminLogin"} title2={"Sair"} home={"AdminPanel"}>  </Menu>
             <div className="container" id="container">
                 <main className="row m-auto container align-items-center py-5" styles="height: 88vh">
                     <div className="table-responsive card">
