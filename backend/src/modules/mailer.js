@@ -18,7 +18,6 @@ const transport = nodemailer.createTransport({
   },
 });
 
-
 transport.use('compile', hbs({
   viewEngine: {
     defaultLayout: undefined,

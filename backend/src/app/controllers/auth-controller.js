@@ -21,11 +21,11 @@ router.get("/moradores", async (req, res) => {
     try {                   // Usando o comando find() do mongoDB
         const moradores = await User.find();
 
-        return res.send(moradores);
+        return res.json(moradores);
     } catch (err) {
         return res.status(400).json({ error: 'Error loading Moradores' });
     }
-})
+});
 
 router.post("/register", async (req, res) => {
     const { email } = req.body;
@@ -35,10 +35,7 @@ router.post("/register", async (req, res) => {
         if (await User.findOne({ email }))
             return res.status(400).json({ error: "User Already Exists" });
 
-
         const user = await User.create(req.body);
-
-
 
         return res.json({
             user,
@@ -46,13 +43,12 @@ router.post("/register", async (req, res) => {
         });
 
     } catch (err) {
-        console.log(err)
         return res.status(400).json({ error: "Registration failed" });
     }
 });
 
 router.post('/authenticate', async (req, res) => {
-    const { email, password } = req.body
+    const { email, password } = req.body;
 
     const user = await User.findOne({ email }).select('+password');
 
@@ -67,9 +63,7 @@ router.post('/authenticate', async (req, res) => {
     res.json({
         user,
         token: generateToken({ id: user.id }),
-
     });
-
 });
 
 router.post('/forgot_password', async (req, res) => {
@@ -101,7 +95,6 @@ router.post('/forgot_password', async (req, res) => {
             template: 'auth/forgot_password',
         }, (err) => {
             if (err)
-
                 return res.status(400).json({ error: 'Cannot send forgot password email' });
 
             return res.json();
@@ -110,7 +103,6 @@ router.post('/forgot_password', async (req, res) => {
     } catch (err) {
         res.status(400).json({ error: 'Erro on forgot password, try again' });
     }
-
 });
 
 router.post('/reset_password', async (req, res) => {
@@ -140,7 +132,6 @@ router.post('/reset_password', async (req, res) => {
     } catch (err) {
         res.status(400).json({ error: 'Cannot reset password, try again!' });
     }
-
 });
 
 router.post("/registerAdmin", async (req, res) => {
@@ -179,7 +170,6 @@ router.post('/admin', async (req, res) => {
         admin,
         token: generateToken({ id: admin.id }),
     });
-
 });
 
 module.exports = app => app.use("/auth", router);

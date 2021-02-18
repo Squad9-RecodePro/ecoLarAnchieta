@@ -4,7 +4,6 @@ const router = express.Router();
 const Voluntariado = require('../models/repository/voluntariado');
 
 router.get('/', async (req, res) => {
-
     try {                   // Usando o comando find() do mongoDB
         const voluntariado = await Voluntariado.find();
 
@@ -39,7 +38,7 @@ router.put('/:voluntariadoId', async (req, res) => {
                         res.json(voluntariado);
                     });
             });
-            
+
     } catch (err) {
         return res.status(400).json({ error: 'Error updating one' });
     }
@@ -47,7 +46,7 @@ router.put('/:voluntariadoId', async (req, res) => {
 
 router.delete('/:voluntariadoId', async (req, res) => {
     try {
-        const voluntariado = await Voluntariado.findByIdAndRemove(req.params.voluntariadoId);
+        await Voluntariado.findByIdAndRemove(req.params.voluntariadoId);
 
         return res.json("Deletado com sucesso!");
 
@@ -55,6 +54,5 @@ router.delete('/:voluntariadoId', async (req, res) => {
         return res.status(400).json({ error: 'Error deleting one' });
     }
 });
-
 
 module.exports = app => app.use('/voluntariado', router);

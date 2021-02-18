@@ -1,7 +1,6 @@
 const mongoose = require("../../../config/database/conn");
 const bcrypt = require("bcryptjs");
 
-
 const AdminSchema = new mongoose.Schema({
     name: {
         type: String,
