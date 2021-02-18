@@ -17,11 +17,11 @@ function AdminPanel() {
     const qtdMoradores = moradores.length;
 
     return (
-        <>
+        <> 
             <Menu page1={"ResidentsAdmin"} title1={"Moradores"} page2={"VolunteerWorks"} title2={"Trabalhos Voluntarios"} page3={"AdminLogin"} title3={"Sair"} home={"AdminPanel"}>
 
             </Menu>
-
+        
             <div className="container" id="container">
                 <div className="row justify-content-center">
                     <div className="card col-lg-5 text-center border shadow">
@@ -35,6 +35,7 @@ function AdminPanel() {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
