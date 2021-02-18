@@ -25,28 +25,27 @@ const RegisterUser = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-
             },
             body: JSON.stringify(formData)
         })
             .then(res => res.json())
             .then((dados) => {
                 if (dados) {
-                    alert("Cadastro efetuado!")
-                    history.push("/UserLogin");
+                    if (password === secondpassword) {
+                        alert("Cadastro efetuado!");
+                        history.push("/UserLogin");
+                    } else {
+                        alert("Algo errado! Talvez as senhas não sejam iguais!");
+                    }
                 }
-            })
+            });
 
         setRender(!render);
 
         event.preventDefault();
 
-        // Lógica de cadastro
-        setName("")
-        setEmail("");
         setPassword("");
         setSecondPassword("");
-
     }
 
     return (
@@ -54,7 +53,7 @@ const RegisterUser = () => {
             <div className="containerRegister">
 
                 <div className="informationRegister">
-                    <img src={Anchieta2} alt=""/>
+                    <img src={Anchieta2} alt="" />
                 </div>
 
                 <div className="registerForm">
@@ -87,15 +86,14 @@ const RegisterUser = () => {
 
                         <button type="submit">Cadastrar</button>
 
-                        <a href="./UserLogin">
+                        <a href="/UserLogin">
                             Já possui uma conta?
                         </a>
                     </form>
                 </div>
             </div>
         </>
-
     );
-
 }
+
 export default RegisterUser;
