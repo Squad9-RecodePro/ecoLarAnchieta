@@ -3,12 +3,10 @@ import { useHistory } from "react-router-dom";
 
 import './styles.css';
 
-// import Footer from '../../components/Footer';
-
 import Anchieta from '../../assets/images/anchieta3.jpeg';
 
 const AdminLogin = () => {
-    const [render, setRender] = React.useState(false);
+    // const [render, setRender] = React.useState(false);
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
 
@@ -73,7 +71,7 @@ const AdminLogin = () => {
 
                 <div className="container-1">
 
-                    <img src={Anchieta} />
+                    <img src={Anchieta} alt=""/>
 
                 </div>
             </div>
