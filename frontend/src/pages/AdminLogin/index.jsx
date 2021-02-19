@@ -69,7 +69,7 @@ const AdminLogin = () => {
 
                 <div className="container-1">
 
-                    <img src={Anchieta} />
+                    <img src={Anchieta} alt=""/>
 
                 </div>
             </div>

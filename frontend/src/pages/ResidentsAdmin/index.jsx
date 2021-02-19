@@ -119,9 +119,9 @@ function ResidentsAdmin() {
     return (
         <>
             <Menu page1={"VolunteerWorks"} title1={"Trabalhos Voluntários"} page2={"/AdminLogin"} title2={"Sair"} home={"AdminPanel"}></Menu>
-            <div className="container-fluid row" id="container">
+            <div className="container-fluid" id="container">
                 <main className="col-12 m-auto align-items-center">
-                    <div className="col-12">
+                    <div className="table-responsive card">
                         <div className="card-header bg-dark d-flex align-items-center justify-content-between">
                             <h4 className="text-white">Moradores</h4>
                         </div>

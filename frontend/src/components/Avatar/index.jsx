@@ -25,10 +25,10 @@ const Avatar = ({ data }) => {
             </Row>
             <Row>
                 <Col className="p-3">
-                    <a href={data.github} target="_blank"><Image src={github} roundedCircle width="30" className="float-right" /></a>
+                    <a href={data.github} target="_blank" rel="noreferrer"><Image src={github} roundedCircle width="30" className="float-right" /></a>
                 </Col>
                 <Col className="p-3">
-                    <a href={data.linkedIn} target="_blank"><Image src={linkedIn} roundedCircle width="30" className="float-left" /></a>
+                    <a href={data.linkedIn} target="_blank" rel="noreferrer"><Image src={linkedIn} roundedCircle width="30" className="float-left" /></a>
                 </Col>
             </Row>
         </Container>

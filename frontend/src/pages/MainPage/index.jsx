@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, CardDeck, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Card, CardDeck, } from 'react-bootstrap';
 
 import Menu from '../../components/Menu/mainMenu';
 import DivImage from '../../components/DivImage';
@@ -139,7 +139,7 @@ const MainPage = () => {
             <section style={{ backgroundColor: '#0B305E' }}>
                 <Container className="p-5">
                     <Row className="d-flex justify-content-center">
-                        <iframe width="640" height="360" frameBorder="0"
+                        <iframe title="video" width="640" height="360" frameBorder="0"
                             src="https://www.youtube.com/embed/wSJt3k06nS8">
                         </iframe>
                     </Row>
@@ -154,7 +154,7 @@ const MainPage = () => {
                     <Row>
                         <Col sm={12} lg={4} >
                             <Row className="p-3 d-flex justify-content-center">
-                                <img src={missao} width="100"></img>
+                                <img src={missao} alt= "" width="100"></img>
                             </Row>
                             <Row className="p-3 d-flex justify-content-center text-center">
                                 <h3>Missão</h3>
@@ -163,7 +163,7 @@ const MainPage = () => {
                         </Col>
                         <Col sm={12} lg={4}>
                             <Row className="p-3 d-flex justify-content-center">
-                                <img src={visao} width="100"></img>
+                                <img src={visao} alt="" width="100"></img>
                             </Row>
                             <Row className="p-3 d-flex justify-content-center text-center">
                                 <h3>Visão</h3>
@@ -172,7 +172,7 @@ const MainPage = () => {
                         </Col>
                         <Col sm={12} lg={4}>
                             <Row className="p-3 d-flex justify-content-center">
-                                <img src={valores} width="100"></img>
+                                <img src={valores} alt="" width="100"></img>
                             </Row>
                             <Row className="p-3 d-flex justify-content-center text-center">
                                 <h3>Valores</h3>

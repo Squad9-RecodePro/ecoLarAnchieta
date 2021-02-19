@@ -93,7 +93,7 @@ function RegisterComplete() {
 
                     <div className="form-row justify-content-center">
                         <div className="form-group col-md-8">
-                            <label for="nome" >Nome complemento</label>
+                            <label for="nome" >Nome completo</label>
                             <input name="nome" type="text" className="form-control" placeholder="Nome completo" value={nome} onChange={event => setNome(event.target.value)} required />
                         </div>
                     </div>
