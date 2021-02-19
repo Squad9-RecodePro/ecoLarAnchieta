@@ -4,7 +4,6 @@ const hbs = require('nodemailer-express-handlebars');
 
 const SMTP_CONFIG = require("../config/mail.json");
 
-
 const transport = nodemailer.createTransport({
   host: SMTP_CONFIG.host,
   port: SMTP_CONFIG.port,

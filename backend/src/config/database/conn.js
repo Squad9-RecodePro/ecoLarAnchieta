@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const url = 'mongodb://localhost/ecolaranchieta';
+const url = process.env.DB_KEY;
 
 mongoose.connect(url, {
     useUnifiedTopology: true, 

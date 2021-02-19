@@ -3,15 +3,11 @@ import { useHistory } from "react-router-dom";
 
 import './styles.css';
 
-// import Footer from '../../components/Footer';
-
 import Anchieta from '../../assets/images/anchieta3.jpeg';
 
 const AdminLogin = () => {
-    const [render, setRender] = React.useState(false);
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
-
 
     const baseUrl = 'http://localhost:5000/auth/';
     let history = useHistory();
@@ -80,7 +76,6 @@ const AdminLogin = () => {
 
         </>
     );
-
 }
 
 export default AdminLogin;

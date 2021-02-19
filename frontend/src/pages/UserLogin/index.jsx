@@ -1,12 +1,10 @@
 import React from 'react';
 import './styles.css';
 import { useHistory } from "react-router-dom";
-//import Tijolo from '../../assets/images/tijolo.svg';
 
 import Anchieta1 from '../../assets/images/anchieta2.jpg';
 
 const UserLogin = () => {
-    //const [render, setRender] = React.useState(false);
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
 
