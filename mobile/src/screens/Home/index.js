@@ -30,36 +30,38 @@ function Home({ navigation }) {
                 source={imgComunidade}
                 style={styles.imgFundo}
             >
-                <Text
-                    style={styles.ecoText}
-                >ECO LAR ANCHIETA</Text>
-                <Text style={styles.comuText}>
-                    Projeto desenvolvido para os moradores da Ocupação Anchieta, localizada no bairro do Grajaú São Paulo, ocupação que já é resistência a sete anos.
-                    </Text>
-                <View style={styles.flexBtn}>
+                <View style={styles.bloco}>
+                    <Text
+                        style={styles.ecoText}
+                    >ECO LAR ANCHIETA</Text>
+                    <Text style={styles.comuText}>
+                        Projeto desenvolvido para os moradores da Ocupação Anchieta, localizada no bairro do Grajaú São Paulo, ocupação que já é resistência a sete anos.
+                        </Text>
+                    <View style={styles.flexBtn}>
 
-                    <TouchableOpacity
-                        style={styles.btn}
-                        onPress={register}
-                    >
-                        <Text
-                            style={styles.btnText}
-                        >Registrar-se</Text>
-                    </TouchableOpacity>
+                        <TouchableOpacity
+                            style={styles.btn}
+                            onPress={register}
+                        >
+                            <Text
+                                style={styles.btnText}
+                            >Inscreva-se</Text>
+                        </TouchableOpacity>
 
-                    <TouchableOpacity
-                        style={styles.btn}
-                        onPress={login}
-                    >
-                        <Text
-                            style={styles.btnText}
-                        >Login</Text>
-                    </TouchableOpacity>
+                        <TouchableOpacity
+                            style={styles.btn}
+                            onPress={login}
+                        >
+                            <Text
+                                style={styles.btnText}
+                            >Login</Text>
+                        </TouchableOpacity>
+                        
+                    </View>
+
                 </View>
             </ImageBackground>
-            <View style={styles.sobre}>
-                <Text style={styles.textSobre}>SOBRE A OCUPAÇÃO ANCHIETA</Text>
-            </View>
+            
 
         </View>
 

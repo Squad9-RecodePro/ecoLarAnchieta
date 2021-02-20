@@ -6,18 +6,29 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignSelf: 'center',
         width: '100%',
-        height: '75%',
+        height: '100%',
+    },
+    bloco: {
+        flex: 0.5,
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginBottom: 160,
+        backgroundColor: 'rgba(11, 48, 94, 0.8)',
+        
     },
     ecoText: {
-        marginLeft: 10,
-        marginTop: 30,
+        // marginLeft: 10,
+        // marginTop: 30,
+        marginVertical: 40,
         color: '#fff',
-        fontSize: 20,
+        fontSize: 30,
         fontWeight: '700',
+        shadowOpacity: 1
+
     },
     comuText: {
         marginLeft: 15,
-        fontSize: 16,
+        fontSize: 22,
         marginTop: 10,
         color: '#fff',
 
@@ -27,6 +38,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'flex-end',
+
     },
     btn: {
         height: 50,
@@ -36,6 +48,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         justifyContent: 'center',
         backgroundColor: '#12B87C',
+        shadowOpacity: 1
     },
     btnText: {
         color: '#fff',

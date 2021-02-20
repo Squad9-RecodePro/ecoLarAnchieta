@@ -7,7 +7,10 @@ import styles from './styles';
 function PainelUser() {
     return (
         <View style={styles.container}>
-            <Text>Olá, Mundo!</Text>
+            <View style={styles.blocovolun}>
+                <Text style={styles.titulovolun}>Seja bem-vindo, deseja ser um voluntário?</Text>
+                <Text>Veja algumas vagas, para que possa colaborar com a sua comunidade:</Text>
+            </View>
         </View>
     )
 }
