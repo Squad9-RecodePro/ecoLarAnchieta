@@ -6,13 +6,16 @@ import {
     TouchableOpacity,
     Linking,
     Alert,
+    Image
 } from 'react-native';
 
 import styles from './styles';
 
+import logo from '../../../assets/comuni/logo.png'
+
 const userApi = {
     id: 1,
-    email: 'Recode@recode.org',
+    user: 'Anna',
     password: 'recodepro',
 }
 
@@ -21,10 +24,10 @@ function Login({ navigation }) {
     const [password, setPassword] = React.useState('');
 
     const autentication = () => {
-        if (userApi.email === user && userApi.password === password) {
-            navigation.navigate('PainelUser')
+        if (userApi.user === user && userApi.password === password) {
+            navigation.navigate('PainelUser');
         } else {
-            Alert.alert("Algo errado!", "Tente novamente. . .")
+            Alert.alert("Algo errado!", "Tente novamente. . .");
         }
 
         setPassword('')
@@ -34,10 +37,24 @@ function Login({ navigation }) {
         navigation.navigate('Register');
     }
 
+    const initialPage = () => {
+        navigation.navigate('Home');
+    }
+
     return (
         <View style={styles.caixa}>
+
+            <TouchableOpacity
+                onPress={initialPage}
+                style={styles.imgLogo}>
+                <Image source={logo} />
+            </TouchableOpacity>
+
             <View style={styles.fundo}>
+
                 <View style={styles.container}>
+
+
                     <Text style={styles.titulo}>Bem Vindo(a) ao Eco Lar Anchieta</Text>
                     <View>
                         <Text style={styles.subtitulo}>Login</Text>
@@ -45,7 +62,7 @@ function Login({ navigation }) {
 
                     <View style={styles.inputs}>
 
-                        <TextInput placeholder="Email" value={user} style={styles.input} onChangeText={(text) => setUser(text)} />
+                        <TextInput placeholder="Nome de usuario" value={user} style={styles.input} onChangeText={(text) => setUser(text)} />
                         <TextInput placeholder="Senha" value={password} style={styles.input} onChangeText={(text) => setPassword(text)} secureTextEntry={true} />
 
                         <TouchableOpacity style={styles.btn}>

@@ -4,8 +4,10 @@ import {
     Text,
     TextInput,
     TouchableOpacity,
+    Image,
 } from 'react-native';
 
+import logo from '../../../assets/comuni/logo.png'
 import styles from './styles';
 
 function Register({ navigation }) {
@@ -14,8 +16,19 @@ function Register({ navigation }) {
         navigation.navigate('Login');
     }
 
+    const initialPage = () => {
+        navigation.navigate('Home');
+    }
+
     return (
         <View style={styles.caixa}>
+
+            <TouchableOpacity
+                onPress={initialPage}
+                style={styles.imgLogo}>
+                <Image source={logo} />
+            </TouchableOpacity>
+
             <View style={styles.fundo}>
                 <View style={styles.container}>
 
@@ -26,11 +39,11 @@ function Register({ navigation }) {
                     <View style={styles.inputs}>
 
                         <TextInput placeholder="Nome" style={styles.input} />
-                        <TextInput placeholder="Email" style={styles.input} />
-                        <TextInput placeholder="Senha" style={styles.input} />
+                        <TextInput placeholder="Nome de usuario" style={styles.input} />
+                        <TextInput placeholder="Senha" style={styles.input} secureTextEntry={true} />
                         <TextInput placeholder="Confirmar Senha" style={styles.input} secureTextEntry={true} />
 
-                        <TouchableOpacity style={styles.btn}>
+                        <TouchableOpacity style={styles.btn} onPress={login}>
                             <Text style={styles.texto}>Entrar</Text>
                         </TouchableOpacity>
                         <Text style={styles.link}

@@ -5,16 +5,21 @@ const styles = StyleSheet.create({
         height: "100%"
         //web 100vh
     },
+    imgLogo: {
+        width: '100%',
+        height: '9%',
+        marginBottom: 45
+    },
     fundo: {
         width: "100%",
-        height: "100%",
+        height: "85%",
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: "#0B305E"
     },
     container: {
         width: "90%",
-        height: "70%",
+        height: "65%",
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: "#fff",
