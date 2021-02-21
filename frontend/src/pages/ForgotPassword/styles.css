@@ -1,0 +1,114 @@
+.sectionPassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: #0B305E;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sectionPassword .content {
+    /* padding: 48px 0px 0px 128px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 42vw;
+    height: 64vh;
+    background-color: #fff;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.sectionPassword .content form .container {
+    display: flex;
+    border-bottom: 2px solid #1c83f6;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.sectionPassword .content form h2 {
+    color: #12B87C;
+    font-size: 36px;
+    display: flex;
+    opacity: 93%;
+}
+
+.containerUserLogin .content form h2 {
+    color: #12B87C;
+    font-size: 36px;
+    display: flex;
+    opacity: 93%;
+}
+
+.sectionPassword .content form .container .input {
+    background: none;
+    display: flex;
+    opacity: 93%;
+    font-size: 16px;
+    border-radius: 4px 4px 4px 4px;
+    border: 0;
+    padding-left: 7px;
+    margin-top: 7px;
+    width: 20vw;
+    height: 5vh;
+    outline: none;
+}
+
+.sectionPassword .content form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px auto;
+    width: 14vw;
+    height: 5vh;
+    border-radius: 14px 14px 14px 14px;
+    background-color: #12B87C;
+    border: solid 2px #fff;
+    color: #eee9e9;
+    outline: none;
+    cursor: pointer;
+}
+
+.sectionPassword .content .container i {
+    display: flex;
+    padding-top: 18px;
+    margin: 0 6px;
+    color: #aaa7a7;
+}
+
+@media (max-width: 890px){
+    .sectionPassword .content {
+        width: 64vw;
+        height: 80vh;
+    }
+    .sectionPassword .content form h2 {
+        margin-bottom: 24px;
+    }
+    .sectionPassword .content form .btn {
+        width: 40vw;
+        height: 6vh;
+        margin: 12px auto;
+      }
+}
+@media (max-width: 600px) {
+    .sectionPassword .content {
+      width: 100%;
+      height: 100%;
+      background-color: #0B305E;
+    }
+    .sectionPassword .content p {
+      color: #aaa7a7;
+      margin-bottom: 8vh;
+    }
+    .sectionPassword .content form {
+      width: 80vw;
+    }
+    .sectionPassword .content form h2 {
+      margin-bottom: 4vh;
+    }
+    .sectionPassword .content form .btn {
+      margin: 4vh auto;
+      width: 60vw;
+      border: 0;
+    }
+  } 
