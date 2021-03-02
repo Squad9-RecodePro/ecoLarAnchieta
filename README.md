@@ -3,11 +3,11 @@ Projeto desenvolvido no curso de Desenvolvimento FullStack da Recode.
 A plataforma tem como objetivo inicial viabilizar uma ferramenta tecnologica para cadastro dos moradores da ocupação anchieta, para que possamos futuramente filtrar os moradores com maiores prioridades para que a propria comunidade possa se reunir e se ajudar a construir a casa uns dos outros até que todos os moradores sejam atendidos, o local tem em abundância recursos naturais e o objetivo é preservar esses recursos com a construção de casa ecologicas usando tijolo ecologico, podendo assim proporciona uma moradia acessivél e digna.
 
 <h2>📜 Sumário</h2>
-<li>::marker <a href="#func">Funcionalidades</a></li>
-<li>::marker <a href="#prec">Pré-requisitos</a></li>
-<li>::marker <a href="#binstall">Bibliotecas instaladas</a></li>
-<li>::marker <a href="#playapp">Como rodar a aplicação</a></li>
-<li>::marker <a href="#contr">Contribuintes</a></li>
+<li> <a href=".func">Funcionalidades</a></li>
+<li> <a href=".prec">Pré-requisitos</a></li>
+<li> <a href=".binstall">Bibliotecas instaladas</a></li>
+<li> <a href=".playapp">Como rodar a aplicação</a></li>
+<li> <a href=".contr">Contribuintes</a></li>
 
 
 <h2 class="func">☑️ Funcionalidades</h2>
