@@ -1,30 +1,56 @@
-<h1>Projeto em desenvolvimento pelo Squad9-SP1 como proposta do curso de FullStack da RecodePro (2020)</h1>
+<h1 align="center"> 🌳 🌎 Eco Lar Anchieta</h1>
+Projeto desenvolvido no curso de Desenvolvimento FullStack da Recode.
+A plataforma tem como objetivo inicial viabilizar uma ferramenta tecnologica para cadastro dos moradores da ocupação anchieta, para que possamos futuramente filtrar os moradores com maiores prioridades para que a propria comunidade possa se reunir e se ajudar a construir a casa uns dos outros até que todos os moradores sejam atendidos, o local tem em abundância recursos naturais e o objetivo é preservar esses recursos com a construção de casa ecologicas usando tijolo ecologico, podendo assim proporciona uma moradia acessivél e digna.
 
-<h3>Tema Moradia - :house_with_garden: Aplicação EcoLar Anchieta</h3>
+<h2>📜 Sumário</h2>
+Funcionalidades
+Pré-requisitos
+Bibliotecas instaladas
+Como rodar a aplicação
+Contribuintes
+Licença
 
-💻 Um pouco sobre o projeto
+<h2>☑️ Funcionalidades</h2>
+Consumo de API
+Validação de acesso por JWT
+Encriptação de senha (Base 64)
+Integração com Front End em React
 
-<h2>ECOLAR ANCHIETA</h2>
+<h2>⚠️ Pré-requisitos</h2>
+Visual Studio 2019
+Nodejs ^ 15.5.0
 
-:deciduous_tree: :earth_americas: Ecocasa
-A plataforma tem como objetivo inicial viabilizar uma ferramenta tecnologica para cadastro dos moradores da ocupação anchieta,
-para que possamos futuramente filtrar os moradores com maiores prioridades para que a propria comunidade possa se reunir e se ajudar a
-construir a casa uns dos outros até que todos os moradores sejam atendidos, o local tem em abundância recursos naturais 
-e o objetivo é preservar esses recursos com a construção de casa ecologicas usando tijolo ecologico,
-podendo assim proporciona uma moradia acessivél e digna.
+<h2>📚 Bibliotecas instaladas</h2>
+Bootstrap
 
 
-<h2>Tecnologias utilizadas</h2>
-As seguintes ferramentas foram usadas na construção do projeto até o momento:
 
-HTML
-CSS
-JavaScript
-Php
-MySQL
-Bootstrap v4.5
+<h2>▶️ Como rodar a aplicação</h2>
+1. Clone o projeto
 
-Link da Aplicação 
-http://ecocasa.infinityfreeapp.com/
+git clone https://github.com/Squad9-RecodePro/ecoLarAnchieta.git
+2. Instale as dependências.
 
-<h3> 👩‍💻 Projeto em Desenvolvimento.</h3>
+npm i no diretorio backend
+npm i no diretorio frontend
+
+3. Inicie o servidor.
+
+
+
+<h2>☁️ Contribuintes</h2>
+
+Edson Oliveira
+:octocat: 👔	
+Elnatan Souza
+:octocat: 👔	
+Frederico Reid
+:octocat: 👔	
+Gustavo Cavalcante
+:octocat: 👔	
+Tainá Ferreira
+:octocat: 👔	
+Thamirez Bastos
+:octocat: 👔
+
+Copyright©️ 2021 - Eco Lar Anchieta
