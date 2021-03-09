@@ -26,7 +26,7 @@ const UserLogin = () => {
         }).then(res => res.json())
             .then((dados) => {
                 if (dados.token) {
-                    localStorage.setItem(dados.token)
+                    localStorage.setItem('user-token', dados.token)
                     history.push("/UserPanel");
                 } else {
                     alert('Email ou senha invalido!');

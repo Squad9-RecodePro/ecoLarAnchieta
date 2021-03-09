@@ -4,6 +4,12 @@ import logo from '../../../assets/icons/icon.svg';
 import Titulo from '../../Titulo';
 
 const Menu = (props) => {
+    const Sair = () => {
+       
+        localStorage.removeItem('user-token')
+        window.location.href='/UserLogin';
+        
+    }
     return ( 
     <>
         <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
@@ -23,7 +29,7 @@ const Menu = (props) => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="navbar-nav mr-auto">
                     <Nav.Link href={props.page1}>{props.title1}</Nav.Link>
-                    <Nav.Link href={props.page2}>{props.title2}</Nav.Link>
+                    <Nav.Link onClick={Sair}>{props.title2}</Nav.Link>
                     <Nav.Link href={props.page3}>{props.title3}</Nav.Link>
                 </Nav>
             </Navbar.Collapse>

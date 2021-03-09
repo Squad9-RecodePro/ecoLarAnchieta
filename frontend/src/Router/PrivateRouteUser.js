@@ -1,13 +1,9 @@
 import React from 'react';
 
 import { Route, Redirect } from 'react-router-dom';
-import UserLogin from './pages/UserLogin';
-// import UserPanel from './pages/UserPanel';
-// import UserLogin from './pages/UserLogin';
 
-
-const PrivateRoute = props => {
-    const isLogged = !!localStorage.getItem(dados.token)
+const PrivateRouteUser = props => {
+    const isLogged = !!localStorage.getItem('user-token')
     return isLogged ? <Route {...props} /> : <Redirect to="/UserLogin" />
 }
 
@@ -37,4 +33,4 @@ const PrivateRoute = props => {
     // else return null;
 
 
-export default PrivateRoute;
+export default PrivateRouteUser;

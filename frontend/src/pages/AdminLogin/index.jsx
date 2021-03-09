@@ -30,6 +30,7 @@ const AdminLogin = () => {
         }).then(res => res.json())
             .then((dados) => {
                 if (dados.token) {
+                    localStorage.setItem('admin-token', dados.token)
                     history.push("/AdminPanel");
                 } else {
                     alert('Email ou senha invalido!');
