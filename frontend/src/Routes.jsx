@@ -13,6 +13,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import RegisterComplete from './pages/RegisterComplete';
 import Page404 from './pages/Page404';
+import PrivateRoute from './PrivateRoute';
 
 
 
@@ -24,7 +25,7 @@ const Routes = () => (
             <Route path="/RegisterUser" component={RegisterUser} />
             <Route path="/AdminLogin" component={AdminLogin} />
             <Route path="/AdminPanel" component={AdminPanel} />
-            <Route path="/UserPanel" component={UserPanel} />
+            <PrivateRoute path="/UserPanel" component={UserPanel} />
             <Route path="/ResidentsAdmin" component={ResidentsAdmin} />
             <Route path="/VolunteerWorks" component={VolunteerWorks} />
             <Route path="/ForgotPassword" component={ForgotPassword} />
