@@ -5,9 +5,10 @@ import Titulo from '../../Titulo';
 
 const Menu = (props) => {
     const Sair = () => {
-       
+
         localStorage.removeItem('user-token')
         window.location.href='/UserLogin';
+
         
     }
     return ( 

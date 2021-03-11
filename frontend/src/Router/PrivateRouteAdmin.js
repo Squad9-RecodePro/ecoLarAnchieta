@@ -7,4 +7,4 @@ const PrivateRouteAdmin = props => {
     return isLogged ? <Route {...props} /> : <Redirect to="/AdminLogin" />
 }
 
-export default PrivateRouteAdmin
+export default PrivateRouteAdmin;
