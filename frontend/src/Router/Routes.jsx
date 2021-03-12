@@ -13,9 +13,8 @@ import ForgotPassword from '../pages/ForgotPassword';
 import ResetPassword from '../pages/ResetPassword';
 import RegisterComplete from '../pages/RegisterComplete';
 import Page404 from '../pages/Page404';
-import PrivateRoute from './PrivateRoute';
-// import PrivateRouteAdmin from './PrivateRouteAdmin';
-
+import PrivateRouteUser from './PrivateRouteUser';
+import PrivateRouteAdmin from './PrivateRouteAdmin';
 
 
 const Routes = () => (
@@ -25,13 +24,13 @@ const Routes = () => (
             <Route path="/UserLogin" component={UserLogin} />
             <Route path="/RegisterUser" component={RegisterUser} />
             <Route path="/AdminLogin" component={AdminLogin} />
-            <PrivateRoute path="/AdminPanel" component={AdminPanel} />
-            <PrivateRoute path="/UserPanel" component={UserPanel} />
-            <PrivateRoute path="/ResidentsAdmin" component={ResidentsAdmin} />
-            <PrivateRoute path="/VolunteerWorks" component={VolunteerWorks} />
+            <PrivateRouteAdmin path="/AdminPanel" component={AdminPanel} />
+            <PrivateRouteUser path="/UserPanel" component={UserPanel} />
+            <PrivateRouteAdmin path="/ResidentsAdmin" component={ResidentsAdmin} />
+            <PrivateRouteAdmin path="/VolunteerWorks" component={VolunteerWorks} />
             <Route path="/ForgotPassword" component={ForgotPassword} />
             <Route path="/ResetPassword" component={ResetPassword} />
-            <PrivateRoute path="/RegisterComplete" component={RegisterComplete} />
+            <PrivateRouteUser path="/RegisterComplete" component={RegisterComplete} />
             <Route path='*' component={Page404} />           
         </Switch>
     </BrowserRouter>
