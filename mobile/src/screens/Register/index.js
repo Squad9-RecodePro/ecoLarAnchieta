@@ -39,7 +39,7 @@ function Register({ navigation }) {
                     <View style={styles.inputs}>
 
                         <TextInput placeholder="Nome" style={styles.input} />
-                        <TextInput placeholder="Nome de usuario" style={styles.input} />
+                        <TextInput placeholder="Email" style={styles.input} />
                         <TextInput placeholder="Senha" style={styles.input} secureTextEntry={true} />
                         <TextInput placeholder="Confirmar Senha" style={styles.input} secureTextEntry={true} />
 
