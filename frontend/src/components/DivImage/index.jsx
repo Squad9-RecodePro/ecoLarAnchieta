@@ -9,7 +9,7 @@ const Image = styled.div`
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 520px;
+    height: 76vh;
     width: 100%;
     padding-top: 50px;
 

@@ -8,6 +8,7 @@ import ControlledCarousel from '../../components/ControlledCarousel';
 import AvatarList from '../../components/Avatar';
 import Footer from '../../components/Footer';
 import './styles.css';
+import initAnimacaoScroll from '../../js/eventScroll.js'
 
 import Titulo from '../../components/Titulo';
 
@@ -22,6 +23,8 @@ import missao from '../../assets/icons/missao.svg';
 import valores from '../../assets/icons/valores.svg';
 import visao from '../../assets/icons/visao.svg';
 
+
+window.onload = initAnimacaoScroll;
 
 const MainPage = () => {
 
@@ -54,24 +57,30 @@ const MainPage = () => {
         }
     ]
 
+
+
+
     return (
         <div style={{ overflowX: "hidden" }}>
-            <Menu  home={"/"} />
+            <Menu page1={"#sobre"} title1={"Sobre"} page2={"#o-projeto"} title2={"O Projeto"} 
+            page3={"#a-comunidade"} title3={"A Comunidade"} page4={"#proposito"} title4={"Sobre Nós"}
+            page5={"#desenvolvedores"} title5={"Desenvolvedores"} home={"/"}
+            />
             <DivImage image={image1}>
-                <Container className="section-1">
-                    <Row>
+                <Container>
+                    <Row className="justify-content-center">
                         <Col lg={8} md={10} sm={8} >
                             <Row>
                                 <Titulo>ECO LAR ANCHIETA</Titulo>
                             </Row>
-                            <Row className="justify-content-center">
-                                <p className="h2">Projeto desenvolvido para os moradores da Ocupação Anchieta, localizada no bairro do Grajaú São Paulo, ocupação que já é resistência a sete anos.</p>
+                            <Row>
+                                <p className="lead">Projeto desenvolvido para os moradores da Ocupação Anchieta, localizada no bairro do Grajaú São Paulo, ocupação que já é resistência a sete anos.</p>
                             </Row>
-                            <Row className="p-0">
-                                <Col lg="3" className="justify-content-center">
+                            <Row className="justify-content-center p-0">
+                                <Col lg="3">
                                     <RoundedButton size="lg" href="/RegisterUser"><span>Inscreva-se</span></RoundedButton>
                                 </Col>
-                                <Col lg="2">
+                                <Col lg="3">
                                     <RoundedButton size="lg" href="/UserLogin"><span>Login</span></RoundedButton>
                                 </Col>
 
@@ -80,10 +89,10 @@ const MainPage = () => {
                     </Row>
                 </Container>
             </DivImage>
-            <section>
-                <Row className="p-5 d-flex justify-content-center" style={{ backgroundColor: '#0B305E' }} fluid>
+            <section id="sobre" className="js-scroll">
+                <Row className="p-5 d-flex justify-content-center" fluid>
                     <Row>
-                        <Container fluid className="p-1 text-light">
+                        <Container fluid className="p-1 text-dark">
                             <h3>SOBRE A OCUPAÇÃO ANCHIETA</h3>
                             <div className="dropdown-divider"></div>
                             <p className="lead">
@@ -100,17 +109,17 @@ const MainPage = () => {
                         <Container className="p-5 d-flex justify-content-center" fluid >
                             <blockquote className="blockquote text-right">
                                 <ControlledCarousel images={imagensCarrousel} />
-                                <footer class="blockquote-footer text-light">Ocupação Anchieta , Grajaú - São Paulo</footer>
+                                <footer class="blockquote-footer text-dark">Ocupação Anchieta , Grajaú - São Paulo</footer>
                             </blockquote>
                         </Container>
                     </Row>
                 </Row>
             </section>
-            <section>
-                <Row fluid>
+            <section id="o-projeto" className="js-scroll">
+                <Row style={{ backgroundColor: '#0B305E' }} fluid>
                     <Container className="p-5">
                         <CardDeck>
-                            <Card className="shadow p-3 mb-5 bg-white rounded">
+                            <Card className="shadow p-3 mb-5 rounded text-light" style={{ backgroundColor: '#0B305E' }}>
                                 <Card.Img variant="top" src={image3} />
                                 <Card.Body>
                                     <Card.Title>Quem somos</Card.Title>
@@ -122,7 +131,7 @@ const MainPage = () => {
                                 </Card.Body>
                             </Card>
 
-                            <Card className="shadow p-3 mb-5 bg-white rounded">
+                            <Card className="shadow p-3 mb-5 rounded text-light" style={{ backgroundColor: '#0B305E' }}>
                                 <Card.Img variant="top" src={image4} />
                                 <Card.Body>
                                     <Card.Title>O projeto</Card.Title>
@@ -136,7 +145,7 @@ const MainPage = () => {
                     </Container>
                 </Row>
             </section>
-            <section style={{ backgroundColor: '#0B305E' }}>
+            <section id="a-comunidade" className="js-scroll">
                 <Container className="p-5">
                     <Row className="d-flex justify-content-center">
                         <iframe title="video" width="640" height="360" frameBorder="0"
@@ -149,7 +158,7 @@ const MainPage = () => {
                     </Row>
                 </Container>
             </section>
-            <section>
+            <section id="proposito" className="js-scroll">
                 <Container>
                     <Row>
                         <Col sm={12} lg={4} >
@@ -183,7 +192,7 @@ const MainPage = () => {
                 </Container>
             </section>
 
-            <section style={{ backgroundColor: 'white' }}>
+            <section id="desenvolvedores" className="js-scroll" style={{ backgroundColor: 'white' }}>
                 <hr />
                 <Container className="p-3 justify-content-center">
                     <Row>

@@ -34,8 +34,11 @@ const Menu = (props) => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="navbar-nav mr-auto">
                     <Nav.Link href={props.page1}>{props.title1}</Nav.Link>
-                    <Nav.Link onClick={Sair}>{props.title2}</Nav.Link>
+                    <Nav.Link href={props.page2} onClick={Sair}>{props.title2}</Nav.Link>
                     <Nav.Link href={props.page3}>{props.title3}</Nav.Link>
+                    <Nav.Link href={props.page4}>{props.title4}</Nav.Link>
+                    <Nav.Link href={props.page5}>{props.title5}</Nav.Link>
+
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
