@@ -15,8 +15,8 @@ import logo from '../../../assets/comuni/logo.png'
 
 const userApi = {
     id: 1,
-    user: 'Anna',
-    password: 'recodepro',
+    email: 's.andreia@gmail.com',
+    password: 'santosandreia123',
 }
 
 function Login({ navigation }) {
@@ -24,7 +24,7 @@ function Login({ navigation }) {
     const [password, setPassword] = React.useState('');
 
     const autentication = () => {
-        if (userApi.user === user && userApi.password === password) {
+        if (userApi.email === user && userApi.password === password) {
             navigation.navigate('PainelUser');
         } else {
             Alert.alert("Algo errado!", "Tente novamente. . .");
@@ -62,7 +62,7 @@ function Login({ navigation }) {
 
                     <View style={styles.inputs}>
 
-                        <TextInput placeholder="Nome de usuario" value={user} style={styles.input} onChangeText={(text) => setUser(text)} />
+                        <TextInput placeholder="Email" value={user} style={styles.input} onChangeText={(text) => setUser(text)} />
                         <TextInput placeholder="Senha" value={password} style={styles.input} onChangeText={(text) => setPassword(text)} secureTextEntry={true} />
 
                         <TouchableOpacity style={styles.btn}>
