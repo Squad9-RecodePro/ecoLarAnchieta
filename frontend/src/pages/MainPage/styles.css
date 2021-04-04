@@ -13,6 +13,16 @@ html {
     transform: translate3d(0, 0, 0);
 }
 
+#container-sobre{
+    position: relative;
+    margin-bottom: -7%;
+}
+
+/* #a-comunidade{
+    position: relative;
+    margin-left: 15%;
+} */
+
 @media (max-width: 769px) {
     .section-1 .h2 {
         font-size: 24px;

@@ -48,14 +48,14 @@ const AvatarList = () => {
             image: elnatan,
             nome: "Elnatan Souza", 
             github: "https://github.com/ElnatanSouza", 
-            linkedIn: "https://www.linkedin.com/in/elnatan-souza-5ba191193/"
+            linkedIn: "https://www.linkedin.com/in/elnatansouza/"
         },
 
         {
             image: frederico,
             nome: "Frederico Reid", 
             github: "https://github.com/FredericoReid", 
-            linkedIn: "https://www.linkedin.com/in/frederico-reid-649601180/"
+            linkedIn: "https://www.linkedin.com/in/fredericoreid/"
         },
 
         {

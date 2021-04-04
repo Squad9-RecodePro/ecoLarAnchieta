@@ -92,7 +92,7 @@ const MainPage = () => {
             <section id="sobre" className="js-scroll">
                 <Row className="p-5 d-flex justify-content-center" fluid>
                     <Row>
-                        <Container fluid className="p-1 text-dark">
+                        <Container fluid className="p-1 text-dark" id= "container-sobre">
                             <h3>SOBRE A OCUPAÇÃO ANCHIETA</h3>
                             <div className="dropdown-divider"></div>
                             <p className="lead">
@@ -145,12 +145,18 @@ const MainPage = () => {
                     </Container>
                 </Row>
             </section>
-            <section id="a-comunidade" className="js-scroll">
+            <section id="a-comunidade" className="js-scroll" align="center">
                 <Container className="p-5">
-                    <Row className="d-flex justify-content-center">
-                        <iframe title="video" width="640" height="360" frameBorder="0"
-                            src="https://www.youtube.com/embed/wSJt3k06nS8">
-                        </iframe>
+                    <Row className=" col-12 d-flex justify-content-center">
+                        <div className="col-6 p-1 text-dark">
+                            <h4>A COMUNIDADE:</h4>
+                            <hr/>
+                        </div>
+                        <div classname=" text-center" id = "a-comunidade">
+                            <iframe title="video" width="640" height="360" frameBorder="0"
+                                src="https://www.youtube.com/embed/wSJt3k06nS8">
+                            </iframe>
+                        </div>
                     </Row>
                     <Row className="p-3 d-flex justify-content-center text-center text-light">
                         <h2 class="lead">“Enquanto o governo maior se organiza lá em cima, nós não temos que nos dar por mortos. A gente tem que se organizar”.
